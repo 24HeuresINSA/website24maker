@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-concerts">Artistes</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">En attendant la programmation 2019, retrouvez quelques artistes des 3 précédentes éditions</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+        <section class="ptb pt-5">
+            <div class="container">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li><a class="categories active" data-filter="*">All</a></li>
+                        <li><a class="categories" data-filter=".artiste-2018">2018</a></li>
+                        <li><a class="categories" data-filter=".artiste-2017">2017</a></li>
+                        <li><a class="categories" data-filter=".artiste-2016">2016</a></li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+
+                <!-- ARTISTES -->
+                <div class="row container-masonry nf-col-3">
+
+                    <!-- KAVINSKY -->
+                    <div class="nf-item artiste-2018 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/kavinsky.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">KAVINSKY (DJ SET)</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#kavinsky-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">KAVINSKY <span style="font-size:10px;">(DJ SET)</span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2018</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="kavinsky-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">KAVINSKY (DJ SET)</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">2018</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/N8ZAx_OvKpM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0">Vous l’avez connu dans Drive avec son tube surpuissant Nightcall, ou encore avec Roadgame, le DJ futuriste français a su s’approprier la scène électro mondiale. Le zombie à la Ferrari débarque sur le campus de La Doua pour vous faire vibrer avec ses tubes mêlant une synthwave rêveuse et futuriste aux sonorités des années 80. Mettez votre casque, baissez la visière, et laissez Kavinsky vous en mettre plein la figure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HILIGHT TRIBE -->
+                    <div class="nf-item artiste-2018 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/hilight_tribe.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">HILIGHT TRIBE</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#hilight-tribe-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">HILIGHT TRIBE</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2018</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Natural Trance</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="hilight-tribe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">HILIGHT TRIBE</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">2018</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Natural Trance</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/Y_df95Wcp3Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0">Nous fûmes heureux et fiers d’accueillir Hilight Tribe cette année aux 24 heures de l’INSA. Cette pointure dans le milieu de la Natural Trance, nous ramènera vers nos instincts tribaux grâce à un live 100% instrumental, où chaque musicien use de son art pour nous rapprocher de la Terre, mais en utilisant la technologie actuelle pour modifier chaque sonorité que peuvent leur fournir leurs instruments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DANAKIL -->
+                    <div class="nf-item artiste-2018 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/danakil.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">DANAKIL</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#danakil-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">DANAKIL</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2018</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Reggae</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="danakil-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">DANAKIL</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">2018</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Reggae</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/NUn3lj64oNw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0">Danakil, le groupe incontournable de la scène reggae française s’invite aux 24h de l’INSA pour faire partager ses valeurs militantes et humanistes lors d’un live dynamique et engagé. Il propose un reggae roots nouvelle génération, bien ancré dans l’air du temps, avec une musique métissée, un humanisme sincère et le désir de dire les choses comme elles viennent, pour faire entendre une voix différente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PENDULUM -->
+                    <div class="nf-item artiste-2017 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/pendulum.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">PENDULUM (DJ SET & VERSE)</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#pendulum-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">PENDULUM <span style="font-size:10px;">(DJ SET & VERSE)</span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2017</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Drum'n Bass</h6>
+                        </div>
+                    </div>
+
+                    <!-- ALLTTA -->
+                    <div class="nf-item artiste-2017 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/alltta.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">ALLTTA (20SYL & MR. J. MEDEIROS)</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#alltta-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">ALLTTA <span style="font-size:10px;">(20SYL & MR. J. MEDEIROS)</span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2017</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro, Hip Hop</h6>
+                        </div>
+                    </div>
+
+                    <!-- LEMAITRE -->
+                    <div class="nf-item artiste-2017 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/lemaitre.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">LEMAITRE</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#lemaitre-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LEMAITRE</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2017</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                        </div>
+                    </div>
+
+                    <!-- ETIENNE DE CRECY -->
+                    <div class="nf-item artiste-2016 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/etienne_de_crecy.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">ETIENNE DE CRECY PRESENTE SUPERDISCOUNT 3</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#lemaitre-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">ETIENNE DE CRECY</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2016</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro house</h6>
+                        </div>
+                    </div>
+
+                    <!-- NETSKY-->
+                    <div class="nf-item artiste-2016 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/netsky.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">NETSKY</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#netsky-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">NETSKY <span style="font-size:10px;">(DJ SET)</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2016</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Drum'n Bass</h6>
+                        </div>
+                    </div>
+
+                    <!-- SAN HOLO-->
+                    <div class="nf-item artiste-2016 spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/old/san_holo.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">SAN HOLO</p>
+                                        <!--<button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#san-holo-modal">
+                                            Plus d'info
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">SAN HOLO</h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2016</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Trap</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Work Section -->
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script>
+		$(".btn-plus-info").click(function(){
+			setTimeout(function(){
+				$(".jjj").each(function(i){
+					var w = $(this).width();
+					if (w > 0) {
+						$(".modal-artiste-video").height(w*315/560);
+						return false;
+                    }
+				});
+			}, 1000);
+		});
+		$(window).resize(function() {
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		});
+    </script>
+    <script type="text/javascript">
+		$("#title-page-nav").append("Artistes");
+    </script>
+    
+</body>
+</html>

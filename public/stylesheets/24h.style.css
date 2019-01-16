@@ -1,0 +1,120 @@
+html{
+    font-family: 'arial', sans-serif;
+}
+
+.photo-concerts-artiste-item{
+    height: 300px;
+}
+
+.nf-item{
+    padding-bottom: 2px;
+}
+
+.color-gris-1{
+    color: #EEEEEE;
+}
+
+.color-gris-4{
+    color: #999999;
+}
+
+@media (min-width: 768px){
+    .logo-partenaire-item{
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px){
+    .photo-concerts-artiste-item{
+        height: 200px;
+    }
+
+    .logo-partenaire-item{
+        height: 150px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .titre-concerts-artiste-item{
+        font-size: 18px;
+        line-height: 15px;
+        padding: 4px 0px 2px 0px;
+    }
+
+    .logo-partenaire-item{
+        height: 100px;
+    }
+
+    .sous-titre-date-concerts-artiste-item, .sous-titre-style-concerts-artiste-item{
+        font-size: 11px;
+    }
+
+    .nf-col-2 .nf-item, .nf-col-3 .nf-item, .nf-col-4 .nf-item,
+    .nf-col-1 .nf-item.w2, .nf-col-2 .nf-item.w2, .nf-col-3 .nf-item.w2, .nf-col-4 .nf-item.w2,
+    .nf-col-1 .nf-item.w3, .nf-col-2 .nf-item.w3, .nf-col-3 .nf-item.w3, .nf-col-4 .nf-item.w3,
+    nf-col-1 .nf-item.w4, .nf-col-2 .nf-item.w4, .nf-col-3 .nf-item.w4, .nf-col-4 .nf-item.w4,
+    .nf-col-1 .nf-item.w4-1, .nf-col-2 .nf-item.w4-1, .nf-col-3 .nf-item.w4-1, .nf-col-4 .nf-item.w4-1,
+    .nf-col-1 .nf-item.w3-1, .nf-col-2 .nf-item.w3-1, .nf-col-3 .nf-item.w3-1, .nf-col-4 .nf-item.w3-1 {
+        width: 50%;
+    }
+
+    .nf-col-5 .nf-item, .nf-col-6 .nf-item {
+        width: 33.3333%;
+    }
+
+    .nf-row2 .nf-item.spacing, .nf-row2 .grid-sizer.spacing {
+        padding: 25px;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .nf-col-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .spacing-grid {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nf-col-3, .nf-col-4 {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 480px){
+    .nf-col-5 .nf-item, .nf-col-6 .nf-item {
+        width: 33.3333%;
+    }
+
+    .nf-row2 .nf-item.spacing, .nf-row2 .grid-sizer.spacing {
+        padding: 25px;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .nf-col-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .spacing-grid {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nf-col-3, .nf-col-4 {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}

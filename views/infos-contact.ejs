@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-concerts">NOUS CONTACTER</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">Besoin d'information ? Une demande particulière ? Envi de nous rencontrer ?</span><br>
+                            <span class="text-original-case">N'hésitez pas à nous contacter ou nous rendre visite au local de l'association !</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+        <section class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 contact">
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
+                            <h6>Coordonnées</h6>
+                            <p>
+                                <b>Club des 24 heures de l’INSA</b><br>
+                                RdC Bâtiment D – INSA de Lyon<br>
+                                20 avenue Albert Einstein<br>
+                                69621 Villeurbanne CEDEX<br>
+                            </p>
+                            <a><i class="fa fa-phone left"></i>04 72 43 70 00</a>
+                        </div>
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="ion ion-ios-clock"></i></div>
+                            <h6>Horraires</h6>
+                            <p>
+                                <span>Du Lundi au Vendredi :</span><br/>
+                                <span>12h > 14h</span><br/>
+                                <span>18h > 20h</span>
+                            </p>
+                        </div>
+                        <div class="contact-box-left mb-45">
+
+                            <h6>Suivez-nous</h6>
+                            <ul class="list-none social">
+                                <li><a target="_blank" href="https://www.facebook.com/24heuresinsa/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/24heuresinsa"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/24heuresinsa/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_blank" href="https://www.flickr.com/photos/24-heures/albums"><i class="fa fa-flickr"></i></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UC9Zbc7wBMv2nro0hazcVMFw"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                        <!-- Contact FORM -->
+                        <form class="contact-form" id="contact" role="form">
+
+                            <!-- IF MAIL SENT SUCCESSFULLY -->
+                            <h6 class="successContent">
+                                <i class="fa fa-check left" style="color: #5cb45d;"></i>Le message a été envoyé.
+                            </h6>
+                            <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+                            <!-- MAIL SENDING UNSUCCESSFULL -->
+                            <h6 class="errorContent">
+                                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Erreur, le message n'a pas pu être envoyé.
+                            </h6>
+                            <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+                            <div class="form-field-wrapper">
+                                <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Votre nom" required>
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Votre email" required>
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <select class="input-sm form-full" id="form-to" type="text" name="form-to" placeholder="Destinataire">
+                                    <option value="1">Communication/Presse</option>
+                                    <option value="2">Partenariats</option>
+                                    <option value="3">Concessions/Restauration</option>
+                                    <option value="4">Billetterie</option>
+                                    <option value="5">Concerts/Programmation</option>
+                                    <option value="6">Courses</option>
+                                    <option value="7">Animations</option>
+                                    <option value="8">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Sujet">
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Votre message" required></textarea>
+                            </div>
+
+                            <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Envoyer</button>
+                        </form>
+                        <!-- END Contact FORM -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section -->
+        <section class="map">
+            <div id="map"></div>
+        </section>
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfKHoCjs71btMYOe-W_GWv_cZRT3I1NWU&sensor=true"></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+    <script src="../js/contact-form.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$("#title-page-nav").append("Nous contacter");
+    </script>
+    
+</body>
+</html>

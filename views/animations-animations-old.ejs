@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-animations">Animations</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">Venez vous divertir en journée, entre amis ou en famille !</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+        <section class="ptb pt-5">
+            <div class="container">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li><a class="categories active" data-filter="*">TOUT</a></li>
+                        <li><a class="categories" data-filter=".samedi">SAMEDI</a></li>
+                        <li><a class="categories" data-filter=".dimanche">DIMANCHE</a></li>
+                        <li><a class="categories" data-filter=".culture">CULTURE</a></li>
+                        <li><a class="categories" data-filter=".sport">SPORT</a></li>
+                        <li><a class="categories" data-filter=".divertissement">DIVERTISSEMENT</a></li>
+                        <li><a class="categories" data-filter=".petit">POUR LES PETITS</a></li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+
+                <!-- ANIMATIONS -->
+               <div class="row container-grid nf-col-3">
+
+                    <div class="nf-item branding coffee spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" src="/img/animations/jeux_gonflables.jpg" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white">Jeux gonflables</h5>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#kavinsky-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">Jeux gonflables</h3>
+                        <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI 10h - 18h / DIMANCHE 10h - 18h</h6>
+                        <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                            <span class="badge badge-success">Culture</span>
+                            <span class="badge badge-primary">Pour les petits</span>
+                        </h6>
+                    </div>
+                   <div class="modal fade m-auto p-0" id="kavinsky-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">Jeux gonflables</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0">SAMEDI 10h - 18h / DIMANCHE 10h - 18h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-success">Culture</span>
+                                       <span class="badge badge-primary">Pour les petits</span>
+                                   </h6>
+                                   <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/N8ZAx_OvKpM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                   <p class="text-justify m-0">DESCRIPTION</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/animations-construction-back.jpg'); background-position-x: center; background-position-y: center;" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="testimonial-carousel">
+                    <div class="item">
+                        <div class="testimonial text-center dark-color">
+                            <div class="container-icon"><i class="fa fa-code"></i></div>
+                            <h2 style="font-weight: normal;">PAGE EN CONSTRUCTION / A VENIR</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script>
+		$(".btn-plus-info").click(function(){
+			setTimeout(function(){
+				$(".jjj").each(function(i){
+					var w = $(this).width();
+					if (w > 0) {
+						$(".modal-artiste-video").height(w*315/560);
+						return false;
+                    }
+				});
+			}, 1000);
+		});
+
+		$("#menu-animation").css('color', 'red');
+
+		$(window).resize(function() {
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		});
+    </script>
+    <script type="text/javascript">
+		$("#title-page-nav").append("Animations");
+    </script>
+    
+</body>
+</html>
