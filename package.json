@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "prod": "NODE_ENV=production nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -12,6 +13,7 @@
     "express": "~4.16.0",
     "gmail-send": "^1.2.14",
     "http-errors": "~1.6.2",
+    "https": "^1.0.0",
     "morgan": "~1.9.0",
     "nodemailer": "^4.7.0"
   }

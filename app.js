@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var https = require('https');
+var fs = require('fs');
+
 var indexRouter = require('./routes/index');
 var animationsRouter = require('./routes/animations');
 var preventionRouter = require('./routes/animations');
@@ -13,6 +16,15 @@ var coursesRouter = require('./routes/courses');
 var infosRouter = require('./routes/infos');
 
 var app = express();
+
+if (process.env.NODE_ENV == 'production') {
+	https.createServer({
+		key: fs.readFileSync('./config/key.pem'),
+		cert: fs.readFileSync('./config/cert.pem')
+	}, app).listen(3001);
+	conosole.log('server started');
+}
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
