@@ -6,6 +6,8 @@ var send = require('gmail-send')({
 	pass: 'poneyroti24h'
 });
 
+var iii=0;
+
 router.get('/bars-restauration', function(req, res, next) {
 	res.render('infos-bars');
 });
@@ -22,21 +24,29 @@ router.post('/contact', function(req, res, next) {
 	var message = req.body.message;
 	var to = req.body.to;
 
-	send({
-		to: to,
-		from: email,
-		replyTo: {name: name, address: email},
-		subject: '[Message du site internet] >> '+subject,
-		text: '>>>> Expediteur du message: '+name+' | '+email+'\n>>>>En répondant à ce message, vous répondrez directement à'+name+'\n\n>>>>Message'+message
-	}, function (err, res) {
-		if (err) {
-			console.log(error);
-			res.status(500).end();
-		} else {
-			console.log('Email sent: ' + info.response);
-			res.status(200).end();
-		}
-	});
+	if(iii==0) {
+		send({
+			to: to,
+			from: email,
+			replyTo: {name: name, address: email},
+			subject: '[Message du site 24heures.org] >> ' + subject,
+			text: '>>>> Expediteur du message: ' + name + ' | ' + email + '\n>>>>En répondant à ce message, vous répondrez directement à ' + name + '\n\n>>>>Message\n' + message
+		}, function (err, info) {
+			console.log('COUCOU');
+			if (err) {
+				console.log(err);
+				res.status(500).end();
+			} else {
+				console.log('Email sent: ' + info.response);
+				res.status(200).end();
+				iii=1;
+				setTimeout(function(){
+					iii=0;
+				}, 3000);
+
+			}
+		});
+	}
 
 /*
 	var transporter = nodemailer.createTransport({

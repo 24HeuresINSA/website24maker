@@ -17,12 +17,11 @@ var infosRouter = require('./routes/infos');
 
 var app = express();
 
-if (process.env.NODE_ENV == 'production') {
+if (process.env.NODE_ENV != 'production') {
 	https.createServer({
 		key: fs.readFileSync('./config/key.pem'),
 		cert: fs.readFileSync('./config/cert.pem')
 	}, app).listen(3001);
-	conosole.log('server started');
 }
 
 

@@ -99,8 +99,29 @@
                 </div>
             </div>
         </section> -->
+        <section class="ptb pt-5">
+            <div class="text-center map-responsive">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1MOyjBv7HP5vNC6DN0xmSTelcTPc" width="640" height="480"></iframe>
+            </div>
+        </section>
 
-        <section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/courses-constructions-back.jpg'); background-position-x: center; background-position-y: center;" data-stellar-background-ratio="0.5">
+        <style>
+            .map-responsive {
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .map-responsive iframe {
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        </style>
+
+        <!-- <section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/courses-constructions-back.jpg'); background-position-x: center; background-position-y: center;" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="testimonial-carousel">
                     <div class="item">
@@ -111,7 +132,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- END CONTENT ---------------------------------------------------------------------------->
 
@@ -170,6 +191,7 @@
 		});
     </script>
     <script type="text/javascript">
+		$("#menu-courses").css('color', '#F11286');
 		$("#title-page-nav").append("Parcours courses");
     </script>
     
