@@ -9,7 +9,7 @@ var fs = require('fs');
 
 var indexRouter = require('./routes/index');
 var animationsRouter = require('./routes/animations');
-var preventionRouter = require('./routes/animations');
+var preventionRouter = require('./routes/prevention');
 var concertsRouter = require('./routes/concerts');
 var billetterieRouter = require('./routes/billetterie');
 var coursesRouter = require('./routes/courses');

@@ -33,7 +33,7 @@ html{
 .header.header-transparent.fixed .nav-icons > *:hover,
 .header.header-transparent.header--dark .nav-icons > *:hover,
 .header.header--dark.header-transparent .nav-icons > *:hover {
-    color: #f11586;
+    color: #4DBCD1;
     transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -51,6 +51,27 @@ html{
 .header.header-transparent.header--dark .nav-menu > ul > li:hover > a::after,
 .header.header--dark.header-transparent .nav-menu > ul > li:hover > a::after {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav-menu > ul > li:hover > a,
+.header.fixed .nav-menu > ul > li:hover > a,
+.header.header-transparent.fixed .nav-menu > ul > li:hover > a,
+.header.header-transparent.header--dark .nav-menu > ul > li:hover > a,
+.header.header--dark.header-transparent .nav-menu > ul > li:hover > a,
+.header .nav-icons > *:hover,
+.header.fixed .nav-icons > *:hover,
+.header.header-transparent.fixed .nav-icons > *:hover,
+.header.header-transparent.header--dark .nav-icons > *:hover,
+.header.header--dark.header-transparent .nav-icons > *:hover {
+    color: #4DBCD1;
+}
+
+.nav-dropdown, .nav-dropdown-sub {
+    background-color: #060023;
+}
+
+.logo a{
+    width: 170px;
 }
 
 .fb-header{
