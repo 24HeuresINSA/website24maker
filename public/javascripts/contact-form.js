@@ -34,6 +34,9 @@
                 to = "communication@24heures.org";
         }
 
+		$('.successContent').fadeOut(500);
+		$('.errorContent').fadeOut(500);
+
 
         var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message + '&to=' + to;
 
@@ -47,9 +50,16 @@
                 type: "POST",
                 url: "/infos/contact",
                 data: dataString,
-                success: function() {
-					$('.successContent').fadeIn(1000);
-					$('.errorContent').fadeOut(500);
+				statusCode: {
+                	200: function () {
+                		$('.btn-send').attr("disabled", true);
+						$('.successContent').fadeIn(1000);
+						$('.errorContent').fadeOut(500);
+					},
+					500: function () {
+						$('.errorContent').fadeIn(1000);
+						$('.successContent').fadeOut(500);
+					}
 				}
             });
         }
@@ -57,9 +67,8 @@
 			$('.errorContent').fadeIn(1000);
 			$('.successContent').fadeOut(500);
         }
-        return false;
+        //return false;
     });
-
 
 
   

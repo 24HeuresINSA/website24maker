@@ -9,7 +9,7 @@ var fs = require('fs');
 
 var indexRouter = require('./routes/index');
 var animationsRouter = require('./routes/animations');
-var preventionRouter = require('./routes/animations');
+var preventionRouter = require('./routes/prevention');
 var concertsRouter = require('./routes/concerts');
 var billetterieRouter = require('./routes/billetterie');
 var coursesRouter = require('./routes/courses');
@@ -17,7 +17,7 @@ var infosRouter = require('./routes/infos');
 
 var app = express();
 
-if (process.env.NODE_ENV == 'production') {
+if (process.env.NODE_ENV != 'production') {
 	https.createServer({
 		key: fs.readFileSync('./config/key.pem'),
 		cert: fs.readFileSync('./config/cert.pem')

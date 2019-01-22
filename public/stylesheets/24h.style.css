@@ -2,6 +2,86 @@ html{
     font-family: 'arial', sans-serif;
 }
 
+.header.header-transparent .header-nav {
+    background-color: #060025 !important; /*Desktop "header-transparent" */
+}
+
+.header .nav-menu > ul > li > a,
+.header.fixed .nav-menu > ul > li > a,
+.header.header-transparent.fixed .nav-menu > ul > li > a,
+.header.header-transparent.header--dark .nav-menu > ul > li > a,
+.header.header--dark.header-transparent .nav-menu > ul > li > a,
+.header .nav-icons > *,
+.header.fixed .nav-icons > *,
+.header.header-transparent.fixed .nav-icons > *,
+.header.header-transparent.header--dark .nav-icons > *,
+.header.header--dark.header-transparent .nav-icons > * {
+    color: rgb(255, 255, 255);
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+
+.header .nav-menu > ul > li > a:hover,
+.header.fixed .nav-menu > ul > li > a:hover,
+.header.header-transparent.fixed .nav-menu > ul > li > a:hover,
+.header.header-transparent.header--dark .nav-menu > ul > li > a:hover,
+.header.header--dark.header-transparent .nav-menu > ul > li > a:hover,
+.header .nav-icons > *:hover,
+.header.fixed .nav-icons > *:hover,
+.header.header-transparent.fixed .nav-icons > *:hover,
+.header.header-transparent.header--dark .nav-icons > *:hover,
+.header.header--dark.header-transparent .nav-icons > *:hover {
+    color: #4DBCD1;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+
+.header .nav-menu > ul > li > a::after,
+.header.fixed .nav-menu > ul > li > a::after,
+.header.header-transparent.fixed .nav-menu > ul > li > a::after,
+.header.header-transparent.header--dark .nav-menu > ul > li > a::after,
+.header.header--dark.header-transparent .nav-menu > ul > li > a::after,
+.header .nav-menu > ul > li:hover > a::after,
+.header.fixed .nav-menu > ul > li:hover > a::after,
+.header.header-transparent.fixed .nav-menu > ul > li:hover > a::after,
+.header.header-transparent.header--dark .nav-menu > ul > li:hover > a::after,
+.header.header--dark.header-transparent .nav-menu > ul > li:hover > a::after {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav-menu > ul > li:hover > a,
+.header.fixed .nav-menu > ul > li:hover > a,
+.header.header-transparent.fixed .nav-menu > ul > li:hover > a,
+.header.header-transparent.header--dark .nav-menu > ul > li:hover > a,
+.header.header--dark.header-transparent .nav-menu > ul > li:hover > a,
+.header .nav-icons > *:hover,
+.header.fixed .nav-icons > *:hover,
+.header.header-transparent.fixed .nav-icons > *:hover,
+.header.header-transparent.header--dark .nav-icons > *:hover,
+.header.header--dark.header-transparent .nav-icons > *:hover {
+    color: #4DBCD1;
+}
+
+.nav-dropdown, .nav-dropdown-sub {
+    background-color: #060023;
+}
+
+.logo a{
+    width: 170px;
+}
+
+.fb-header{
+    color: #FFF;
+}
+
+.fb-header:hover{
+    color: #f11586;
+}
+
 .photo-concerts-artiste-item{
     height: 300px;
 }
@@ -117,4 +197,8 @@ html{
         margin: 0 auto;
         max-width: 300px;
     }
+}
+
+body{
+    font-family: Roboto, sans-serif;
 }
