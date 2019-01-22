@@ -22,7 +22,6 @@ if (process.env.NODE_ENV == 'production') {
 		key: fs.readFileSync('./config/key.pem'),
 		cert: fs.readFileSync('./config/cert.pem')
 	}, app).listen(3001);
-	conosole.log('server started');
 }
 
 
