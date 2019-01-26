@@ -2242,8 +2242,8 @@ form label.error {
     text-transform: none;
 }
 
-.footer .copyright {
-    text-align: center;
+.footer .copyrightt {
+    text-align: center !important;
 }
 
 
