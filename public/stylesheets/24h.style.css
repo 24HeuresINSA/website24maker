@@ -70,6 +70,10 @@ html{
     background-color: #060023;
 }
 
+.sidebar-menu {
+    background-color: #060025;
+}
+
 .logo a{
     width: 170px;
 }
@@ -78,8 +82,12 @@ html{
     color: #FFF;
 }
 
+.sidebar-menu ul > li > a:hover {
+    color: #4DBCD1;
+}
+
 .fb-header:hover{
-    color: #f11586;
+    color: #4dbcd1;
 }
 
 .photo-concerts-artiste-item{
