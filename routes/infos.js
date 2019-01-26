@@ -30,7 +30,7 @@ router.post('/contact', function(req, res, next) {
 			from: email,
 			replyTo: {name: name, address: email},
 			subject: '[Message du site 24heures.org] >> ' + subject,
-			text: '>>>> Expediteur du message: ' + name + ' | ' + email + '\n>>>>En répondant à ce message, vous répondrez directement à ' + name + '\n\n>>>>Message\n' + message
+			text: '>>>> Expediteur du message: ' + name + ' | ' + email + '\n>>>>Pour lui répondre veuillez renvoyer un mail à son adresse ' + email + '\n\n>>>>Message\n' + message
 		}, function (err, info) {
 			console.log('COUCOU');
 			if (err) {

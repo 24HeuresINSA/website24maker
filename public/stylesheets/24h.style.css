@@ -74,6 +74,32 @@ html{
     background-color: #060025;
 }
 
+@media screen and (min-width: 1px) and (max-width: 768px) {
+
+    .inner-intro {
+        position: relative;
+        padding: 50px 0;
+    }
+
+}
+
+.inner-intro {
+    position: relative;
+    padding: 120px 0;
+}
+
+a:hover {
+    color: #f11286;
+}
+
+.accordion-title:before {
+    content: '›';
+}
+
+.accordion-title.active:before {
+    content: "⌵";
+}
+
 .logo a{
     width: 170px;
 }
