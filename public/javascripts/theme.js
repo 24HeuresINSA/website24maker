@@ -858,11 +858,13 @@ $(function () {
         }
 
         if ($('.parallax').hasClass('parallax-background1')) {
-            $el.css("background-position", 'left' + " " + yPos_p + "px");
+            var ppp = yPos_p;
+            $el.css("background-position", 'center' + " " + -ppp + "px");
+            //$el.css("background-position", "center");
         }
         if ($('.parallax').hasClass('parallax-background2')) {
             $el.css("background-position", 'left' + " " + -yPos_p + "px");
-
+			//$el.css("background-position", "center");
         }
     };
 
