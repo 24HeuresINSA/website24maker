@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/billetterie.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +52,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="theme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/theme.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
               <caret line="861" column="61" selection-start-line="861" selection-start-column="61" selection-end-line="861" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template_html/service-1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="435" column="12" selection-start-line="435" selection-start-column="12" selection-end-line="442" selection-end-column="22" />
+              <folding>
+                <element signature="n#nav#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="billetterie.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+              <folding>
+                <element signature="e#2185#2191#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +107,8 @@
       <find>f105</find>
       <find>social</find>
       <find>copyright</find>
-      <find>copyri</find>
       <find>background-position</find>
+      <find>copyri</find>
       <find>yPos</find>
     </findStrings>
     <replaceStrings>
@@ -142,9 +165,9 @@
         <option value="$PROJECT_DIR$/views/infos-contact.ejs" />
         <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
         <option value="$PROJECT_DIR$/views/mentions-legales.ejs" />
-        <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/theme.js" />
+        <option value="$PROJECT_DIR$/views/billetterie.ejs" />
       </list>
     </option>
   </component>
@@ -191,6 +214,16 @@
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="template_html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,18 +285,18 @@
       <workItem from="1547489803609" duration="407000" />
       <workItem from="1547658191448" duration="3379000" />
       <workItem from="1547990095156" duration="47618000" />
-      <workItem from="1548517090683" duration="10711000" />
+      <workItem from="1548517090683" duration="12853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90708000" />
+    <option name="totallyTimeSpent" value="92850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20126449" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20126449" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.23093683" />
@@ -271,7 +304,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49947312" visible="true" weight="0.30501089" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947312" visible="true" weight="0.30501089" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -310,19 +343,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/logos/logo_24h_insa_2018_long.jpg" />
     <entry file="file://$PROJECT_DIR$/public/images/logos/logo_24h_insa_edition_2019_nuit_sf_100px_v1.png" />
     <entry file="file://$PROJECT_DIR$/routes/animations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_html/service-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="499" column="34" lean-forward="true" selection-start-line="499" selection-start-column="34" selection-end-line="499" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -788,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/mentions-legales.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -870,10 +888,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template_html/blog-1col-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/theme.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="861" column="61" selection-start-line="861" selection-start-column="61" selection-end-line="861" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_html/service-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="435" column="12" selection-start-line="435" selection-start-column="12" selection-end-line="442" selection-end-column="22" />
+          <folding>
+            <element signature="n#nav#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+          <folding>
+            <element signature="e#2185#2191#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
