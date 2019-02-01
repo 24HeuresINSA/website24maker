@@ -233,6 +233,28 @@ a:hover {
     }
 }
 
+.skillbar-bar {
+    height: 6px;
+    width: 0px;
+    background: #4DBCD1;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-bar-1 {
+    height: 6px;
+    width: 0px;
+    background: #f11286;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
 body{
     font-family: Roboto, sans-serif;
 }
