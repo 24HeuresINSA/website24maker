@@ -34,7 +34,7 @@
                             <span class="color-concerts">Artistes</span><br />
                         </h2>
                         <h4>
-                            <span class="text-original-case">Les premiers noms arrivent le 7 Février !</span>
+                            <span class="text-original-case">La fin de la prog' arrive bientôt.</span>
                         </h4>
                     </div>
                 </div>
@@ -46,9 +46,137 @@
 
         <%if (true) { %>
 
-        <section class="ptb pt-0 pt-md-5">
+        <section class="ptb pt-5">
             <div class="container">
-                <img alt="1" style="object-fit: cover" src="../img/site/teaser_devoilement1.png" class="">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li><a class="categories active" data-filter="*">TOUS</a></li>
+                        <li><a class="categories" data-filter=".vendredi">VENDREDI 17 MAI</a></li>
+                        <li><a class="categories" data-filter=".samedi">SAMEDI 18 MAI</a></li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+
+                <!-- ARTISTES -->
+                <div class="row container-masonry nf-col-3">
+
+                    <!-- MOME -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_mome_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">MØME</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#mome-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span style="font-size:10px;"> (Live)</span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="mome-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">MØME</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/1YRW1QRKTBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BELLECOUR -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_bellecour_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">BELLECOUR</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#bellecour-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">BELLECOUR<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro / Bass House</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="bellecour-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">BELLECOUR</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro / Bass House</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/ZRRPO-lUhEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TWO TRAINS LEFT -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_two_trains_left_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">TWO TRAINS LEFT</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#ttl-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">TWO TRAINS LEFT<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rock</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="ttl-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">TWO TRAINS LEFT</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Rock</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/MMFEZJVeWIQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
@@ -113,7 +241,6 @@
 		});
 
 		$("#menu-concerts").css('color', '#F11286');
-		$("#sidebar-menu-artistes").css('color', '#F11286');
     </script>
     <script type="text/javascript">
 		$("#title-page-nav").append("Artistes");
