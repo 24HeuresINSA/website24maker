@@ -47,26 +47,48 @@
     </section>
     <!-- End About Section -->
 
-    <!--<section class="ptb-30 pt-2 pt-md-4 pb-4">
+    <section class="pb-5 pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-12 blog-post-hr m-auto">
-                    <div class="blog-post">
-                        <div class="post-header">
-                            <h3 class="text-center">Aftermovie Courses et Animations 2018</h3>
-                        </div>
-                    </div>
+                <div class="col-md-6 m-auto">
+                    <!--<h3 class="text-center color-courses">FORMULAIRE D'INSCRIPTION</h3>-->
+                    <!-- Contact FORM -->
+                    <% if(locals.messageSucces != undefined){ %>
+                        <h6 class="text-success">
+                            <i class="fa fa-check left" style="color: #5cb45d;"></i>
+                            <%= locals.messageSucces %>
+                        </h6>
+                    <% } %>
+                    <% if(locals.messageEchec != undefined){ %>
+                        <h6 class="text-danger">
+                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>
+                            <%= locals.messageEchec %>
+                        </h6>
+                    <% } %>
 
-                    <div class="post-media">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/juzVZSExeco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
+                    <% if(locals.message != undefined){ %>
+                        <h6 class="text-danger text-center"><%= locals.message %></h6>
+                    <% } %>
+                    <form class="contact-form" method="post" action="/courses/connexion">
+
+                        <div class="form-field-wrapper">
+                            <h6>Nom d'équipe / Login</h6>
+                            <input class="input-sm form-full" id="" type="text" name="equipe_nom" placeholder="Nom d'équipe" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Mot de passe</h6>
+                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp" placeholder="Mot de passe" required>
+                        </div>
+
+                        <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Se connecter</button>
+                        <a href="/courses/inscriptions" class="btn btn-md btn-white form-full btn-send" type="submit" id="form-submit" name="submit">Je n'ai pas encore créé mon équipe</a>
+                    </form>
+                    <!-- END Contact FORM -->
                 </div>
             </div>
-            <div class="row">
-                <iframe width="100%" height="" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- END CONTENT ---------------------------------------------------------------------------->
 
