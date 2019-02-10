@@ -36,10 +36,10 @@
                 <div class="col">
                     <div class="col-md-8 offset-md-2"></div>
                     <h2 class="m-0">
-                        <span class="color-courses">Inscriptions Courses</span><br />
+                        <span class="color-courses">Connexion espace Courses</span><br />
                     </h2>
                     <h4>
-                        <span class="text-original-case">Course à pied ? Vélo ? Triathlon ? Seul ou en équipe relevez le défi des 24 heures de courses !</span>
+                        <span class="text-original-case">Complète les informations de ton équipe et valide ta participation</span>
                     </h4>
                 </div>
             </div>
@@ -67,67 +67,6 @@
             </div>
         </div>
     </section> -->
-
-    <section class="pb-5 pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto">
-                    <div class="contact-box-left mb-45">
-                        <div class="contact-icon-left"><i class="ion ion-information-circled"></i></div>
-                        <h6>INFORMATIONS</h6>
-                        <p>Retrouvez toutes les informations sur les courses sur la page : <a href="/courses/informations">Courses / Informations</a>.
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 m-auto">
-                    <!--<h3 class="text-center color-courses">FORMULAIRE D'INSCRIPTION</h3>-->
-                    <!-- Contact FORM -->
-                    <form class="contact-form" id="contact" role="form">
-
-                        <!-- IF MAIL SENT SUCCESSFULLY -->
-                        <h6 class="successContent">
-                            <i class="fa fa-check left" style="color: #5cb45d;"></i>Inscription réussie, connectez-vous pour la terminer :)
-                        </h6>
-                        <!-- END IF MAIL SENT SUCCESSFULLY -->
-
-                        <!-- MAIL SENDING UNSUCCESSFULL -->
-                        <h6 class="errorContent">
-                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Inscription impossible
-                        </h6>
-                        <!-- END MAIL SENDING UNSUCCESSFULL -->
-
-                        <div class="form-field-wrapper">
-                            <h6>Nom d'équipe / Login</h6>
-                            <input class="input-sm form-full" id="" type="text" name="equipe_nom" placeholder="Nom d'équipe" required>
-                        </div>
-
-                        <div class="form-field-wrapper">
-                            <h6>Mot de passe</h6>
-                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp" placeholder="Mot de passe" required>
-                        </div>
-
-                        <div class="form-field-wrapper">
-                            <h6>Confirmation de mot de passe</h6>
-                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp2" placeholder="Mot de passe confirmation" required>
-                        </div>
-
-                        <div class="form-field-wrapper">
-                            <h6>Catégorie</h6>
-                            <select class="input-sm form-full" id="form-to" type="text" name="equipe_categorie" placeholder="">
-                                <% categories.forEach((categorie, index) => { %>
-                                    <option value="<%= categorie.categorie_id %>"><%= categorie.categorie_nom %></option>
-                                <% })  %>
-                            </select>
-                        </div>
-
-                        <button class="btn btn-md btn-black form-full btn-send" type="submit" id="form-submit" name="submit">Créer l'équipe</button>
-                    </form>
-                    <!-- END Contact FORM -->
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- END CONTENT ---------------------------------------------------------------------------->
 
@@ -185,10 +124,10 @@
 		});
 	});
 	$("#menu-courses").css('color', '#f11286');
-	$("#sidebar-menu-inscriptions").css('color', '#F11286');
+	$("#sidebar-menu-connexion").css('color', '#F11286');
 </script>
 <script type="text/javascript">
-	$("#title-page-nav").append("Inscriptions courses");
+	$("#title-page-nav").append("Connexion Courses");
 </script>
 
 </body>

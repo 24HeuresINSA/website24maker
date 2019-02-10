@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-courses">Informations Courses</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">Retrouvez toutes les informations relatives aux courses ici</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+        <section class="p-md-5">
+            <div class="container">
+                <div class="tabs b-lrb-none">
+                    <ul>
+                        <li><a href="#tabs-inscriptions"><i class="ion ion-flag left"></i>Inscriptions</a></li>
+                        <li><a href="#tabs-tarifs"><i class="ion ion-flag left"></i>Tarifs</a></li>
+                        <li><a href="#tabs-surplace"><i class="ion ion-star left"></i>Sur place</a></li>
+                        <li><a href="#tabs-reglement"><i class="ion ion-pin left"></i>Réglement</a></li>
+                        <li><a href="#tabs-courses"><i class="ion ion-pin left"></i>Types des courses</a></li>
+                    </ul>
+                    <div class="ui-tab-content">
+                        <div id="tabs-inscriptions" class="plr-0">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment m'inscrire ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Rendez-vous à la page <a href="/courses/inscriptions">Inscription</a> et créer une équipe. Cette équipe est associée à un compte (avec mot de passe)
+                                            pour que vous puissiez vous connectez et complétez l'inscription.
+                                            <br>Une fois l'équipe créée, rendez-vous à la page <a href="/courses/connexion">Connexion</a>
+                                             et connectez-vous avec le nom de l'équipe que votre équipe, puis complétez les informations demandées.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment être sur que mon inscription a été validée</h6>
+                                    <div class="accordion-content">
+                                        <p>Rendez-vous sur votre compte pour voir si votre inscription a été définitivement validée.
+                                            Nous vous laissons quelques jours pour proceder au paiement et charger votre certificat médical.
+                                            Si cela n'est pas fait dans les semaines qui suivent, l'inscription sera annulée et une équipe sur liste d'attente sera prise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion -->
+                        </div>
+                        <div id="tabs-tarifs" class="plr-0">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Quels sont les tarifs des courses</h6>
+                                    <div class="accordion-content">
+                                        <p>
+                                            VELO Solo > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                            VELO Equipe > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                            VELO Loisir > Tarif normal : 12€ / Tarif INSA VA : 8€ <br>
+                                            COURSE A PIED Solo > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                            COURSE A PIED Equipe > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                            COURSE A PIED Loisir > Tarif normal : 12€ / Tarif INSA VA : 8€ <br>
+                                            TRIATHLON Solo > Tarif normal : 25€ / Tarif INSA VA : 20€ <br>
+                                            TRIATHLON Equipe > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                            TRIATHLON Loisir > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment payer ?</h6>
+                                    <div class="accordion-content">
+                                        <p>
+                                            En espece en venant à notre local au 20 Avenue Albert Einstein, Villeurbanne. <br>
+                                            Par internet sur le site Hello Asso.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion -->
+                        </div>
+                        <div id="tabs-surplace" class="plr-0">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je circuler sur le campus ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Le campus est fermé à la circulation du Vendredi 17 mai jusqu'au Lundi 20 mai 2019 par un arrété prefectoral.  Les professionnels, prestataires et autres personnes necessitant d'accéder au campus durant cette période
+                                            doivent formuler une demande avant le 1er mai 2019. Sans cette autorisation préable, aucune exception ne sera faite.</p>
+                                        <p>De toute manière, aucun stationnement ne pourra s'éffectuer sur le campus et les parkings seront évacués la semaine du 13 mai. Les voitures recalcitrantes seront enlevées par la fourrière.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-reglement" class="plr-0">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Quel est le réglement des courses</h6>
+                                    <div class="accordion-content">
+                                        <p>Consultez le réglement des courses ici<a target="_blank" href="../documents/reglement_courses_2019.pdf">Reglement</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-courses" class="plr-0">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Que signifie la catégorie "VELO - Solo"</h6>
+                                    <div class="accordion-content">
+                                        <p>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section -->
+        
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+		$('.countdown').downCount({
+			date: '05/17/2019 19:00:00',
+			offset: +10
+		}, function () {
+			alert('La 45ème édition est lancé !');
+		});
+    </script>
+    <script type="text/javascript">
+		$("#menu-courses").css('color', '#F11286');
+		$("#sidebar-menu-informations").css('color', '#F11286');
+        $("#title-page-nav").append("Infos Courses");
+    </script>
+
+
+    
+</body>
+</html>
