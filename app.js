@@ -25,7 +25,6 @@ if (process.env.NODE_ENV != 'production') {
 	}, app).listen(3001);
 }
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
