@@ -118,7 +118,9 @@
                             <select class="input-sm form-full" id="form-to" type="text" name="equipe_categorie" placeholder="">
                                 <% if(locals.categories != undefined){ %>
                                 <% locals.categories.forEach((categorie, index) => { %>
-                                    <option value="<%= categorie.categorie_id %>"><%= categorie.categorie_nom %></option>
+                                    <% if(categorie.categorie_complet == 0){ %>
+                                        <option value="<%= categorie.categorie_id %>"><%= categorie.categorie_nom %></option>
+                                    <% } %>
                                 <% })  %>
                                 <% } %>
                             </select>
@@ -127,6 +129,43 @@
                         <button class="btn btn-md btn-black form-full btn-send" type="submit" id="form-submit" name="submit">Créer l'équipe</button>
                     </form>
                     <!-- END Contact FORM -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow fadeIn ptb ptb-sm-80">
+        <div class="container">
+            <div class="spacer-30"></div>
+            <div class="owl-carousel client-carousel nf-carousel-theme ">
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                    </div>
                 </div>
             </div>
         </div>

@@ -48,22 +48,26 @@
     <!-- End About Section -->
 
     <section class="pt-3 pb-1" style="background-color: rgba(255,203,41,0.42)">
-        <div class="rowm-auto text-center">
-            <div>
-                <span id="participationValidee" class="badge-success text-center p-2 d-none">Participation validée<b></b></span>&nbsp;
-                <span id="participationRejetee" class="badge-danger text-center p-2 d-none">Participation rejetée<b></b></span>&nbsp;
-                <span id="participationEnCours" class="badge-primary text-center p-2 d-nosne">Participation en cours de validation</span>
-            </div>
-            <div class="p-2">
-                <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.equipe) { %><%= equipe.equipe_nom %><% }else{ %>??<% } %></b></h3></h6><br>
-                <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.categorie) { %><%= categorie.categorie_nom %><% }else{ %>??<% } %></b></h5></h6><br>
-                <p class="d-inline color-gris-4"><% if(locals.categorie) { %><%= categorie.categorie_description %><% }else{ %>??<% } %></p>
-                <div class="m-auto"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
+        <div class="row m-auto text-center">
+            <div class="container">
+                <% if(locals.equipe && equipe.equipe_valide == 1) { %>
+                    <span id="participationValidee" class="badge-success text-center p-2">Participation validée<b></b></span>&nbsp;
+                <% }else if(locals.equipe && equipe.equipe_valide == 2){ %>
+                    <span id="participationRejetee" class="badge-danger text-center p-2">Participation rejetée<b></b></span>&nbsp
+                <% }else if(locals.equipe && equipe.equipe_valide == 0){ %>
+                    <span id="participationEnCours" class="badge-primary text-center p-2">Participation en cours de validation</span>
+                <% } %>
+                <div class="p-2">
+                    <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.equipe) { %><%= equipe.equipe_nom %><% }else{ %>??<% } %></b></h3></h6><br>
+                    <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.categorie) { %><%= categorie.categorie_nom %><% }else{ %>??<% } %></b></h5></h6><br>
+                    <p class="d-inline color-gris-4"><% if(locals.categorie) { %><%= categorie.categorie_description %><% }else{ %>??<% } %></p>
+                    <div class="m-auto"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="pt-4 pb" style="background-color: rgba(255,203,41,0.1)">
+    <section class="pt-4 pb-4" style="background-color: rgba(255,203,41,0.1)">
         <div class="row m-auto pr-3 pl-3 pb-3" style="max-width: 1500px">
             <div class="m-auto col-12" style="max-width: 100%; overflow: auto;">
                 <% if (locals.coureurs && coureurs.length != 0){ %>
@@ -110,8 +114,7 @@
                     </tbody>
                 </table>
                 <% }else{ %>
-                <div id="" class="text-center p-2 m-auto"><h3 class="">Aucun coureur trouvé pour l'équipe.</h3>
-                    <br><h5>Si aucun coureur n'est enregistré, l'équipe ne sera pas inscrite et la participation sera rejetée.</h5>
+                <div id="" class="text-center p-2 m-auto"><h3 class="">Aucun coureur trouvé pour l'équipe.<br> Veuillez ajouter au moins un participant pour être certain que l'équipe soit valide.</h3>
                 </div>
                 <% } %>
             </div>
@@ -123,6 +126,64 @@
                 <% }else{ %>
 
                 <% } %>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 pb-2" style="background-color: rgba(255,255,255)">
+        <div class="rowm-auto text-center">
+            <div class="p-2">
+                <h4 class="d-inline">Course carritative</h4><br>
+                <h6 class="d-inline">Participez à la course carritative afin de récolter des fonds pour la Fondation de la Recherche Médicale</a></h6><br>
+                <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
+                    Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</a></p><br>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 pb-2" style="background-color: rgb(255,255,255)">
+        <div class="rowm-auto text-center">
+            <div class="p-2">
+                <h5 class="d-inline">Paiement</h5><br>
+                <h6 class="d-inline">Paiement et dons sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h">Hello Asso</a></h6><br>
+                <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
+                    <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</a></p><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="wow fadeIn ptb ptb-sm-80">
+        <div class="container">
+            <div class="spacer-30"></div>
+            <div class="owl-carousel client-carousel nf-carousel-theme ">
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -175,7 +236,7 @@
                                 </div>
                                 <div class="form-field-wrapper">
                                     <h6>Email</h6>
-                                    <input class="input-sm form-full" id="" type="text" name="coureur_email" placeholder="Email">
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_email" placeholder="Email" required>
                                 </div>
                                 <div class="form-field-wrapper">
                                     <h6>Commentaire</h6>
@@ -261,7 +322,7 @@
                             </div>
                             <div class="form-field-wrapper">
                                 <h6>Email</h6>
-                                <input class="input-sm form-full" id="" type="text" name="coureur_email" value="">
+                                <input class="input-sm form-full" id="" type="text" name="coureur_email" value="" required>
                             </div>
                             <div class="form-field-wrapper">
                                 <h6>Commentaire</h6>
