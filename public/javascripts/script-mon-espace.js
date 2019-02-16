@@ -4,6 +4,9 @@ $( document ).ready(function() {
 		'<button id="bEdit" type="button" class="btn btn-black p-2"  onclick="rowEdit(this);">' +
 		'Modifier <i class="ion ion-edit m-1"></i>' +
 		'</button>' +
+		'<button id="bCertif" type="button" class="btn btn-color-b p-2"  onclick="rowCertif(this);">' +
+		'Charger Certificat <i class="ion ion-edit m-1"></i>' +
+		'</button>' +
 		'<button id="bElim" type="button" class="btn btn-white p-2"  onclick="rowElim(this);">' +
 		'<i class="ion ion-trash-a m-1" aria-hidden="true"></i>' +
 		'</button>';
@@ -41,6 +44,15 @@ $( document ).ready(function() {
 			}
 		});
 
+	}
+
+	rowCertif = function (but) {
+		var $row = $(but).parents('tr');
+		var uuid = $row.find('.idRaw').html();
+		$(".update-certificat input[name='coureur_id']").val(uuid);
+		$('#modalCertificat').modal({
+			show: true
+		});
 	}
 
 	/*$('.submit').on('submit', function(event){

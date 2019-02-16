@@ -255,6 +255,11 @@ a:hover {
     transition-property: width, background-color;
 }
 
+.accordion-title.active {
+    /* background: #fafafa; */
+    color: #4dbcd1;
+}
+
 body{
     font-family: Roboto, sans-serif;
 }

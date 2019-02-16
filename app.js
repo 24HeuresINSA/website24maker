@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 var https = require('https');
 var fs = require('fs');
@@ -36,6 +37,9 @@ app.use(cookieParser());
 app.use(session({
 	secret: "key",
 	cookie: { maxAge: 10000000 }
+}));
+app.use(fileUpload({
+	limits: { fileSize: 50 * 1024 * 1024 },
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 

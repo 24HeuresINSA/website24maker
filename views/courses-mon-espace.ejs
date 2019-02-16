@@ -97,7 +97,7 @@
                         <td class="commentaireRaw"><%= raw.coureur_commentaire %></td>
                         <td class="paiementRaw" style="min-width:140px; max-width:150px">
                             <% if (raw.coureur_paiement == 1){ %>
-                                <span class="badge-success p-1">Reçu</span>
+                                <span class="badge-success p-1">Validé</span>
                             <% }else if (raw.coureur_paiement == 0){ %>
                                 <% if (raw.coureur_etudiant == 1 && locals.categorie){ %>
                                     <span class="badge-danger p-1">Non Reçu : <%= categorie.categorie_prix_va %>€</span>
@@ -107,7 +107,16 @@
                                     <span class="badge-danger p-1">Non Reçu</span>
                                 <% } %>
                             <% } %></td>
-                        <td class="certificatRaw" style="min-width:120px; max-width:150px"><% if (raw.coureur_certificat_valide == 1){ %><span class="badge-success p-1">Reçu</span><% }else if (raw.coureur_certificat_valide == 0){ %><span class="badge-danger p-1">Non Reçu</span><% } %></td>
+                        <td class="certificatRaw" style="min-width:120px; max-width:150px">
+                            <% if (raw.coureur_certificat_valide == 1){ %>
+                                <span class="badge-success p-1">Validé</span>
+                            <% }else if (raw.coureur_certificat_valide == 0){ %>
+                                <span class="badge-danger p-1">Refusé</span>
+                            <% }else if (raw.coureur_certificat_valide == 2){ %>
+                                <span class="badge-danger p-1">Non Reçu</span>
+                            <% }else if (raw.coureur_certificat_valide == 3){ %>
+                                <span class="badge-primary p-1">En cours de traitement</span>
+                            <% } %></td>
                         <td class="buttonRaw" name="buttons"></td>
                     </tr>
                     <% }) %>
@@ -130,22 +139,22 @@
         </div>
     </section>
     <section class="pt-4 pb-2" style="background-color: rgba(255,255,255)">
-        <div class="rowm-auto text-center">
-            <div class="p-2">
+        <div class="row m-auto text-center" style="max-width: 1500px;">
+            <div class="p-2 m-auto">
                 <h4 class="d-inline">Course carritative</h4><br>
                 <h6 class="d-inline">Participez à la course carritative afin de récolter des fonds pour la Fondation de la Recherche Médicale</a></h6><br>
                 <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
-                    Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</a></p><br>
+                    Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
             </div>
         </div>
     </section>
     <section class="pt-4 pb-2" style="background-color: rgb(255,255,255)">
-        <div class="rowm-auto text-center">
-            <div class="p-2">
+        <div class="row m-auto text-center" style="max-width: 1500px;">
+            <div class="p-2 m-auto">
                 <h5 class="d-inline">Paiement</h5><br>
                 <h6 class="d-inline">Paiement et dons sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h">Hello Asso</a></h6><br>
                 <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
-                    <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</a></p><br>
+                    <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
             </div>
         </div>
     </section>
@@ -334,6 +343,34 @@
                 </div>
             </div>
         </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCertificat" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="margin-top: 90px">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">CHARGER CERTIFICAT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <form class="contact-form update-certificat" method="post" enctype="multipart/form-data" action="/courses/ajouter-certificat-coureur">
+                                <div class="form-field-wrapper d-none">
+                                    <h6>Id</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_id" value="" required>
+                                </div>
+                                <div class="">
+                                    <input class="input-sm form-full" type="file" name="coureur_certificat_file" required>
+                                </div>
+                                <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -6,7 +6,7 @@ var sha256 = require('sha256');
 
 router.get('/inscriptions', function(req, res, next) {
 
-	if(false){
+	if(true){
 		res.render('courses-inscriptions-ferme');
 	}else{
 
@@ -203,6 +203,38 @@ router.delete('/supprimer-coureur/:id', function(req, res, next) {
 
 });
 
+router.post('/ajouter-certificat-coureur', function(req, res, next) {
+
+	console.log('Ok');
+	if(req.session.equipe){
+		var coureur =
+			{
+				"coureur_certificat_valide": 3,
+				"coureur_certificat_fichier": req.session.equipe.equipe_nom,
+				"extension": req.files.coureur_certificat_file.name.split('.').pop(),
+				"coureur_certificat_buffer": req.files.coureur_certificat_file.data
+			};
+		var request = {method: 'PUT', uri: serverConfig.server+"/coureur/certificat/"+req.body['coureur_id'], resolveWithFullResponse: true, body: {"coureur": coureur}, json: true};
+		var coureurPromise = rp(request);
+
+		Promise.all([coureurPromise])
+			.then(responses=>{
+				if(responses[0].statusCode == 204){
+					res.redirect('/courses/connexion');
+				}else {
+					res.redirect('/courses/connexion');
+				}
+			})
+			.catch(err =>{
+				res.redirect('/courses/connexion');
+			});
+
+	}else{
+		res.redirect('/');
+	}
+
+});
+
 router.get('/connexion', function(req, res, next) {
 	if(!req.session.equipe){
 		res.render('courses-connexion');
@@ -300,6 +332,10 @@ router.post('/connexion', function(req, res, next) {
 
 router.get('/informations', function(req, res, next) {
 	res.render('courses-informations');
+});
+
+router.get('/course-caritative', function(req, res, next) {
+	res.render('courses-caritative');
 });
 
 router.get('/parcours', function(req, res, next) {
