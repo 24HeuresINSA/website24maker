@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-courses">Informations Courses</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">Retrouvez toutes les informations relatives aux courses ici</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Comment m'inscrire ?</h6>
+                        <div class="accordion-content">
+                            <p>Rendez-vous à la page <a href="/courses/inscriptions">Inscription</a> et créer une équipe. Cette équipe est associée à un compte (avec mot de passe)
+                                pour que vous puissiez vous connectez et complétez l'inscription.
+                                <br>Une fois l'équipe créée, rendez-vous à la page <a href="/courses/connexion">Connexion</a>
+                                et connectez-vous avec le nom de l'équipe, puis complétez les informations demandées.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Comment être sur que mon inscription a été validée</h6>
+                        <div class="accordion-content">
+                            <p>Rendez-vous sur votre compte pour voir si votre inscription a été définitivement validée.
+                                Nous vous laissons quelques jours pour proceder au paiement et charger votre certificat médical.
+                                Si cela n'est pas fait dans les semaines qui suivent, l'inscription sera annulée et une équipe sur liste d'attente sera prise.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Quels sont les documents nécessaires à la validation de l'inscription</h6>
+                        <div class="accordion-content">
+                            <p>Pour valider l'inscription, il faut :<br>
+                            - le paiement de chaque coureur<br>
+                            - un certificat médical portant la mention <b>"autorise la pratique du ... en compétition"</b> où ... est remplacé par le type de sport auquel vous participez (triathlon / cyclisme / course à pied).<br>
+                            - pour les sportifs licenciés dans le sport de la course, vous pouvez nous faire parvenir la photocopie de votre licence en cours de validité à la place du certificat médical.<br>
+                            - la carte VA (pour les détenteurs)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Qu’est ce qu’est la carte VA ?</h6>
+                            <div class="accordion-content">
+                                <p>C'est la carte de la vie associative. Elle concerne seulement les étudiants de l'INSA adhérents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Les courses, c'est quoi, c'est quand ?</h6>
+                        <div class="accordion-content">
+                            <p>
+                               Les courses se déroulent sur 24h du 18 mai 14h au 19 mai 14h. Elles se décompose en 3 types :<br>
+                            - Course à Vélo<br>
+                                - Course à Pied<br>
+                                - Triathlon (4h de natation, 14h de vélo, 6h de course à pied)<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Comment fonctionnent les catégories ?</h6>
+                        <div class="accordion-content">
+                            <p>
+                                Pour chaque sport, on a les catégories suivantes :<br>
+                                - Solo (Equipe composée de 1 personne)<br>
+                                - Equipe (Equipe composée de 2 à 4 personnes)<br>
+                                - Loisirs (Equipe composée  de 5 à 12 personnes)<br>
+                                - Folklo (Equipe composé de 1 à 12 personnes)<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">La course Folklo, c'est quoi ?</h6>
+                        <div class="accordion-content">
+                            <p>
+                                Faire la course en folklo ça sert à mettre l'ambiance !<br>
+                                Viens avec ton vélo déguisé ou toi déguisé sur ton vélo, si tu es un pro du bricolage, tu peux même faire un véhicule pour plusieurs personnes, décoré, stylisé, bonne ambiance assurée. La course folklo dure quant à elle moins d'une journée (aucune course folklo la nuit).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Quels sont les tarifs des courses</h6>
+                        <div class="accordion-content">
+                            <p>
+                                Voici la grille tarifaire par coureur : <br>
+                                - VELO Solo > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                - VELO Equipe > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                - VELO Loisir > Tarif normal : 12€ / Tarif INSA VA : 8€ <br>
+                                - COURSE A PIED Solo > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                - COURSE A PIED Equipe > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                - COURSE A PIED Loisir > Tarif normal : 12€ / Tarif INSA VA : 8€ <br>
+                                - TRIATHLON Solo > Tarif normal : 25€ / Tarif INSA VA : 20€ <br>
+                                - TRIATHLON Equipe > Tarif normal : 20€ / Tarif INSA VA : 15€ <br>
+                                - TRIATHLON Loisir > Tarif normal : 15€ / Tarif INSA VA : 10€ <br>
+                                - FOLKLO > Gratuit pour tous
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-section">
+                        <h6 class="accordion-title">Comment payer ?</h6>
+                        <div class="accordion-content">
+                            <p>
+                                En espece en venant à notre local au 20 Avenue Albert Einstein, Villeurbanne. <br>
+                                Par internet sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h">Hello Asso</a>.<br>
+                                Sélectionnez la catégorie, entrez le nom de votre équipe, votre nom et prénom et c'est fini ! Une fois le paiement reçu de notre côté nous pourrons le valider et vous le verrez apparaître sur votre compte "équipe".<br>
+                                Nous ne prenons pas les chèques.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Comment venir ?</h6>
+                            <div class="accordion-content">
+                                <p>Rendez-vous à la page <a target="_blank" href="/infos/transports">Transport</a>.<br>
+                                    Dans le cas où vous souhaitez venir en voiture, vous pouvez consulter la question suivante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Où se garer ?</h6>
+                            <div class="accordion-content">
+                                <p>
+                                    Le campus de la Doua étant fermé à la circulation sur l’ensemble du week-end de festivités, vous pourrez rentrer uniquement en véhicule à moteur par l’entrée ouest (voir plan), le vendredi 17 avant 20h, ou le samedi 18 matin entre 6h et 10h afin de vous installer.<br>
+                                    Il n'est pas possible de rentrer après 20h le vendredi, ni après 10h le samedi, planifiez donc votre arrivée en conséquence.<br>
+                                    Un justificatif d’identité au nom d’un coureur sera exigé pour que le véhicule puisse rentrer.<br>
+                                    Dans le cas où vous ne pouvez arriver qu’après 20h le vendredi, il vous sera tout de même possible de vous garer à proximité, sur la contre allée longeant le boulevard Laurent Bonnevay (zone grisée sur la plan). D’ici, vous pourrez venir vous installer à pied (moins de 200 mètres) en attendant de rentrer votre véhicule sur le campus le samedi matin entre 6h et 10h.<br>
+                                    Une fois sur le campus vous serez autorisés à venir vous garer et vous installer sur la pelouse longeant le boulevard Niels Bohr (zone verte sur le plan): <a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?mid=1poQHHGe80NHDJCHNXRM7TPgd2AGzNF7p&ll=45.78365686358531%2C4.871056112759106&z=16">Plan et Parcours</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Y a t-il un ravitaillement ?</h6>
+                            <div class="accordion-content">
+                                <p>Le ravito est là pour les coureurs et leur petite (ou grosse) faim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Où les accompagnateurs / supporters peuvent-ils manger ?</h6>
+                            <div class="accordion-content">
+                                <p>Vos sandwichs et pique-niques seront de la partie ! Sinon il y'a aussi des food-trucks sur le campus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Qu'est-ce que le village coureur ?</h6>
+                            <div class="accordion-content">
+                                <p>Le village coureur sera le centre de vie des coureurs et de la course. C’est l’endroit du ravito, de l’espace sieste, et de l’espace détente avec des ostéopathes qui seront présents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Quel est le réglement des courses</h6>
+                            <div class="accordion-content">
+                                <p>Consultez le réglement des courses ici <a target="_blank" href="../documents/reglement_courses_2019.pdf">Reglement</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <h6 class="accordion-title">Qu’est ce qu’est le partenariat avec la FRM ?</h6>
+                            <div class="accordion-content">
+                                <p>Plus d'info sur la page <a href="course-caritative">Course caritative</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion -->
+            </div>
+        </section>
+        <section class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <div class="spacer-30"></div>
+                <div class="owl-carousel client-carousel nf-carousel-theme ">
+                    <div class="item">
+                        <div class="client-logo m-2">
+                            <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo m-2">
+                            <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo m-2 ml-4 mr-4">
+                            <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo m-2 ml-4 mr-4">
+                            <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo m-2 ml-4 mr-4">
+                            <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo m-2 ml-4 mr-4">
+                            <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section -->
+        
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+		$('.countdown').downCount({
+			date: '05/17/2019 19:00:00',
+			offset: +10
+		}, function () {
+			alert('La 45ème édition est lancé !');
+		});
+    </script>
+    <script type="text/javascript">
+		$("#menu-courses").css('color', '#F11286');
+		$("#sidebar-menu-informations").css('color', '#F11286');
+        $("#title-page-nav").append("Infos Courses");
+    </script>
+
+
+    
+</body>
+</html>

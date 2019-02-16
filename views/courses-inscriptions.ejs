@@ -39,7 +39,7 @@
                         <span class="color-courses">Inscriptions Courses</span><br />
                     </h2>
                     <h4>
-                        <span class="text-original-case">Les inscriptions ouvriront en Mars 2019</span>
+                        <span class="text-original-case">Course à pied ? Vélo ? Triathlon ? Seul ou en équipe relevez le défi des 24 heures de courses !</span>
                     </h4>
                 </div>
             </div>
@@ -47,64 +47,9 @@
     </section>
     <!-- End About Section -->
 
-    <!--
-    <section class="ptb pt-5">
-        <div class="container">
-
-            <div class="row">
-                <ul class="col container-filter categories-filter">
-                    <li><a class="categories active" data-filter="*">All</a></li>
-                    <li><a class="categories" data-filter=".anim-sports">Démonstrations sportives</a></li>
-                    <li><a class="categories" data-filter=".anim-culture">Cultures, Art et Découverte</a></li>
-                    <li><a class="categories" data-filter=".anim-plaisirs">Jeux et divertissements</a></li>
-                </ul>
-            </div>
-
-            <div class="row container-masonry nf-col-3">
-                <div class="nf-item anim-sports spacing">
-                    <div class="item-box">
-                        <a>
-                            <img alt="1" style="object-fit: cover" src="../img/artistes/old/kavinsky.jpg" class="item-container photo-concerts-artiste-item">
-                            <div class="item-mask">
-                                <div class="item-caption">
-                                    <p class="white text-justify text-original-case letter-spacing-no pt-1">KAVINSKY (DJ SET)</p>
-                                    <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#kavinsky-modal">
-                                        Plus d'info
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">KAVINSKY <span style="font-size:10px;">(DJ SET)</span></h3>
-                        <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">2018</h6>
-                        <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
-                    </div>
-                </div>
-                <div class="modal fade m-auto p-0" id="kavinsky-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body jjj">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title text-center" style="padding-left:13px;">KAVINSKY (DJ SET)</h4>
-                                <h6 class="letter-spacing-1 text-center m-0">2018</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/N8ZAx_OvKpM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                <p class="text-justify m-0">Vous l’avez connu dans Drive avec son tube surpuissant Nightcall, ou encore avec Roadgame, le DJ futuriste français a su s’approprier la scène électro mondiale. Le zombie à la Ferrari débarque sur le campus de La Doua pour vous faire vibrer avec ses tubes mêlant une synthwave rêveuse et futuriste aux sonorités des années 80. Mettez votre casque, baissez la visière, et laissez Kavinsky vous en mettre plein la figure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="ptb-30 pt-2 pt-md-4 pb-4">
+    <!--<section class="ptb-30 pt-2 pt-md-4 pb-4">
         <div class="container">
             <div class="row">
-                <!-- Post Bar -->
                 <div class="col-lg-9 col-md-12 blog-post-hr m-auto">
                     <div class="blog-post">
                         <div class="post-header">
@@ -117,7 +62,112 @@
                     </div>
                 </div>
             </div>
-            <!-- End Post Bar -->
+            <div class="row">
+                <iframe width="100%" height="" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <div class="contact-box-left mb-45">
+                        <div class="contact-icon-left"><i class="ion ion-information-circled"></i></div>
+                        <h6>INFORMATIONS</h6>
+                        <p>Retrouvez toutes les informations sur les courses sur la page : <a href="/courses/informations">Courses / Informations</a>.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <!--<h3 class="text-center color-courses">FORMULAIRE D'INSCRIPTION</h3>-->
+                    <!-- Contact FORM -->
+                    <form class="contact-form" id="contact" role="form" action="/courses/inscriptions" method="post">
+
+                        <% if(locals.messageSucces != undefined){ %>
+                        <h6 class="text-success">
+                            <i class="fa fa-check left" style="color: #5cb45d;"></i>
+                            <%= locals.messageSucces %>
+                        </h6>
+                        <% } %>
+                        <% if(locals.messageEchec != undefined){ %>
+                        <h6 class="text-danger">
+                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>
+                            <%= locals.messageEchec %>
+                        </h6>
+                        <% } %>
+
+                        <div class="form-field-wrapper">
+                            <h6>Nom d'équipe / Login</h6>
+                            <input class="input-sm form-full" id="" type="text" name="equipe_nom" placeholder="Nom d'équipe" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Mot de passe</h6>
+                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp" placeholder="Mot de passe" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Confirmation de mot de passe</h6>
+                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp2" placeholder="Mot de passe confirmation" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Catégorie</h6>
+                            <select class="input-sm form-full" id="form-to" type="text" name="equipe_categorie" placeholder="">
+                                <% if(locals.categories != undefined){ %>
+                                <% locals.categories.forEach((categorie, index) => { %>
+                                    <% if(categorie.categorie_complet == 0){ %>
+                                        <option value="<%= categorie.categorie_id %>"><%= categorie.categorie_nom %></option>
+                                    <% } %>
+                                <% })  %>
+                                <% } %>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-md btn-black form-full btn-send" type="submit" id="form-submit" name="submit">Créer l'équipe</button>
+                    </form>
+                    <!-- END Contact FORM -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow fadeIn ptb ptb-sm-80">
+        <div class="container">
+            <div class="spacer-30"></div>
+            <div class="owl-carousel client-carousel nf-carousel-theme ">
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

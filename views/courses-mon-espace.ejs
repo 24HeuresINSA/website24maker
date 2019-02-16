@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+<!-- Preloader --> <!--
+ <!--
+<section id="preloader">
+    <div class="loader" id="loader">
+        <div class="loader-img"></div>
+    </div>
+</section>
+<!-- End Preloader -->
+
+<!-- Sidebar Menu -->
+<%- include sidebar.ejs %>
+<!-- End Sidebar Menu -->
+
+<!-- Site Wraper -->
+<div class="wrapper">
+
+    <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+    <%- include header.ejs %>
+    <!-- End Header -->
+
+
+    <!-- CONTENT --------------------------------------------------------------------------------->
+
+    <!-- About Section -->
+    <section id="about" class="pt pt-sm-60 pb-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="col-md-8 offset-md-2"></div>
+                    <h2 class="m-0">
+                        <span class="color-courses">Mon Espace Courses</span><br />
+                    </h2>
+                    <h4>
+                        <span class="text-original-case">Toutes les informations de mon équipe pour les courses</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <section class="pt-3 pb-1" style="background-color: rgba(255,203,41,0.42)">
+        <div class="row m-auto text-center">
+            <div class="container">
+                <% if(locals.equipe && equipe.equipe_valide == 1) { %>
+                    <span id="participationValidee" class="badge-success text-center p-2">Participation validée<b></b></span>&nbsp;
+                <% }else if(locals.equipe && equipe.equipe_valide == 2){ %>
+                    <span id="participationRejetee" class="badge-danger text-center p-2">Participation rejetée<b></b></span>&nbsp
+                <% }else if(locals.equipe && equipe.equipe_valide == 0){ %>
+                    <span id="participationEnCours" class="badge-primary text-center p-2">Participation en cours de validation</span>
+                <% } %>
+                <div class="p-2">
+                    <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.equipe) { %><%= equipe.equipe_nom %><% }else{ %>??<% } %></b></h3></h6><br>
+                    <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.categorie) { %><%= categorie.categorie_nom %><% }else{ %>??<% } %></b></h5></h6><br>
+                    <p class="d-inline color-gris-4"><% if(locals.categorie) { %><%= categorie.categorie_description %><% }else{ %>??<% } %></p>
+                    <div class="m-auto"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-4 pb-4" style="background-color: rgba(255,203,41,0.1)">
+        <div class="row m-auto pr-3 pl-3 pb-3" style="max-width: 1500px">
+            <div class="m-auto col-12" style="max-width: 100%; overflow: auto;">
+                <% if (locals.coureurs && coureurs.length != 0){ %>
+                <table class="table table-password table-striped p-2 table-sm" id="">
+                    <thead>
+                    <tr>
+                        <th class="d-none">ID</th>
+                        <th style="min-width:150px">Prénom</th>
+                        <th style="min-width:150px">Nom</th>
+                        <th style="min-width:200px">Contact</th>
+                        <th style="min-width:200px">Commentaires</th>
+                        <th style="min-width:70px; max-width:80px">Paiement</th>
+                        <th style="min-width:70px; max-width:80px">Certificat</th>
+                        <th name="buttons"></th>
+                    </tr>
+                    </thead>
+                    <tbody id="bodyTable">
+                    <% locals.coureurs.forEach((raw, index) => { %>
+                    <tr>
+                        <td class="idRaw"hidden><%= raw.coureur_id %></td>
+                        <td class="prenomRaw"><%= raw.coureur_prenom %></td>
+                        <td class="nomRaw"><%= raw.coureur_nom %></td>
+                        <td class="contactRaw">
+                            <% if (raw.coureur_email != undefined && raw.coureur_email != null){ %><%= raw.coureur_email %><% } %>
+                            <% if (raw.coureur_telephone != undefined && raw.coureur_telephone != null){ %><br><%= raw.coureur_telephone %><% } %>
+                        </td>
+                        <td class="commentaireRaw"><%= raw.coureur_commentaire %></td>
+                        <td class="paiementRaw" style="min-width:140px; max-width:150px">
+                            <% if (raw.coureur_paiement == 1){ %>
+                                <span class="badge-success p-1">Validé</span>
+                            <% }else if (raw.coureur_paiement == 0){ %>
+                                <% if (raw.coureur_etudiant == 1 && locals.categorie){ %>
+                                    <span class="badge-danger p-1">Non Reçu : <%= categorie.categorie_prix_va %>€</span>
+                                <% }else if (raw.coureur_etudiant == 0 && locals.categorie){ %>
+                                    <span class="badge-danger p-1">Non Reçu : <%= categorie.categorie_prix_normal %>€</span>
+                                <% }else{ %>
+                                    <span class="badge-danger p-1">Non Reçu</span>
+                                <% } %>
+                            <% } %></td>
+                        <td class="certificatRaw" style="min-width:120px; max-width:150px">
+                            <% if (raw.coureur_certificat_valide == 1){ %>
+                                <span class="badge-success p-1">Validé</span>
+                            <% }else if (raw.coureur_certificat_valide == 0){ %>
+                                <span class="badge-danger p-1">Refusé</span>
+                            <% }else if (raw.coureur_certificat_valide == 2){ %>
+                                <span class="badge-danger p-1">Non Reçu</span>
+                            <% }else if (raw.coureur_certificat_valide == 3){ %>
+                                <span class="badge-primary p-1">En cours de traitement</span>
+                            <% } %></td>
+                        <td class="buttonRaw" name="buttons"></td>
+                    </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
+                <% }else{ %>
+                <div id="" class="text-center p-2 m-auto"><h3 class="">Aucun coureur trouvé pour l'équipe.<br> Veuillez ajouter au moins un participant pour être certain que l'équipe soit valide.</h3>
+                </div>
+                <% } %>
+            </div>
+            <div class="m-auto col-12 text-center m-auto">
+                <% if(locals.categorie && locals.coureurs) { %>
+                    <% if(categorie.categorie_nb_max > coureurs.length) { %>
+                        <button id="" onclick="$('#modalAjout').modal({show:true})" class="btn btn-white btn-md">Ajouter un coureur dans l'équipe</button>
+                    <% } %>
+                <% }else{ %>
+
+                <% } %>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 pb-2" style="background-color: rgba(255,255,255)">
+        <div class="row m-auto text-center" style="max-width: 1500px;">
+            <div class="p-2 m-auto">
+                <h4 class="d-inline">Course carritative</h4><br>
+                <h6 class="d-inline">Participez à la course carritative afin de récolter des fonds pour la Fondation de la Recherche Médicale</a></h6><br>
+                <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
+                    Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 pb-2" style="background-color: rgb(255,255,255)">
+        <div class="row m-auto text-center" style="max-width: 1500px;">
+            <div class="p-2 m-auto">
+                <h5 class="d-inline">Paiement</h5><br>
+                <h6 class="d-inline">Paiement et dons sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h">Hello Asso</a></h6><br>
+                <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
+                    <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="wow fadeIn ptb ptb-sm-80">
+        <div class="container">
+            <div class="spacer-30"></div>
+            <div class="owl-carousel client-carousel nf-carousel-theme ">
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalAjout" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="margin-top: 90px">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">AJOUT D'UN COUREUR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <form class="contact-form" method="post" action="/courses/ajouter-coureur">
+                                <div class="form-field-wrapper">
+                                    <h6>Prénom</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_prenom" placeholder="Prénom" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Nom</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_nom" placeholder="Nom" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Date de naissance</h6>
+                                    <input class="input-sm form-full" id="" type="date" name="coureur_date_naissance" placeholder="25/12/2000" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Je suis étudiant INSA avec une carte VA</h6>
+                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="">
+                                        <option value="0">Non</option>
+                                        <option value="1">Oui</option>
+                                    </select>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Taille tee-shirt</h6>
+                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" placeholder="">
+                                        <option value="NO">Choisir taille</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Telephone</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_telephone" placeholder="Téléphone">
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Email</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_email" placeholder="Email" required>
+                                </div>
+                                <div class="form-field-wrapper">
+                                    <h6>Commentaire</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_commentaire" placeholder="Un Commentaire ?">
+                                </div>
+                                <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Supprimer un coureur</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Attention, cette action est irréversible, le coureur sera définitivement supprimé de l'équipe.<br>
+                    Si le paiement a déjà été effectué, aucun remboursement n'est possible.<br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnNO">Annuler</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnYES">Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="margin-top: 90px">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">METTRE A JOUR UN COUREUR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="form-label-group">
+                        <form class="contact-form update-coureur" method="post" action="/courses/updater-coureur">
+                            <div class="form-field-wrapper d-none">
+                                <h6>Id</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_id" value="" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Prénom</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_prenom" value="" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Nom</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_nom" value="" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Date de naissance</h6>
+                                <input class="input-sm form-full" id="" type="date" name="coureur_date_naissance" value="" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Je suis étudiant INSA avec une carte VA</h6>
+                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="">
+                                    <option value="0">Non</option>
+                                    <option value="1">Oui</option>
+                                </select>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Taille tee-shirt</h6>
+                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" value="">
+                                    <option value="NO">Choisir taille</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Telephone</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_telephone" value="">
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Email</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_email" value="" required>
+                            </div>
+                            <div class="form-field-wrapper">
+                                <h6>Commentaire</h6>
+                                <input class="input-sm form-full" id="" type="text" name="coureur_commentaire" value="">
+                            </div>
+                            <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Mettre à jour</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCertificat" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="margin-top: 90px">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">CHARGER CERTIFICAT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <form class="contact-form update-certificat" method="post" enctype="multipart/form-data" action="/courses/ajouter-certificat-coureur">
+                                <div class="form-field-wrapper d-none">
+                                    <h6>Id</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_id" value="" required>
+                                </div>
+                                <div class="">
+                                    <input class="input-sm form-full" type="file" name="coureur_certificat_file" required>
+                                </div>
+                                <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTENT ---------------------------------------------------------------------------->
+
+    <!-- FOOTER -->
+    <%- include footer.ejs %>
+    <!-- END FOOTER -->
+
+    <!-- Scroll Top -->
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+    <!-- End Scroll Top -->
+
+</div>
+<!-- Site Wraper End -->
+
+
+<!-- JS -->
+
+<script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+<script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+<script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+<script src="../js/plugin/mediaelement-and-player.min.js"></script>
+<script src="../js/theme.js" type="text/javascript"></script>
+<script src="../js/script-mon-espace.js" type="text/javascript"></script>
+<script>
+	$(".btn-plus-info").click(function(){
+		setTimeout(function(){
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		}, 1000);
+	});
+	$(window).resize(function() {
+		$(".jjj").each(function(i){
+			var w = $(this).width();
+			if (w > 0) {
+				$(".modal-artiste-video").height(w*315/560);
+				return false;
+			}
+		});
+	});
+	$("#menu-courses").css('color', '#f11286');
+	$("#sidebar-menu-connexion").css('color', '#F11286');
+</script>
+<script type="text/javascript">
+	$("#title-page-nav").append("Espace Courses");
+</script>
+
+</body>
+</html>

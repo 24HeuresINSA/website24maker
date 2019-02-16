@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+<!-- Preloader --> <!--
+ <!--
+<section id="preloader">
+    <div class="loader" id="loader">
+        <div class="loader-img"></div>
+    </div>
+</section>
+<!-- End Preloader -->
+
+<!-- Sidebar Menu -->
+<%- include sidebar.ejs %>
+<!-- End Sidebar Menu -->
+
+<!-- Site Wraper -->
+<div class="wrapper">
+
+    <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+    <%- include header.ejs %>
+    <!-- End Header -->
+
+
+    <!-- CONTENT --------------------------------------------------------------------------------->
+
+    <!-- About Section -->
+    <section id="about" class="pt pt-sm-60">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="col-md-8 offset-md-2"></div>
+                    <h2 class="m-0">
+                        <span class="color-courses">Connexion espace Courses</span><br />
+                    </h2>
+                    <h4>
+                        <span class="text-original-case">Complète les informations de ton équipe et valide ta participation</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <section class="pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <!--<h3 class="text-center color-courses">FORMULAIRE D'INSCRIPTION</h3>-->
+                    <!-- Contact FORM -->
+                    <% if(locals.messageSucces != undefined){ %>
+                        <h6 class="text-success">
+                            <i class="fa fa-check left" style="color: #5cb45d;"></i>
+                            <%= locals.messageSucces %>
+                        </h6>
+                    <% } %>
+                    <% if(locals.messageEchec != undefined){ %>
+                        <h6 class="text-danger">
+                            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>
+                            <%= locals.messageEchec %>
+                        </h6>
+                    <% } %>
+
+                    <% if(locals.message != undefined){ %>
+                        <h6 class="text-danger text-center"><%= locals.message %></h6>
+                    <% } %>
+                    <form class="contact-form" method="post" action="/courses/connexion">
+
+                        <div class="form-field-wrapper">
+                            <h6>Nom d'équipe / Login</h6>
+                            <input class="input-sm form-full" id="" type="text" name="equipe_nom" placeholder="Nom d'équipe" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Mot de passe</h6>
+                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp" placeholder="Mot de passe" required>
+                        </div>
+
+                        <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Se connecter</button>
+                        <a href="/courses/inscriptions" class="btn btn-md btn-white form-full btn-send" type="submit" id="form-submit" name="submit">Je n'ai pas encore créé mon équipe</a>
+                    </form>
+                    <!-- END Contact FORM -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow fadeIn ptb ptb-sm-80">
+        <div class="container">
+            <div class="spacer-30"></div>
+            <div class="owl-carousel client-carousel nf-carousel-theme ">
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_FRM_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2">
+                        <img src="../img/partenaires/logo_isosteo_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_weleda_nb_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_megazone_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_aquarium_de_lyon_couleur_sf.png" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client-logo m-2 ml-4 mr-4">
+                        <img src="../img/partenaires/logo_therascience_couleur_fond.jpg" alt="" style="object-fit: scale-down" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTENT ---------------------------------------------------------------------------->
+
+    <!-- FOOTER -->
+    <%- include footer.ejs %>
+    <!-- END FOOTER -->
+
+    <!-- Scroll Top -->
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+    <!-- End Scroll Top -->
+
+</div>
+<!-- Site Wraper End -->
+
+
+<!-- JS -->
+
+<script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+<script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+<script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+<script src="../js/plugin/mediaelement-and-player.min.js"></script>
+<script src="../js/theme.js" type="text/javascript"></script>
+<script>
+	$(".btn-plus-info").click(function(){
+		setTimeout(function(){
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		}, 1000);
+	});
+	$(window).resize(function() {
+		$(".jjj").each(function(i){
+			var w = $(this).width();
+			if (w > 0) {
+				$(".modal-artiste-video").height(w*315/560);
+				return false;
+			}
+		});
+	});
+	$("#menu-courses").css('color', '#f11286');
+	$("#sidebar-menu-connexion").css('color', '#F11286');
+</script>
+<script type="text/javascript">
+	$("#title-page-nav").append("Connexion Courses");
+</script>
+
+</body>
+</html>
