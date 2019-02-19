@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('home');
 });
 
+router.get('/c==3', function(req, res, next) {
+	res.redirect('https://www.forumorg.org/');
+});
+
 router.get('/partenaires', function(req, res, next) {
 	res.render('a-propos-partenaires');
 });
