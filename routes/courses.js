@@ -6,7 +6,7 @@ var sha256 = require('sha256');
 
 router.get('/inscriptions', function(req, res, next) {
 
-	if(true){
+	if(false){
 		res.render('courses-inscriptions-ferme');
 	}else{
 
