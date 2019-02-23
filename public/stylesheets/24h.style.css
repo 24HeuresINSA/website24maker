@@ -2,6 +2,14 @@ html{
     font-family: 'arial', sans-serif;
 }
 
+.container-filter li a.active {
+    color: #4DBCD1;
+}
+
+.bg-image {
+    background-repeat: repeat-x;
+}
+
 .header.header-transparent .header-nav {
     background-color: #060025 !important; /*Desktop "header-transparent" */
 }
