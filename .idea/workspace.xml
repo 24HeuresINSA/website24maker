@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/views/a-propos-organisation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-organisation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,19 +55,9 @@
       <file leaf-file-name="a-propos-organisation.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/a-propos-organisation.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="161" column="93" selection-start-line="161" selection-start-column="93" selection-end-line="161" selection-end-column="93" />
+            <state relative-caret-position="472">
+              <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
               <folding>
-                <element signature="e#1302#5317#0#HTML" />
-                <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -151,7 +142,6 @@
         <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
         <option value="$PROJECT_DIR$/views/courses-inscription-ferme.ejs" />
         <option value="$PROJECT_DIR$/views/infos-contact.ejs" />
-        <option value="$PROJECT_DIR$/views/a-propos-partenaires.ejs" />
         <option value="$PROJECT_DIR$/views/courses-connexion.ejs" />
         <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -170,6 +160,7 @@
         <option value="$PROJECT_DIR$/routes/concerts.js" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
         <option value="$PROJECT_DIR$/views/sidebar.ejs" />
+        <option value="$PROJECT_DIR$/views/a-propos-partenaires.ejs" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
         <option value="$PROJECT_DIR$/views/a-propos-organisation.ejs" />
       </list>
@@ -260,19 +251,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\partenaires" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\config" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\artistes\edition" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\views" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\partenaires" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\javascripts" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\partenaires" />
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\config" />
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\artistes\edition" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,18 +308,18 @@
       <workItem from="1550612736949" duration="384000" />
       <workItem from="1550688962179" duration="647000" />
       <workItem from="1550696322581" duration="4651000" />
-      <workItem from="1550952330599" duration="14125000" />
+      <workItem from="1550952330599" duration="15345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217554000" />
+    <option name="totallyTimeSpent" value="218774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76636904" visible="true" weight="0.19072708" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76636904" visible="true" weight="0.19072708" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.09220232" side_tool="true" weight="0.22222222" />
@@ -336,7 +327,7 @@
       <window_info id="npm" order="2" sideWeight="0.23363096" side_tool="true" visible="true" weight="0.19072708" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.9077977" visible="true" weight="0.26797387" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.9077977" visible="true" weight="0.26797387" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -380,9 +371,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/animations/jeux_gonflables.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/animations/feu_artifice.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -449,13 +437,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template_html/blog-grid-2col-sidebar.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/a-propos-partenaires.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="172" column="75" lean-forward="true" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/courses-connexion.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,20 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_html/element-typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="529" column="22" lean-forward="true" selection-start-line="510" selection-start-column="16" selection-end-line="529" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/background/a-propos-benevole-back-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -668,28 +635,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/a-propos-partenaires2.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/a-propos-partenaires.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="424" column="133" selection-start-line="424" selection-start-column="133" selection-end-line="424" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="73" column="82" selection-start-line="73" selection-start-column="82" selection-end-line="73" selection-end-column="82" />
+        <state relative-caret-position="268">
+          <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_html/element-typography.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="529" column="22" lean-forward="true" selection-start-line="510" selection-start-column="16" selection-end-line="529" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/a-propos-organisation.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="161" column="93" selection-start-line="161" selection-start-column="93" selection-end-line="161" selection-end-column="93" />
+        <state relative-caret-position="472">
+          <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
           <folding>
-            <element signature="e#1302#5317#0#HTML" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
