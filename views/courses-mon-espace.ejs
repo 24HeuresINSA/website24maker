@@ -47,7 +47,7 @@
     </section>
     <!-- End About Section -->
 
-    <section class="pt-3 pb-1" style="background-color: rgba(255,203,41,0.42)">
+    <section class="pt-3 pb-1 m-auto" style="background-color: rgba(255,203,41,0.42); max-width: 1500px">
         <div class="row m-auto text-center">
             <div class="container">
                 <% if(locals.equipe && equipe.equipe_valide == 1) { %>
@@ -67,11 +67,11 @@
         </div>
     </section>
 
-    <section class="pt-4 pb-4" style="background-color: rgba(255,203,41,0.1)">
+    <section class="pt-4 pb-4 m-auto" style="background-color: rgba(255,60,66,0.4); max-width: 1500px">
         <div class="row m-auto pr-3 pl-3 pb-3" style="max-width: 1500px">
             <div class="m-auto col-12" style="max-width: 100%; overflow: auto;">
                 <% if (locals.coureurs && coureurs.length != 0){ %>
-                <table class="table table-password table-striped p-2 table-sm" id="">
+                <table class="table table-password table-striped p-2 table-sm" style="background-color: white" id="">
                     <thead>
                     <tr>
                         <th class="d-none">ID</th>
@@ -123,7 +123,7 @@
                     </tbody>
                 </table>
                 <% }else{ %>
-                <div id="" class="text-center p-2 m-auto"><h3 class="">Aucun coureur trouvé pour l'équipe.<br> Veuillez ajouter au moins un participant pour être certain que l'équipe soit valide.</h3>
+                <div id="" class="text-center p-2 m-auto"><h3 style="color: #000000;">Aucun coureur trouvé pour l'équipe.<br> Veuillez ajouter au moins un participant pour être certain que l'équipe soit valide.</h3>
                 </div>
                 <% } %>
             </div>
@@ -154,7 +154,7 @@
                 <h6 class="d-inline">Paiement et dons sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h-tout-tarif">Hello Asso</a></h6><br>
                 <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
                     <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
-                <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h-tout-tarif/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe><div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
+                <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h-tout-tarif/widget" style="width:100%;height:750px;border:none;"></iframe><div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
             </div>
         </div>
     </section>
