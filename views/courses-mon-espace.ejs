@@ -110,9 +110,9 @@
                         <td class="certificatRaw" style="min-width:120px; max-width:150px">
                             <% if (raw.coureur_certificat_valide == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
-                            <% }else if (raw.coureur_certificat_valide == 0){ %>
-                                <span class="badge-danger p-1">Refusé</span>
                             <% }else if (raw.coureur_certificat_valide == 2){ %>
+                                <span class="badge-danger p-1">Refusé</span>
+                            <% }else if (raw.coureur_certificat_valide == 0){ %>
                                 <span class="badge-danger p-1">Non Reçu</span>
                             <% }else if (raw.coureur_certificat_valide == 3){ %>
                                 <span class="badge-primary p-1">En cours de traitement</span>
