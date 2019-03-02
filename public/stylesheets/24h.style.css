@@ -6,8 +6,10 @@ html{
     color: #4DBCD1;
 }
 
+
 .bg-image {
     background-repeat: repeat-x;
+    background-size: auto;
 }
 
 .header.header-transparent .header-nav {
@@ -82,7 +84,7 @@ html{
     background-color: #060025;
 }
 
-@media screen and (min-width: 1px) and (max-width: 768px) {
+@media all and (min-width: 1px) and (max-width: 768px) {
 
     .inner-intro {
         position: relative;
@@ -91,9 +93,15 @@ html{
 
 }
 
-.inner-intro {
-    position: relative;
-    padding: 120px 0;
+
+@media all and (min-width: 768px) and (max-width: 4000px) {
+
+    .inner-intro {
+        position: relative;
+        padding: 100px 0;
+        height: 600px;
+    }
+
 }
 
 a:hover {
