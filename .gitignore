@@ -1,4 +1,3 @@
 template_html/
 config/*.pem
 views/concerts-artistes-2019_1.ejs
-views/concerts-artistes-2019_2.ejs
