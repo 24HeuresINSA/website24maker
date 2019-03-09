@@ -41,7 +41,10 @@
         <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
-              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+              <caret line="126" column="215" selection-start-line="126" selection-start-column="215" selection-end-line="126" selection-end-column="215" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -297,12 +300,12 @@
       <workItem from="1550952330599" duration="16555000" />
       <workItem from="1551466455201" duration="3183000" />
       <workItem from="1551472908892" duration="14361000" />
-      <workItem from="1551710748579" duration="11089000" />
+      <workItem from="1551710748579" duration="11791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250535000" />
+    <option name="totallyTimeSpent" value="251237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -877,7 +880,10 @@
     <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
-          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
+          <caret line="126" column="215" selection-start-line="126" selection-start-column="215" selection-end-line="126" selection-end-column="215" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
