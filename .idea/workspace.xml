@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/animations/12h_danse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/beach_volley.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/carre_creatif.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/chateau_gonflable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/clown.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/expo_photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/graffeurs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/jeux_societe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/jonglage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/joute.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/maquillage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/origami.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/petanque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/piano.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/proto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/rink_hockey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/spectacle_feu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/tennis_demo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/tesla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/tir_arc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/tir_elastique.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/tti.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/animations/ultimate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/timetable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/timetable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/animations/feu_artifice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/animations/feu_artifice.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/concerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/concerts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animations-animations-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations-old.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/concerts-timetable.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-timetable.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/concerts-timetable2.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,68 +48,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="courses-mon-espace.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/courses-mon-espace.ejs">
+      <file leaf-file-name="concerts-timetable.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/concerts-timetable.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="55" column="161" selection-start-line="55" selection-start-column="161" selection-end-line="55" selection-end-column="161" />
+            <state relative-caret-position="1341">
+              <caret line="136" column="71" selection-start-line="136" selection-start-column="71" selection-end-line="136" selection-end-column="71" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="concerts-artistes-2019_2.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs">
+      <file leaf-file-name="timetable.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/timetable.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="130" column="87" selection-start-line="130" selection-start-column="87" selection-end-line="130" selection-end-column="87" />
+            <state relative-caret-position="596">
+              <caret line="659" column="24" selection-start-line="659" selection-start-column="24" selection-end-line="659" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="timetable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/timetable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/courses.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses-informations.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/courses-informations.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="63" column="120" selection-start-line="63" selection-start-column="120" selection-end-line="63" selection-end-column="120" />
+            <state relative-caret-position="210">
+              <caret line="84" column="103" selection-start-line="84" selection-start-column="97" selection-end-line="84" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;?php include(&quot;</find>
-      <find>.php</find>
-      <find>.php&quot;); ?&gt;</find>
-      <find>&lt;div class=&quot;loader-img&quot;&gt;&lt;/div&gt;         &lt;/div&gt;     &lt;/section&gt;</find>
       <find>form</find>
       <find>&lt;!-- Preloader --&gt;</find>
       <find>\n</find>
@@ -102,6 +113,13 @@
       <find>parallax-background2</find>
       <find>parallax-background1</find>
       <find>cover</find>
+      <find>tennis</find>
+      <find>ori</find>
+      <find>height</find>
+      <find>timeline</find>
+      <find>events</find>
+      <find>cd-schedule</find>
+      <find>width</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%- include</replace>
@@ -119,9 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/concerts-timetable2.ejs" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/config/key.pem" />
         <option value="$PROJECT_DIR$/config/cert.pem" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/public/javascripts/contact-form.js" />
@@ -142,7 +157,6 @@
         <option value="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" />
         <option value="$PROJECT_DIR$/views/head.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_1.ejs" />
-        <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
         <option value="$PROJECT_DIR$/views/courses-inscription-ferme.ejs" />
         <option value="$PROJECT_DIR$/views/infos-contact.ejs" />
         <option value="$PROJECT_DIR$/views/courses-connexion.ejs" />
@@ -159,17 +173,21 @@
         <option value="$PROJECT_DIR$/views/sidebar.ejs" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
         <option value="$PROJECT_DIR$/views/billetterie.ejs" />
-        <option value="$PROJECT_DIR$/routes/concerts.js" />
         <option value="$PROJECT_DIR$/views/a-propos-organisation.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
         <option value="$PROJECT_DIR$/routes/billetterie.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/24h.style.css" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
-        <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
         <option value="$PROJECT_DIR$/views/courses-informations.ejs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/courses-mon-espace.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" />
+        <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
+        <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
+        <option value="$PROJECT_DIR$/routes/concerts.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/timetable.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/timetable.css" />
+        <option value="$PROJECT_DIR$/views/concerts-timetable.ejs" />
       </list>
     </option>
   </component>
@@ -189,11 +207,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
+    <option name="y" value="-19" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,12 +236,7 @@
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
@@ -240,6 +253,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Courses24Maker" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -306,21 +320,30 @@
       <workItem from="1550952330599" duration="16555000" />
       <workItem from="1551466455201" duration="3183000" />
       <workItem from="1551472908892" duration="14361000" />
-      <workItem from="1551710748579" duration="35000" />
+      <workItem from="1551710748579" duration="10848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239481000" />
+    <option name="totallyTimeSpent" value="250294000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76096183" visible="true" weight="0.20073763" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.09220232" side_tool="true" weight="0.22222222" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" sideWeight="0.23903818" side_tool="true" visible="true" weight="0.20073763" />
@@ -334,7 +357,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -369,40 +391,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/animations/animation_generique2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/animations.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_html/about-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_html/about-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="450" column="18" lean-forward="true" selection-start-line="436" selection-start-column="8" selection-end-line="450" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="152" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/animations-animations-old.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1088" column="117" selection-start-line="1088" selection-start-column="117" selection-end-line="1088" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/blog-grid-3col.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -452,13 +440,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/infos-faq.ejs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/theme.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,20 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/concerts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/concerts-tremplins.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="94" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -624,24 +591,277 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/courses-informations.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="63" column="120" selection-start-line="63" selection-start-column="120" selection-end-line="63" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-old.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-timetable2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/concerts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-tremplins.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/animations-animations-old.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="1271" column="68" selection-start-line="1271" selection-start-column="68" selection-end-line="1271" selection-end-column="68" />
+          <folding>
+            <element signature="e#4617#4643#0#HTML" expanded="true" />
+            <element signature="e#4952#4959#1#HTML" expanded="true" />
+            <element signature="e#5083#5109#0#HTML" expanded="true" />
+            <element signature="e#6006#6022#0#HTML" expanded="true" />
+            <element signature="e#8038#8064#0#HTML" expanded="true" />
+            <element signature="e#8373#8380#1#HTML" expanded="true" />
+            <element signature="e#8504#8530#0#HTML" expanded="true" />
+            <element signature="e#11414#11440#0#HTML" expanded="true" />
+            <element signature="e#11749#11756#1#HTML" expanded="true" />
+            <element signature="e#11880#11906#0#HTML" expanded="true" />
+            <element signature="e#15050#15076#0#HTML" expanded="true" />
+            <element signature="e#15385#15392#1#HTML" expanded="true" />
+            <element signature="e#15516#15542#0#HTML" expanded="true" />
+            <element signature="e#18726#18752#0#HTML" expanded="true" />
+            <element signature="e#19061#19068#1#HTML" expanded="true" />
+            <element signature="e#19192#19218#0#HTML" expanded="true" />
+            <element signature="e#22308#22334#0#HTML" expanded="true" />
+            <element signature="e#22643#22650#1#HTML" expanded="true" />
+            <element signature="e#22774#22800#0#HTML" expanded="true" />
+            <element signature="e#21980#22006#0#HTML" expanded="true" />
+            <element signature="e#22315#22322#1#HTML" expanded="true" />
+            <element signature="e#22446#22472#0#HTML" expanded="true" />
+            <element signature="e#25471#25497#0#HTML" expanded="true" />
+            <element signature="e#25806#25813#1#HTML" expanded="true" />
+            <element signature="e#25937#25963#0#HTML" expanded="true" />
+            <element signature="e#29418#29444#0#HTML" expanded="true" />
+            <element signature="e#29753#29760#1#HTML" expanded="true" />
+            <element signature="e#29884#29910#0#HTML" expanded="true" />
+            <element signature="e#31596#32963#0#HTML" />
+            <element signature="e#32983#35336#0#HTML" />
+            <element signature="e#33161#33187#0#HTML" expanded="true" />
+            <element signature="e#33496#33503#1#HTML" expanded="true" />
+            <element signature="e#33627#33653#0#HTML" expanded="true" />
+            <element signature="e#35397#36738#0#HTML" />
+            <element signature="e#36758#38830#0#HTML" />
+            <element signature="e#36928#36954#0#HTML" expanded="true" />
+            <element signature="e#37263#37270#1#HTML" expanded="true" />
+            <element signature="e#37394#37420#0#HTML" expanded="true" />
+            <element signature="e#38891#40311#0#HTML" />
+            <element signature="e#40331#42525#0#HTML" />
+            <element signature="e#40508#40534#0#HTML" expanded="true" />
+            <element signature="e#40843#40850#1#HTML" expanded="true" />
+            <element signature="e#40974#41000#0#HTML" expanded="true" />
+            <element signature="e#42586#43951#0#HTML" />
+            <element signature="e#43971#46067#0#HTML" />
+            <element signature="e#44144#44170#0#HTML" expanded="true" />
+            <element signature="e#44479#44486#1#HTML" expanded="true" />
+            <element signature="e#44610#44636#0#HTML" expanded="true" />
+            <element signature="e#46131#47677#0#HTML" />
+            <element signature="e#47697#49760#0#HTML" />
+            <element signature="e#47871#47897#0#HTML" expanded="true" />
+            <element signature="e#48206#48213#1#HTML" expanded="true" />
+            <element signature="e#48337#48363#0#HTML" expanded="true" />
+            <element signature="e#49822#51364#0#HTML" />
+            <element signature="e#51384#53729#0#HTML" />
+            <element signature="e#51558#51584#0#HTML" expanded="true" />
+            <element signature="e#51893#51900#1#HTML" expanded="true" />
+            <element signature="e#52024#52050#0#HTML" expanded="true" />
+            <element signature="e#53788#55248#0#HTML" />
+            <element signature="e#55268#57653#0#HTML" />
+            <element signature="e#55443#55469#0#HTML" expanded="true" />
+            <element signature="e#55778#55785#1#HTML" expanded="true" />
+            <element signature="e#55909#55935#0#HTML" expanded="true" />
+            <element signature="e#57713#59168#0#HTML" />
+            <element signature="e#59188#61364#0#HTML" />
+            <element signature="e#59364#59390#0#HTML" expanded="true" />
+            <element signature="e#59699#59706#1#HTML" expanded="true" />
+            <element signature="e#59830#59856#0#HTML" expanded="true" />
+            <element signature="e#61419#62875#0#HTML" />
+            <element signature="e#62895#65084#0#HTML" />
+            <element signature="e#63066#63092#0#HTML" expanded="true" />
+            <element signature="e#63401#63408#1#HTML" expanded="true" />
+            <element signature="e#63532#63558#0#HTML" expanded="true" />
+            <element signature="e#65150#66607#0#HTML" />
+            <element signature="e#66627#68819#0#HTML" />
+            <element signature="e#66802#66828#0#HTML" expanded="true" />
+            <element signature="e#67137#67144#1#HTML" expanded="true" />
+            <element signature="e#67268#67294#0#HTML" expanded="true" />
+            <element signature="e#68873#70205#0#HTML" />
+            <element signature="e#70225#72074#0#HTML" />
+            <element signature="e#70395#70421#0#HTML" expanded="true" />
+            <element signature="e#70730#70737#1#HTML" expanded="true" />
+            <element signature="e#70861#70887#0#HTML" expanded="true" />
+            <element signature="e#72139#73520#0#HTML" />
+            <element signature="e#73540#75427#0#HTML" />
+            <element signature="e#73721#73747#0#HTML" expanded="true" />
+            <element signature="e#74056#74063#1#HTML" expanded="true" />
+            <element signature="e#74187#74213#0#HTML" expanded="true" />
+            <element signature="e#75493#76876#0#HTML" />
+            <element signature="e#76896#78783#0#HTML" />
+            <element signature="e#77075#77101#0#HTML" expanded="true" />
+            <element signature="e#77410#77417#1#HTML" expanded="true" />
+            <element signature="e#77541#77567#0#HTML" expanded="true" />
+            <element signature="e#78849#80225#0#HTML" />
+            <element signature="e#80245#82125#0#HTML" />
+            <element signature="e#80417#80443#0#HTML" expanded="true" />
+            <element signature="e#80752#80759#1#HTML" expanded="true" />
+            <element signature="e#80883#80909#0#HTML" expanded="true" />
+            <element signature="e#86008#87340#0#HTML" />
+            <element signature="e#87360#89209#0#HTML" />
+            <element signature="e#87530#87556#0#HTML" expanded="true" />
+            <element signature="e#87865#87872#1#HTML" expanded="true" />
+            <element signature="e#87996#88022#0#HTML" expanded="true" />
+            <element signature="e#82192#83738#0#HTML" />
+            <element signature="e#83758#86085#0#HTML" />
+            <element signature="e#83929#83955#0#HTML" expanded="true" />
+            <element signature="e#84264#84271#1#HTML" expanded="true" />
+            <element signature="e#84395#84421#0#HTML" expanded="true" />
+            <element signature="e#86149#87599#0#HTML" />
+            <element signature="e#87619#89966#0#HTML" />
+            <element signature="e#87789#87815#0#HTML" expanded="true" />
+            <element signature="e#88124#88131#1#HTML" expanded="true" />
+            <element signature="e#88255#88281#0#HTML" expanded="true" />
+            <element signature="e#98588#98614#0#HTML" expanded="true" />
+            <element signature="e#98923#98930#1#HTML" expanded="true" />
+            <element signature="e#99054#99080#0#HTML" expanded="true" />
+            <element signature="e#100715#102152#0#HTML" />
+            <element signature="e#102172#104489#0#HTML" />
+            <element signature="e#102343#102369#0#HTML" expanded="true" />
+            <element signature="e#102678#102685#1#HTML" expanded="true" />
+            <element signature="e#102809#102835#0#HTML" expanded="true" />
+            <element signature="e#96871#98401#0#HTML" />
+            <element signature="e#98421#100768#0#HTML" />
+            <element signature="e#98591#98617#0#HTML" expanded="true" />
+            <element signature="e#98926#98933#1#HTML" expanded="true" />
+            <element signature="e#99057#99083#0#HTML" expanded="true" />
+            <element signature="e#90027#91472#0#HTML" />
+            <element signature="e#91492#93453#0#HTML" />
+            <element signature="e#91664#91690#0#HTML" expanded="true" />
+            <element signature="e#91999#92006#1#HTML" expanded="true" />
+            <element signature="e#92130#92156#0#HTML" expanded="true" />
+            <element signature="e#93514#94926#0#HTML" />
+            <element signature="e#94946#97128#0#HTML" />
+            <element signature="e#95122#95148#0#HTML" expanded="true" />
+            <element signature="e#95457#95464#1#HTML" expanded="true" />
+            <element signature="e#95588#95614#0#HTML" expanded="true" />
+            <element signature="e#97192#98546#0#HTML" />
+            <element signature="e#98566#100781#0#HTML" />
+            <element signature="e#98745#98771#0#HTML" expanded="true" />
+            <element signature="e#99080#99087#1#HTML" expanded="true" />
+            <element signature="e#99211#99237#0#HTML" expanded="true" />
+            <element signature="e#111387#112741#0#HTML" />
+            <element signature="e#112761#114976#0#HTML" />
+            <element signature="e#112940#112966#0#HTML" expanded="true" />
+            <element signature="e#113275#113282#1#HTML" expanded="true" />
+            <element signature="e#113406#113432#0#HTML" expanded="true" />
+            <element signature="e#115330#116831#0#HTML" />
+            <element signature="e#116851#119225#0#HTML" />
+            <element signature="e#117022#117048#0#HTML" expanded="true" />
+            <element signature="e#117357#117364#1#HTML" expanded="true" />
+            <element signature="e#117488#117514#0#HTML" expanded="true" />
+            <element signature="e#107648#109160#0#HTML" />
+            <element signature="e#109180#111217#0#HTML" />
+            <element signature="e#109351#109377#0#HTML" expanded="true" />
+            <element signature="e#109686#109693#1#HTML" expanded="true" />
+            <element signature="e#109817#109843#0#HTML" expanded="true" />
+            <element signature="e#100836#102363#0#HTML" />
+            <element signature="e#102383#104435#0#HTML" />
+            <element signature="e#102554#102580#0#HTML" expanded="true" />
+            <element signature="e#102889#102896#1#HTML" expanded="true" />
+            <element signature="e#103020#103046#0#HTML" expanded="true" />
+            <element signature="e#104499#106042#0#HTML" />
+            <element signature="e#106062#108122#0#HTML" />
+            <element signature="e#106233#106259#0#HTML" expanded="true" />
+            <element signature="e#106568#106575#1#HTML" expanded="true" />
+            <element signature="e#106699#106725#0#HTML" expanded="true" />
+            <element signature="e#108174#109633#0#HTML" />
+            <element signature="e#109653#111624#0#HTML" />
+            <element signature="e#109821#109847#0#HTML" expanded="true" />
+            <element signature="e#110156#110163#1#HTML" expanded="true" />
+            <element signature="e#110287#110313#0#HTML" expanded="true" />
+            <element signature="e#122344#123785#0#HTML" />
+            <element signature="e#123805#125758#0#HTML" />
+            <element signature="e#123973#123999#0#HTML" expanded="true" />
+            <element signature="e#124308#124315#1#HTML" expanded="true" />
+            <element signature="e#124439#124465#0#HTML" expanded="true" />
+            <element signature="e#118461#119902#0#HTML" />
+            <element signature="e#119922#121875#0#HTML" />
+            <element signature="e#120090#120116#0#HTML" expanded="true" />
+            <element signature="e#120425#120432#1#HTML" expanded="true" />
+            <element signature="e#120556#120582#0#HTML" expanded="true" />
+            <element signature="e#111687#113122#0#HTML" />
+            <element signature="e#113142#115098#0#HTML" />
+            <element signature="e#113314#113340#0#HTML" expanded="true" />
+            <element signature="e#113649#113656#1#HTML" expanded="true" />
+            <element signature="e#113780#113806#0#HTML" expanded="true" />
+            <element signature="e#115160#116662#0#HTML" />
+            <element signature="e#116682#118678#0#HTML" />
+            <element signature="e#116857#116883#0#HTML" expanded="true" />
+            <element signature="e#117192#117199#1#HTML" expanded="true" />
+            <element signature="e#117323#117349#0#HTML" expanded="true" />
+            <element signature="e#129406#130908#0#HTML" />
+            <element signature="e#130928#132924#0#HTML" />
+            <element signature="e#131103#131129#0#HTML" expanded="true" />
+            <element signature="e#131438#131445#1#HTML" expanded="true" />
+            <element signature="e#131569#131595#0#HTML" expanded="true" />
+            <element signature="e#118747#120203#0#HTML" />
+            <element signature="e#120223#122195#0#HTML" />
+            <element signature="e#120396#120422#0#HTML" expanded="true" />
+            <element signature="e#120731#120738#1#HTML" expanded="true" />
+            <element signature="e#120862#120888#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="126" column="69" selection-start-line="126" selection-start-column="69" selection-end-line="126" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="458" column="29" lean-forward="true" selection-start-line="458" selection-start-column="29" selection-end-line="458" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses-mon-espace.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="55" column="161" selection-start-line="55" selection-start-column="161" selection-end-line="55" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -652,17 +872,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses-mon-espace.ejs">
+    <entry file="file://$PROJECT_DIR$/views/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="161" selection-start-line="55" selection-start-column="161" selection-end-line="55" selection-end-column="161" />
+        <state relative-caret-position="18">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs">
+    <entry file="file://$PROJECT_DIR$/views/concerts-timetable.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="130" column="87" selection-start-line="130" selection-start-column="87" selection-end-line="130" selection-end-column="87" />
+        <state relative-caret-position="1341">
+          <caret line="136" column="71" selection-start-line="136" selection-start-column="71" selection-end-line="136" selection-end-column="71" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/timetable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="84" column="103" selection-start-line="84" selection-start-column="97" selection-end-line="84" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/timetable.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="659" column="24" selection-start-line="659" selection-start-column="24" selection-end-line="659" selection-end-column="24" />
         </state>
       </provider>
     </entry>
