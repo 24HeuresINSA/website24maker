@@ -2,38 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/animations/12h_danse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/bd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/beach_volley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/carre_creatif.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/chateau_gonflable.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/clown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/expo_photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/graffeurs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/jeux_societe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/jonglage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/joute.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/maquillage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/origami.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/petanque.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/piano.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/proto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/rink_hockey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/spectacle_feu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/tennis_demo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/tesla.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/tir_arc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/tir_elastique.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/tti.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/animations/ultimate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/timetable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/timetable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/animations/feu_artifice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/animations/feu_artifice.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/concerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/concerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-animations-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations-old.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-timetable.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable2.ejs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/courses-inscriptions.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -60,11 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timetable.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="timetable.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/timetable.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="596">
               <caret line="659" column="24" selection-start-line="659" selection-start-column="24" selection-end-line="659" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courses-inscriptions.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -182,12 +159,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/courses-mon-espace.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" />
-        <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
         <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
         <option value="$PROJECT_DIR$/routes/concerts.js" />
         <option value="$PROJECT_DIR$/public/javascripts/timetable.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/timetable.css" />
         <option value="$PROJECT_DIR$/views/concerts-timetable.ejs" />
+        <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
       </list>
     </option>
   </component>
@@ -320,12 +297,12 @@
       <workItem from="1550952330599" duration="16555000" />
       <workItem from="1551466455201" duration="3183000" />
       <workItem from="1551472908892" duration="14361000" />
-      <workItem from="1551710748579" duration="10848000" />
+      <workItem from="1551710748579" duration="11089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250294000" />
+    <option name="totallyTimeSpent" value="250535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,6 +315,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76096183" visible="true" weight="0.20073763" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -837,13 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="126" column="69" selection-start-line="126" selection-start-column="69" selection-end-line="126" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -900,6 +871,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
           <caret line="659" column="24" selection-start-line="659" selection-start-column="24" selection-end-line="659" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="126" column="64" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
         </state>
       </provider>
     </entry>
