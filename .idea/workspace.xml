@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_early_soldout.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/animations-animations-jour.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/concerts-artistes-2019-nuit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/24h.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/24h.style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/billetterie.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/billetterie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/concerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/concerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/billetterie.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-bars.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-bars.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,15 +16,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="animations-prevention.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="animations-prevention.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/animations-prevention.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="3656">
               <caret line="265" column="64" selection-start-line="265" selection-start-column="64" selection-end-line="265" selection-end-column="64" />
               <folding>
                 <element signature="n#div#24;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#25;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="billetterie.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -139,7 +139,6 @@
         <option value="$PROJECT_DIR$/views/courses-mon-espace.ejs" />
         <option value="$PROJECT_DIR$/views/a-propos-partenaires.ejs" />
         <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
-        <option value="$PROJECT_DIR$/routes/billetterie.js" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" />
         <option value="$PROJECT_DIR$/routes/concerts.js" />
@@ -149,6 +148,7 @@
         <option value="$PROJECT_DIR$/routes/animations.js" />
         <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/views/animations-prevention.ejs" />
+        <option value="$PROJECT_DIR$/routes/billetterie.js" />
       </list>
     </option>
   </component>
@@ -281,12 +281,12 @@
       <workItem from="1551466455201" duration="3183000" />
       <workItem from="1551472908892" duration="14361000" />
       <workItem from="1551710748579" duration="13673000" />
-      <workItem from="1552596178011" duration="16405000" />
+      <workItem from="1552596178011" duration="16587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269524000" />
+    <option name="totallyTimeSpent" value="269706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/concerts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -817,12 +810,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/animations-prevention.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="3656">
           <caret line="265" column="64" selection-start-line="265" selection-start-column="64" selection-end-line="265" selection-end-column="64" />
           <folding>
             <element signature="n#div#24;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#25;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
