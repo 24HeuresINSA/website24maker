@@ -6,7 +6,7 @@ router.get('/timetable', function(req, res, next) {
 });
 
 router.get('/artistes', function(req, res, next) {
-	res.render('concerts-artistes-2019_2');
+	res.render('concerts-artistes-2019');
 });
 
 router.get('/tremplins', function(req, res, next) {

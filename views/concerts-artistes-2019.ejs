@@ -34,7 +34,7 @@
                             <span class="color-concerts">Artistes</span><br />
                         </h2>
                         <h4>
-                            <span class="text-original-case">La fin de la prog' arrive bientôt.</span>
+                            <span class="text-original-case">Retrouvez la programmation de l'édition 2019</span>
                         </h4>
                     </div>
                 </div>
@@ -44,6 +44,7 @@
 
         <!-- Work Section -->
 
+        <%if (true) { %>
 
         <section class="ptb pt-5">
             <div class="container">
@@ -60,14 +61,14 @@
                 <!-- ARTISTES -->
                 <div class="row container-masonry nf-col-3">
 
-                            <!-- FEDER -->
+                    <!-- FEDER -->
                     <div class="nf-item vendredi spacing">
                         <div class="item-box">
                             <a>
                                 <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_feder_500px.jpg" class="item-container photo-concerts-artiste-item">
                                 <div class="item-mask">
                                     <div class="item-caption">
-                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">FEDER</p>
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">FEDER <span style="font-size:10px;">(DJ SET)</span></p>
                                         <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#feder-modal">
                                             Plus d'info
                                         </button>
@@ -76,7 +77,7 @@
                             </a>
                         </div>
                         <div>
-                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">FEDER<span style="font-size:10px;"></span></h3>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">FEDER <span style="font-size:10px;">(DJ SET)</span></h3>
                             <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
                             <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
                         </div>
@@ -88,7 +89,7 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                    <h4 class="modal-title text-center" style="padding-left:13px;">FEDER</h4>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">FEDER <span style="font-size:10px;">(DJ SET)</span></h4>
                                     <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
                                     <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
                                     <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/RvK8SKZbBWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -97,7 +98,6 @@
                             </div>
                         </div>
                     </div>
-            
 
                     <!-- MOME -->
                     <div class="nf-item samedi spacing">
@@ -115,7 +115,7 @@
                             </a>
                         </div>
                         <div>
-                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span style="font-size:10px;"> (Live)</span></h3>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
                             <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
                             <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
                         </div>
@@ -131,6 +131,120 @@
                                     <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
                                     <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
                                     <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/1YRW1QRKTBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JAZZY BAZZ -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_jazzy_bazz_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">JAZZY BAZZ</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#jb-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">JAZZY BAZZ<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rap</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="jb-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">JAZZY BAZZ</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Rap</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/bxtJcFa2FaU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LA FINE EQUIPE -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_lfe_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">LA FINE éQUIPE</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#lfe-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LA FINE éQUIPE<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">HIP HOP / SCRATCH / ELECTRO</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="lfe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">LA FINE éQUIPE</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">HIP HOP / SCRATCH / ELECTRO</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/3vzT7KMGkdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COMAH -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_comah_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">COMAH</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#comah-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">COMAH<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Minimal Progressive</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="comah-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">COMAH</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Minimal Progressive</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/cynjKOdqHkY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     <p class="text-justify m-0"></p>
                                 </div>
                             </div>
@@ -175,6 +289,120 @@
                         </div>
                     </div>
 
+                    <!-- TEZ CADEY -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_tez_cadey_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">TEZ CADEY <span style="font-size:10px;"> (DJ SET)</span></p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#tezcadey-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">TEZ CADEY<span style="font-size:10px;"> (DJ SET)</span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Nord</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro / Tropical House</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="tezcadey-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">TEZ CADEY <span style="font-size:10px;"> (DJ SET)</span></h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Scène Nord</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro / Tropical House</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/MDt1Ed_Qwlo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RO x KONOBA -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_ro_konoba_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">R.O. x KONOBA</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#rokonoba-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">R.O. <span style="font-size:10px;">x</span> KONOBA<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène Nord</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro Pop</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="rokonoba-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">R.O. <span style="font-size:10px;">x</span> KONOBA</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Scène Nord</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro Pop</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/sbKjGKycuyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TETRA X BRAINLESS -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_tetra_x_brainless_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">TETRA HYDRO K <span style="font-size:10px;">MEETS</span> BRAINLESS</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#tetra-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item pt-2" style="line-height: 15px;">TETRA HYDRO K <span style="font-size:10px;">MEETS</span> BRAINLESS<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène Roots</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Dub / Jungle</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="tetra-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">TETRA HYDRO K <span style="font-size:10px;">MEETS</span> BRAINLESS</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Scène Roots</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Dub / Jungle</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/ZK6vm3RhVOk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- TWO TRAINS LEFT -->
                     <div class="nf-item samedi spacing">
                         <div class="item-box">
@@ -193,7 +421,7 @@
                         <div>
                             <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">TWO TRAINS LEFT<span style="font-size:10px;"></span></h3>
                             <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
-                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rock</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rock / Pop Punk</h6>
                         </div>
                     </div>
                     <div class="modal fade m-auto p-0" id="ttl-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -205,8 +433,391 @@
                                     </button>
                                     <h4 class="modal-title text-center" style="padding-left:13px;">TWO TRAINS LEFT</h4>
                                     <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
-                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Rock</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Rock / Pop Punk</h6>
                                     <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/MMFEZJVeWIQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HOPEX -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_hopex_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">HOPEX</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#hopex-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">HOPEX<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Nord</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Trap / EDM</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="hopex-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">HOPEX</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Scène Nord</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Trap / EDM</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/w3O2IGGBT2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EFFIGIE -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_effigie_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">EFFIGIE</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#effigie-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">EFFIGIE<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène nord</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Pop / Electro</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="effigie-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">EFFIGIE</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Scène Nord</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Pop / Electro</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/XgYWhT0ZA3k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BEARS TOWERS -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_bears_towers_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">BEAR'S TOWERS</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#bt-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">BEAR'S TOWERS<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Folk</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="bt-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">BEAR'S TOWERS</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Folk</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/bXNsT1XMPpY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HIGH GARDENS -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_high_gardens_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">HIGH GARDENS</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#hg-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">HIGH GARDEN SOUND<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène Roots</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Collectif Reggae / Dub</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="hg-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">HIGH GARDEN SOUND</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Scène Roots</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Collectif Reggae / Dub</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- THE ACKEE SALTFISH -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_the_ackee_saltfish_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">THE ACKEE SALTFISH</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#tas-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">THE ACKEE SALTFISH<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Roots</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Reggae Bass</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="tas-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">THE ACKEE SALTFISH</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Scène Roots</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Reggae Bass</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/4cyOz8qfs8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LA BOUTURE DUB -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_la_bouture_dub_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">LA BOUTURE DUB</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#la-bouture-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LA BOUTURE DUB<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Roots</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Collectif Reggae / Dub</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="la-bouture-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">LA BOUTURE DUB</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Scène Roots</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Collectif Reggae / Dub</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KLS -->
+                    <div class="nf-item vendredi samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_kls_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">KLS CREW</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#kls-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">KLS CREW<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI / SAMEDI</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Collectif DJ multistyle</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="kls-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">KLS CREW</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI / SAMEDI</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Collectif DJ multistyle</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WAVE UP -->
+                    <div class="nf-item vendredi samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_wave_up_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">WAVE UP</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#waveup-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">WAVE UP<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI / SAMEDI</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Trance / Techno</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="waveup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">WAVE UP</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI / SAMEDI</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Trance / Techno</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0">C'est HEARKEN qui jouera le vendredi soir sur la Scène Root's pour un set de Trance inédit.<br>
+                                        RECURSIV MINDZ seront sur la Scène Nord le samedi pour un bon set de techno comme on aime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LEONXLEON -->
+                    <div class="nf-item vendredi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_leonxleon_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">LEONXLEON</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#leonxleon-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LEONXLEON<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - OPEN AIR</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">House / Italo-Disco / Boogie</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="leonxleon-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">LEONXLEON</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">VENDREDI - OPEN AIR</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">House / Italo-Disco / Boogie</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/rz40LCFgduE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p class="text-justify m-0">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MASTER PHIL -->
+                    <div class="nf-item samedi spacing">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_master_phil_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <p class="white text-justify text-original-case letter-spacing-no pt-1">MASTER PHIL</p>
+                                        <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#masterphil-modal">
+                                            Plus d'info
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MASTER PHIL<span style="font-size:10px;"></span></h3>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - OPEN AIR</h6>
+                            <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Synth pop belge / Disco libanaise</h6>
+                        </div>
+                    </div>
+                    <div class="modal fade m-auto p-0" id="masterphil-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body jjj">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title text-center" style="padding-left:13px;">MASTER PHIL</h4>
+                                    <h6 class="letter-spacing-1 text-center m-0">SAMEDI - OPEN AIR</h6>
+                                    <h6 class="letter-spacing-1 text-center m-0 pb-2">Synth pop belge / Disco libanaise</h6>
+                                    <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/r7m_1cSThPw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     <p class="text-justify m-0"></p>
                                 </div>
                             </div>
@@ -218,6 +829,7 @@
             </div>
         </section>
 
+        <% }%>
 
         <!-- End Work Section -->
 
