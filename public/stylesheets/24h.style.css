@@ -13,7 +13,20 @@ html{
 }
 
 .header.header-transparent .header-nav {
-    background-color: #060025 !important; /*Desktop "header-transparent" */
+    background-color: #0e003d !important;
+    #background-color: #060025 !important; /*Desktop "header-transparent" */
+}
+
+.fond-nuit-back{
+    background-color: #0e003d;
+}
+
+.fond-jour-back{
+    background-color: #6DC6C4;
+}
+
+.color-animations-jour2 {
+    color: #F7F730;
 }
 
 .header .nav-menu > ul > li > a,
@@ -77,11 +90,13 @@ html{
 }
 
 .nav-dropdown, .nav-dropdown-sub {
-    background-color: #060023;
+    background-color: #0e003d;
+    #background-color: #060023;
 }
 
 .sidebar-menu {
-    background-color: #060025;
+    background-color: #0e003d;
+    #background-color: #060023;
 }
 
 @media all and (min-width: 1px) and (max-width: 768px) {
