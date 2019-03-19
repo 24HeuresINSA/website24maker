@@ -46,18 +46,31 @@
         </section>
         <!-- End About Section -->
 
-        <section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/a-propos-benevole-back.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
+        <section id="testimonial" class="overlay-dark dark-bg pt-5 pb-5" style="background-image: url('../img/background/a-propos-benevole-back-2.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="testimonial-carousel">
                     <div class="item">
-                        <div class="testimonial text-center dark-color">
-                            <h3 style="font-weight: normal;">VIENT FAIRE ORGA AVEC TES AMIS ET PARTICIPE A L'ORGANISATION D'UN DES PLUS GRANDS FESTIVALS ETUDIANT DE FRANCE</h3>
+                        <div id="testimonial-video-orga" class="testimonial text-center dark-color">
+                            <h5 style="font-weight: normal;">VIENT FAIRE ORGA AVEC TES AMIS ET PARTICIPE A L'ORGANISATION D'UN DES PLUS GRANDS FESTIVALS ETUDIANT DE FRANCE</h5>
+                            <iframe style="opacity: 0.7;" id="frame-video-orga" src="https://www.youtube.com/embed/MaOALnpdShE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="testimonial" class="overlay-dark dark-bg ptb " style="background-image: url('../img/background/a-propos-benevole-back-2.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
+        <script>
+			$(window).resize(function() {
+				var w = $('#testimonial-video-orga').width();
+				if(w > 560){
+					$("#frame-video-orga").height(315);
+					$("#frame-video-orga").width(560);
+                }else {
+					$("#frame-video-orga").height(w * 315 / 560);
+					$("#frame-video-orga").width(w);
+				}
+			});
+        </script>
+        <section id="testimonial" class="overlay-dark dark-bg ptb " style="background-image: url('../img/background/a-propos-benevole-back.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="testimonial-carousel">
                     <div class="item">
@@ -143,6 +156,14 @@
 		$("#menu-a-propos").css('color', '#F11286');
 		$("#sidebar-menu-benevoles").css('color', '#F11286');
 		$("#title-page-nav").append("Devenir bénévole");
+		var w = $('#testimonial-video-orga').width();
+		if(w > 560){
+			$("#frame-video-orga").height(315);
+			$("#frame-video-orga").width(560);
+		}else {
+			$("#frame-video-orga").height(w * 315 / 560);
+			$("#frame-video-orga").width(w);
+		}
     </script>
     
 </body>
