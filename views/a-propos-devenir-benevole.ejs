@@ -29,8 +29,8 @@
         <!-- CONTENT --------------------------------------------------------------------------------->
 
         <!-- About Section -->
-        <section id="about" class="pt pt-sm-60">
-            <div class="container text-center">
+        <section id="testimonial" class="dark-bg bg-image overlay-dark parallax parallax-background1 overlay-dark dark-bg pt-5 pb-md-5 pt-sm-60 pt-60" data-background-img="../img/benevole/a-propos-benevole-back-2.jpg">
+            <div class="container text-center pt-60 pb">
                 <div class="row">
                     <div class="col">
                         <div class="col-md-8 offset-md-2"></div>
@@ -38,21 +38,20 @@
                             <span class="">Devenir bénévole</span><br />
                         </h2>
                         <h4>
-                            <span class="text-original-case">Participer à l'organisation d'un des plus gros festival étudiant avec 300 bénévoles !</span>
+                            <span class="text-original-case">Participez à l'organisation d'un des plus gros festival étudiant avec 300 bénévoles !</span>
                         </h4>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End About Section -->
 
-        <section id="testimonial" class="overlay-dark dark-bg pt-5 pb-5" style="background-image: url('../img/background/a-propos-benevole-back-2.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
-            <div class="container">
+            <div class="container pb">
                 <div class="testimonial-carousel">
                     <div class="item">
                         <div id="testimonial-video-orga" class="testimonial text-center dark-color">
-                            <h5 style="font-weight: normal;">VIENT FAIRE ORGA AVEC TES AMIS ET PARTICIPE A L'ORGANISATION D'UN DES PLUS GRANDS FESTIVALS ETUDIANT DE FRANCE</h5>
-                            <iframe style="opacity: 0.7;" id="frame-video-orga" src="https://www.youtube.com/embed/MaOALnpdShE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h5 style="font-weight: normal;">VIENT FAIRE ORGA AVEC TES AMIS, DECOUVRIR LES COULISSES ET PARTICIPER A L'ORGANISATION D'UN DES PLUS GRANDS FESTIVALS ETUDIANT DE FRANCE</h5>
+                            <iframe style="opacity: 0.9;" id="frame-video-orga" src="https://www.youtube.com/embed/MaOALnpdShE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="testimonial text-center dark-color">
                         </div>
                     </div>
                 </div>
@@ -61,38 +60,97 @@
         <script>
 			$(window).resize(function() {
 				var w = $('#testimonial-video-orga').width();
-				if(w > 560){
-					$("#frame-video-orga").height(315);
-					$("#frame-video-orga").width(560);
+				if(w > 560*1.5){
+					$("#frame-video-orga").height(315*1.5);
+					$("#frame-video-orga").width(560*1.5);
                 }else {
 					$("#frame-video-orga").height(w * 315 / 560);
 					$("#frame-video-orga").width(w);
 				}
 			});
         </script>
-        <section id="testimonial" class="overlay-dark dark-bg ptb " style="background-image: url('../img/background/a-propos-benevole-back.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
+        <section id="testimonial" class="ptb dark-bg bg-image overlay-dark parallax parallax-background1 pt-2 pt-md-4" data-background-img='../img/benevole/a-propos-benevole-back.jpg'  data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="testimonial-carousel">
                     <div class="item">
                         <div class="testimonial text-center dark-color">
                             <h2 style="font-weight: normal;">LE RECRUTEMENT EST OUVERT</h2>
                             <h3 style="font-weight: normal"><button class="btn btn-lg btn-white"><a href="http://assomaker.24heures.org/login/token/85365b7c91dae190208fa7d7afd990a1?fbclid=IwAR3u8lu_-bKvo2X0H04A0Wp3gepGbsZPMRIU9IVKJ0dThdpoyK_pSZC3s2g">INSCRIPTIONS ICI</a></button></h3>
-                            <h4 style="font-weight: normal;">Contact et informations à : humain@24heures.org</h4>
+                            <h4 class="pt-5"><span>Comment s'inscrire ?</span></h4>
+                            <p>
+                                <span>
+                                Connecte toi avec un compte google sur <a style="color: rgba(255,253,251,0.9);" href="http://assomaker.24heures.org/login/token/85365b7c91dae190208fa7d7afd990a1?fbclid=IwAR3u8lu_-bKvo2X0H04A0Wp3gepGbsZPMRIU9IVKJ0dThdpoyK_pSZC3s2g">ORGA 24H</a>.
+                                Commence par remplir tes disponibilités (plus tu en mets, plus tes chances d’être pris sont élevées) et indique les personnes avec qui tu veux être affecté.
+                                Si tu as des préférences pour les missions (catering, technique, animations...), si tu as des talents cachés ou une quelconque précision à apporter par rapport à ta personne, indique les en commentaire.<br>
+                                On t’attend avec impatience !
+                                </span>
+                            </p>
+                            <h4 class="pt-5">C’est une bonne situation ça orga ?</h4>
+                            <p>
+                                Être orga sur les 24 est une immersion dans la vie associative, une occasion unique d’organiser un tel événement, et une expérience de partage et de rencontres.
+                                Mais c’est aussi de nombreux avantages, un accès aux concerts, des consos aux bars, une place garantie au QG des orgas où réconfort, nourriture et bonne ambiance t’attendent,
+                                et bien d’autres !
+                            </p>
+                            <h4 class="pt-5">Les 24 en quelques mots</h4>
+                            <p>
+                                Les 24 sont le plus grand festival étudiant de France !
+                                L’espace d’un week-end le campus de l’Insa Lyon est converti en une zone riche en événements: 3 soirs de concerts, 2 journées de loisirs pour petits et grands et 3 épreuves sportives de courses d’endurance !
+                                Difficile de croire qu’il y a 45 ans, tout a commencé par une course à vélo de 24h autour des résidences étudiantes.<br>
+                                Ce festival ne pourrait gagner de l’ampleur sans l’investissement de tous les bénévoles. Chaque année, 200 orgas participent au bon déroulement du festival !
+                                C’est pour cela qu’on a besoin de toi ! Si tu as envie d’aider à l'organisation du festival et de découvrir tout ce qui s'y cache derrière, n'hésite pas: être bénévole est fait pour toi !
+                                Des missions variées t'attendent, tu pourras t'inventer barman, animateur, électricien ou même cuistot mais aussi caresser des chèvres, jouer avec des enfants ou tirer des bières.
+                            </p>
+                            <h4 class="pt-5" style="font-weight: normal;">Contact et informations à : humain@24heures.org</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/a-propos-benevole-back-3.jpg'); background-position: center; background-size: cover;" data-stellar-background-ratio="0.5">
+
+        <section class="fond-nuit-back p-2">
             <div class="container">
-                <div class="testimonial-carousel">
-                    <div class="item">
-                        <div class="testimonial text-center dark-color">
-                            <div class="container-icon"><i class="fa fa-code"></i></div>
-                            <h3 style="font-weight: normal;">PLUS D'INFORMATION A VENIR</h3>
-                        </div>
+                <div class="owl-carousel item1-carousel nf-carousel-theme o-flow-hidden">
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (7).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (13).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (10).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (14).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (15).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (1).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (5).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (3).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (4).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (6).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (12).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (11).jpg" />
+                    </div>
+                    <div class="item text-center">
+                        <img alt="" src="../img/benevole/photo_benevole_24h_2018 (9).jpg" />
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -157,9 +215,9 @@
 		$("#sidebar-menu-benevoles").css('color', '#F11286');
 		$("#title-page-nav").append("Devenir bénévole");
 		var w = $('#testimonial-video-orga').width();
-		if(w > 560){
-			$("#frame-video-orga").height(315);
-			$("#frame-video-orga").width(560);
+		if(w > 5601.5){
+			$("#frame-video-orga").height(315*1.5);
+			$("#frame-video-orga").width(560*1.5);
 		}else {
 			$("#frame-video-orga").height(w * 315 / 560);
 			$("#frame-video-orga").width(w);

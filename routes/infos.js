@@ -85,6 +85,10 @@ router.get('/faq', function(req, res, next) {
 	res.render('infos-faq');
 });
 
+router.get('/payer', function(req, res, next) {
+	res.render('infos-payer');
+});
+
 router.get('/transports', function(req, res, next) {
 	res.render('infos-transports');
 });

@@ -859,7 +859,7 @@ $(function () {
 
         if ($('.parallax').hasClass('parallax-background1')) {
             var ppp = yPos_p;
-            $el.css("background-position", 'center' + " " + -ppp + "px");
+            $el.css("background-position", 'center' + " " + -ppp/2 + "px");
             //$el.css("background-position", "center");
         }
         if ($('.parallax').hasClass('parallax-background2')) {
