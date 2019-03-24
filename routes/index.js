@@ -18,6 +18,10 @@ router.get('/partenariat', function(req, res, next){
 	res.render('sponsoring');
 });
 
+router.get('/presse', function(req, res, next){
+	res.render('presse');
+});
+
 router.get('/partenaires', function(req, res, next) {
 	res.render('a-propos-partenaires');
 });

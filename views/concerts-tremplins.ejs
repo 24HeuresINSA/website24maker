@@ -15,11 +15,16 @@
     <!-- End Sidebar Menu -->
 
     <!-- Site Wraper -->
-    <div class="wrapper">
+    <div class="wrapper fond-nuit-back">
 
         <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
             <%- include header.ejs %>
         <!-- End Header -->
+        <style>
+            h1, h2, h3, h4, h5, h6, a {
+                color: #aaaaaa;
+            }
+        </style>
 
 
         <!-- CONTENT --------------------------------------------------------------------------------->
@@ -34,7 +39,7 @@
                             <span class="color-concerts">Tremplins</span><br />
                         </h2>
                         <h4>
-                            <span class="text-original-case">Quels nouveaux talents feront l'ouverture du festival cette année ?</span>
+                            <span class="text-original-case">A la découverte de nouveaux talents qui ouvriront le festival cette année</span>
                         </h4>
                     </div>
                 </div>
@@ -51,41 +56,60 @@
                         <h3 class="text-center">TREMPLIN ROCK</h3>
                         <p>Chaque année les 24 heures de l'INSA organisent un tremplin rock afin de recompenser des groupes émergents et leur permettre de jouer lors de l'évènement</p>
                         <p>Les quatres groupes qui ont retenu l'attention de l'association ont joués au <a target="_blank" href="https://toitoilezinc.fr/">Toï Toï le Zinc</a> (Villeurbanne) le mercredi 6 mars au soir :<br>
-                            il s'agissait des groupes <b>Maze, Fuzzcall, Zomething</b> et <b>WHIST</b>.<br>
-                            Après des performances bluffantes, il a été difficile de les départager... Mais c'est finalement <b><a target="_blank" href="https://www.facebook.com/Fuzzcall/">Fuzzcall</a></b> qui ouvrira la scène principale le vendredi 17 mai prochain.
+                            il s'agissait des groupes <b>Maze, Fuzzcall, Zomething</b> et <b>WHIST</b>.</p>
+                        <p>Après des performances bluffantes, il a été difficile de les départager... Mais c'est finalement <b><a target="_blank" href="https://www.facebook.com/Fuzzcall/">Fuzzcall</a></b> qui ouvrira la scène principale le vendredi 17 mai prochain.
                         </p>
                     </div>
-                    <div class="col-md-6 text-justify m-auto">
-                        <img alt="1" style="object-fit: cover" src="../img/site/tremplin_rock_event_2.png" class="item-container">
+                    <div id="testimonial-video-tremplin-rock" class="col-md-6 text-justify m-auto">
+                        <iframe id="frame-video-rock" src="https://www.youtube.com/embed/XORUpICfk6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+			$(window).resize(function() {
+				var w = $('#testimonial-video-tremplin-rock').width();
+				if(w > 560*1.5){
+					$("#frame-video-rock").height(315*1.5);
+					$("#frame-video-rock").width(560*1.5);
+				}else {
+					$("#frame-video-rock").height(w * 315 / 560);
+					$("#frame-video-rock").width(w);
+				}
+			});
+        </script>
         <section class="pb-5 pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-justify">
                         <h3 class="text-center">TREMPLIN ELECTRO</h3>
                         <p>Comme pour le tremplin rock, un tremplin électro est organisé afin de découvrir et mettre en avant de nouveaux talents de ce style très vaste.</p>
-                        <p><a target="_blank" href="https://www.facebook.com/ParadoxLyon/">Le Paradox</a> (Lyon 1er) accueillera les artistes nominés le vendredi 22 mars. Les artistes sélectionnés sont :
+                        <p><a target="_blank" href="https://www.facebook.com/ParadoxLyon/">Le Paradox</a> (Lyon 1er) a accueilli les artistes nominés le vendredi 22 mars. Se sont succédés  :
                         <b><a target="_blank" href="https://www.facebook.com/alyvemusique/">Alyve</a>,
-                            <a target="_blank" href="https://www.facebook.com/slogan.musique/">SLOGAN</a>,
-                            <a target="_blank" href="https://www.facebook.com/segfaultmusic/">SEGFAULT</a></b> et
+                            <a target="_blank" href="https://www.facebook.com/slogan.musique/">SLOGAN</a></b> et
                         <b><a target="_blank" href="https://www.facebook.com/fontiacmusic/">Fontiac</a></b>.</p>
-                        <p class="pt-1">Venez donc choisir qui ouvrira la scène nord des 24h de l'INSA ce 22 mars dans ce bar associatif unique !</p>
-                            <p style="color: #b9b9b9">☰ INFOS PRATIQUES ☰<br>
-                            26 Rue Sergent Blandan 69001<br>
-                            Adhésion à l'association pour une durée d'un an obligatoire et à prix libre !<br>
-                            PAS DE CB : banque la plus proche au 11 rue d'Algérie<br>
-                            Merci de respecter le voisinage, pensez à leur tranquillité, silence dehors.<br>
-                            Ne sortez plus avec vos verres dehors après 22h.</p>
+                        <p class="pt-1">Du 100% live, c'est ce que nous ont proposés ces passionés de musique électronique.<br>
+                            Mais malgré leur talents, un seul n'a pu être retenu... et ce sont les sonorités de <b><a target="_blank" href="https://www.facebook.com/slogan.musique/">SLOGAN</a></b> qui ouvriront la scène nord le vendredi 17 mai.
+                        </p>
                     </div>
-                    <div class="col-md-6 text-justify m-auto">
-                        <img alt="1" style="object-fit: cover" src="../img/site/tremplin_electro_event_2.png" class="item-container">
+                    <div id="testimonial-video-tremplin-electro" class="col-md-6 text-justify m-auto">
+                        <iframe id="frame-video-electro" src="https://www.youtube.com/embed/EHjuJW4o0_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+			$(window).resize(function() {
+				var w = $('#testimonial-video-tremplin-electro').width();
+				if(w > 560*1.5){
+					$("#frame-video-electro").height(315*1.5);
+					$("#frame-video-electro").width(560*1.5);
+				}else {
+					$("#frame-video-electro").height(w * 315 / 560);
+					$("#frame-video-electro").width(w);
+				}
+			});
+        </script>
         <section class="ptb pt-5">
             <div class="container">
                 <div class="row">
