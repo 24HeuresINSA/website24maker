@@ -143,7 +143,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="268" />
     <option name="y" value="-21" />
     <option name="width" value="1366" />
@@ -165,7 +165,13 @@
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="documents" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,11 +199,11 @@
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\documents" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\bars" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,12 +254,12 @@
       <workItem from="1551710748579" duration="13673000" />
       <workItem from="1552596178011" duration="18325000" />
       <workItem from="1552949068226" duration="4471000" />
-      <workItem from="1553276140582" duration="27565000" />
+      <workItem from="1553276140582" duration="28309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303480000" />
+    <option name="totallyTimeSpent" value="304224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,7 +271,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7567185" visible="true" weight="0.20073763" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
