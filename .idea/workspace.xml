@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="" />
+    <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/public/images/bars/concession_johnny_churros.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bars/concession_johnny_churros.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/infos-bars.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-bars.ejs" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,7 +16,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="infos-bars.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/infos-bars.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="167" column="156" selection-start-line="167" selection-start-column="156" selection-end-line="167" selection-end-column="156" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,7 +123,6 @@
         <option value="$PROJECT_DIR$/public/javascripts/theme.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/24h.style.css" />
         <option value="$PROJECT_DIR$/views/animations-prevention.ejs" />
-        <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
         <option value="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" />
         <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/views/infos-faq.ejs" />
@@ -124,6 +136,7 @@
         <option value="$PROJECT_DIR$/views/infos-payer2.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
         <option value="$PROJECT_DIR$/routes/infos.js" />
+        <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
       </list>
     </option>
   </component>
@@ -173,6 +186,24 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="documents" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="bars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -199,10 +230,10 @@
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\bars" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\documents" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\bars" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
     </key>
   </component>
@@ -254,12 +285,12 @@
       <workItem from="1551710748579" duration="13673000" />
       <workItem from="1552596178011" duration="18325000" />
       <workItem from="1552949068226" duration="4471000" />
-      <workItem from="1553276140582" duration="28309000" />
+      <workItem from="1553276140582" duration="28620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304224000" />
+    <option name="totallyTimeSpent" value="304535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,7 +302,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7567185" visible="true" weight="0.20073763" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -325,13 +356,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/courses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/animations/baby_foot_humain.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -529,30 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/infos-bars.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-          <folding>
-            <element signature="n#style#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#3;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#3;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#1;n#div#3;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -700,6 +700,16 @@
             <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/bars/concession_makaa_food.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/infos-bars.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="167" column="156" selection-start-line="167" selection-start-column="156" selection-end-line="167" selection-end-column="156" />
         </state>
       </provider>
     </entry>
