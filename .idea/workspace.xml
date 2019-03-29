@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/images/bars/concession_johnny_churros.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bars/concession_johnny_churros.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-bars.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-bars.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="infos-bars.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/infos-bars.ejs">
+      <file leaf-file-name="presse.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/presse.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="167" column="156" selection-start-line="167" selection-start-column="156" selection-end-line="167" selection-end-column="156" />
+            <state relative-caret-position="522">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -126,7 +125,6 @@
         <option value="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" />
         <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/views/infos-faq.ejs" />
-        <option value="$PROJECT_DIR$/views/presse.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/footer.ejs" />
         <option value="$PROJECT_DIR$/views/infos-payer.ejs" />
@@ -137,6 +135,7 @@
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
         <option value="$PROJECT_DIR$/routes/infos.js" />
         <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
+        <option value="$PROJECT_DIR$/views/presse.ejs" />
       </list>
     </option>
   </component>
@@ -285,12 +284,12 @@
       <workItem from="1551710748579" duration="13673000" />
       <workItem from="1552596178011" duration="18325000" />
       <workItem from="1552949068226" duration="4471000" />
-      <workItem from="1553276140582" duration="28620000" />
+      <workItem from="1553276140582" duration="29028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304535000" />
+    <option name="totallyTimeSpent" value="304943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,7 +301,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7567185" visible="true" weight="0.20073763" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -567,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/presse.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/24h.style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -708,8 +700,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/infos-bars.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="1888">
           <caret line="167" column="156" selection-start-line="167" selection-start-column="156" selection-end-line="167" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/presse.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
         </state>
       </provider>
     </entry>
