@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/site/tuto_lyfpay.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/billetterie.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/billetterie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/billetterie.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-tremplins.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-tremplins.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-payer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-payer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animations-animations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,13 +15,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="24h de l'INSA (Site NodeJS)" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="courses-informations.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/courses-informations.ejs">
+    <leaf>
+      <file leaf-file-name="animations-animations.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/animations-animations.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="164" column="67" selection-start-line="164" selection-start-column="67" selection-end-line="164" selection-end-column="67" />
+            <state relative-caret-position="303">
+              <caret line="2057" column="31" lean-forward="true" selection-start-line="2057" selection-start-column="31" selection-end-line="2057" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -45,8 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dropd</find>
-      <find>sidebar-content</find>
       <find>sidebar</find>
       <find>f105</find>
       <find>social</find>
@@ -75,6 +69,8 @@
       <find>parallax-background1</find>
       <find>course</find>
       <find>etudiant</find>
+      <find>reglem</find>
+      <find>bd</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%- include</replace>
@@ -93,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template_html/home-coming-soon.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/error.ejs" />
         <option value="$PROJECT_DIR$/views/mentions-legales.ejs" />
@@ -122,11 +117,9 @@
         <option value="$PROJECT_DIR$/views/a-propos-organisation.ejs" />
         <option value="$PROJECT_DIR$/views/sponsoring.ejs" />
         <option value="$PROJECT_DIR$/views/animations-animations-jour.ejs" />
-        <option value="$PROJECT_DIR$/views/animations-animations.ejs" />
         <option value="$PROJECT_DIR$/views/infos-contact.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/theme.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/24h.style.css" />
-        <option value="$PROJECT_DIR$/views/animations-prevention.ejs" />
         <option value="$PROJECT_DIR$/views/infos-faq.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/footer.ejs" />
@@ -137,13 +130,16 @@
         <option value="$PROJECT_DIR$/routes/infos.js" />
         <option value="$PROJECT_DIR$/views/infos-bars.ejs" />
         <option value="$PROJECT_DIR$/views/presse.ejs" />
-        <option value="$PROJECT_DIR$/routes/billetterie.js" />
         <option value="$PROJECT_DIR$/views/infos-payer.ejs" />
-        <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
         <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
         <option value="$PROJECT_DIR$/views/courses-informations.ejs" />
+        <option value="$PROJECT_DIR$/views/infos-transports.ejs" />
+        <option value="$PROJECT_DIR$/views/animations-prevention.ejs" />
+        <option value="$PROJECT_DIR$/views/animations-animations.ejs" />
+        <option value="$PROJECT_DIR$/routes/billetterie.js" />
+        <option value="$PROJECT_DIR$/views/billetterie.ejs" />
       </list>
     </option>
   </component>
@@ -163,10 +159,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="647" />
-    <option name="width" value="1280" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="235" />
+    <option name="y" value="-14" />
+    <option name="width" value="1366" />
+    <option name="height" value="910" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,30 +178,6 @@
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="documents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="bars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
@@ -298,12 +271,13 @@
       <workItem from="1552949068226" duration="4471000" />
       <workItem from="1553276140582" duration="29028000" />
       <workItem from="1553869505642" duration="1924000" />
-      <workItem from="1554309775253" duration="2395000" />
+      <workItem from="1554309775253" duration="3139000" />
+      <workItem from="1554759958553" duration="907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309262000" />
+    <option name="totallyTimeSpent" value="310913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,19 +289,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="647" y="0" width="1280" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7529566" visible="true" weight="0.3083736" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.20179136" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4074074" side_tool="true" visible="true" weight="0.16281629" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4077977" side_tool="true" visible="true" weight="0.16122004" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" sideWeight="0.24704337" side_tool="true" visible="true" weight="0.3083736" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5925926" visible="true" weight="0.16281629" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5922023" visible="true" weight="0.16122004" />
+      <window_info id="Favorites" order="1" sideWeight="0.24805194" side_tool="true" visible="true" weight="0.20179136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,19 +316,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" visible="true" weight="0.23093683" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.23093683" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -370,9 +344,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/animations/animation_generique2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/blog-grid-2col-sidebar.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -495,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/animations-animations.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="210" column="134" selection-start-line="210" selection-start-column="134" selection-end-line="210" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/blog-masonry-2col.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -513,13 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
           <caret line="186" column="29" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/animations-prevention.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="544" column="18" selection-start-line="544" selection-start-column="18" selection-end-line="544" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -644,20 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="55" column="175" lean-forward="true" selection-start-line="55" selection-start-column="175" selection-end-line="55" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/presse.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -688,8 +631,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/courses-informations.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="164" column="67" selection-start-line="164" selection-start-column="67" selection-end-line="164" selection-end-column="67" />
+        <state relative-caret-position="192">
+          <caret line="196" column="91" selection-start-line="196" selection-start-column="91" selection-end-line="196" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/infos-transports.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/animations-prevention.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="544" column="18" selection-start-line="544" selection-start-column="18" selection-end-line="544" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+          <folding>
+            <element signature="e#4005#6704#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/animations-animations.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="2057" column="31" lean-forward="true" selection-start-line="2057" selection-start-column="31" selection-end-line="2057" selection-end-column="31" />
         </state>
       </provider>
     </entry>
