@@ -862,6 +862,14 @@ $(function () {
             $el.css("background-position", 'center' + " " + -ppp/2 + "px");
             //$el.css("background-position", "center");
         }
+        if ($('.parallax').hasClass('parallax-background3')) {
+            var ppp = yPos_p+170;
+            if($(window).innerWidth<500){
+                ppp = yPos_p+570;
+            }
+            $el.css("background-position", 'center' + " " + -ppp/0.7 + "px");
+            //$el.css("background-position", "center");
+        }
         if ($('.parallax').hasClass('parallax-background2')) {
             $el.css("background-position", 'left' + " " + -yPos_p + "px");
 			//$el.css("background-position", "center");

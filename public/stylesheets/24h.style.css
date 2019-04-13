@@ -12,6 +12,13 @@ html{
     background-size: auto;
 }
 
+.skillbar-title, .skill-bar-percent {
+    color: #f11286;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .header.header-transparent .header-nav {
     background-color: #0e003d !important;
     #background-color: #060025 !important; /*Desktop "header-transparent" */
@@ -23,6 +30,10 @@ html{
 
 .fond-jour-back{
     background-color: #6DC6C4;
+}
+
+.jauge-titre{
+    color: #6DC6C4;
 }
 
 .color-animations-jour2 {
@@ -104,6 +115,7 @@ html{
     .inner-intro {
         position: relative;
         padding: 50px 0;
+        height: 400px;
     }
 
 }
@@ -114,7 +126,7 @@ html{
     .inner-intro {
         position: relative;
         padding: 100px 0;
-        height: 600px;
+        height: 800px;
     }
 
 }
