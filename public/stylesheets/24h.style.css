@@ -110,7 +110,7 @@ html{
     #background-color: #060023;
 }
 
-@media all and (min-width: 1px) and (max-width: 768px) {
+@media all and (min-width: 1px) and (max-width: 600px) {
 
     .inner-intro {
         position: relative;
@@ -118,8 +118,21 @@ html{
         height: 400px;
     }
 
+    .parallax-background3 {
+        background-size: auto 480px;
+    }
+
 }
 
+@media all and (min-width: 600px) and (max-width: 768px) {
+
+    .inner-intro {
+        position: relative;
+        padding: 50px 0;
+        height: 600px;
+    }
+
+}
 
 @media all and (min-width: 768px) and (max-width: 4000px) {
 

@@ -864,11 +864,13 @@ $(function () {
         }
         if ($('.parallax').hasClass('parallax-background3')) {
             var ppp = yPos_p+170;
-            if($(window).innerWidth<500){
-                ppp = yPos_p+570;
+            console.log($(window).innerWidth());
+            if($(window).innerWidth()<600){
+                ppp = yPos_p-30;
+                $el.css("background-position", 'center' + " " + -ppp/1.7 + "px");
+            }else{
+                $el.css("background-position", 'center' + " " + -ppp/0.9 + "px");
             }
-            $el.css("background-position", 'center' + " " + -ppp/0.7 + "px");
-            //$el.css("background-position", "center");
         }
         if ($('.parallax').hasClass('parallax-background2')) {
             $el.css("background-position", 'left' + " " + -yPos_p + "px");
