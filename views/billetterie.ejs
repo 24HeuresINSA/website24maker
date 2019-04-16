@@ -52,7 +52,7 @@
                     <div class="col-md-12">
                         <h5 class="h4"></h5>
                         <div class="spacer-15"></div>
-                        <p class="lead" style="color: red">Attention, il ne reste que très peu de pass 2 nuits.</p>
+                        <p class="lead" style="color: red" id="attentionbil">Attention, il ne reste que <span style="font-weight: bold" id="nbplaces"></span> pass 2 nuits.</p>
                         <p class="lead" style="color: greys">PASS Région : Vous devez vous rendre à notre local pour achetez votre place. <a href="/infos/contact">Infos et horaires</a>.</p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <a title="Billetterie Weezevent - 24h de l'INSA" href="https://www.weezevent.com/24hinsa" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=403386&lg_billetterie=1&code=64199&resize=1&width_auto=1&color_primary=0d003d" data-width="650" data-height="600" data-id="403386" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>
                     <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-8 col-12 m-auto pb-4"><img src="/img/site/tarifs_billetterie_04.14_site.jpg"/></div>
+                <div class="col-lg-4 col-md-5 col-sm-8 col-12 m-auto pb-4"><img id="imgtarifs" src="/img/site/tarifs_billetterie_04.14_site.jpg"/></div>
                 <div class="row text-center">
                     <div class="col-md-8 offset-md-2">
                         <h3 class="h4">&nbsp;</h3>
@@ -188,12 +188,18 @@
 					var ven = JSON.parse(xhr.responseText).vendredi;
 					var sam = JSON.parse(xhr.responseText).samedi;
 					var deuxs = JSON.parse(xhr.responseText).deuxsoirs;
+					var nbplaces = JSON.parse(xhr.responseText).restant;
 					$('.ven-jauge-label').text('ATTEINT '+ ven+'%');
 					$('.sam-jauge-label').text('ATTEINT '+ sam+'%');
 					$('.deuxs-jauge-label').text('ATTEINT '+ deuxs+'%');
 					$('.ven-jauge').attr('data-percent', ven+'%');
 					$('.sam-jauge').attr('data-percent', sam+'%');
 					$('.deuxs-jauge').attr('data-percent', deuxs+'%');
+					$('#nbplaces').html(nbplaces);
+					if(nbplaces<2){
+                        $('#attentionbil').html('Tous les bracelets 2 soirs sont épuisés');
+                        $('#imgtarifs').attr('src','/img/site/tarifs_billetterie_04.18_site.jpg')
+					}
 				}else{
 					$(".jauge-billetterie").remove();
 				}
