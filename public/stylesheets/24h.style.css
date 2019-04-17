@@ -311,6 +311,17 @@ a:hover {
     transition-property: width, background-color;
 }
 
+.skillbar-bar-2 {
+    height: 6px;
+    width: 0px;
+    background: #f11286;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
 .accordion-title.active {
     /* background: #fafafa; */
     color: #4dbcd1;
