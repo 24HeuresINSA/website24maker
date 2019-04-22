@@ -19,7 +19,7 @@ var infosRouter = require('./routes/infos');
 
 var app = express();
 
-if (process.env.NODE_ENV != 'production') {
+if (process.env.NODE_ENV != 'production' && false) {
 	https.createServer({
 		key: fs.readFileSync('./config/key.pem'),
 		cert: fs.readFileSync('./config/cert.pem')
