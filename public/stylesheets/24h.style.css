@@ -180,6 +180,18 @@ a:hover {
     padding-bottom: 2px;
 }
 
+.btn-bleu-anim {
+    color: #fff;
+    background: #41c5e5;
+    border: none;
+}
+
+.btn-rouge-concerts{
+    color: #fff;
+    background: #ed1d45;
+    border: none;
+}
+
 .color-gris-1{
     color: #EEEEEE;
 }

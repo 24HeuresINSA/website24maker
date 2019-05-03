@@ -1,3 +1,4 @@
 template_html/
 config/*.pem
+config/api-weezevent.json
 views/concerts-artistes-2019_1.ejs
