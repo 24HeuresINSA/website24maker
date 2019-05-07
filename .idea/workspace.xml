@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/documents/timetable_dimanche_24h_INSA_2019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/documents/timetable_open_air_24h_INSA_2019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partenaires/logo_rodis_couleur_sf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partenaires/logo_worldline2_couleur_sf.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/plan_festival_animations_24h_INSA_2019.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/plan_festival_animations_24h_INSA_2019.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/timetable_24h_INSA_2019.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/timetable_24h_INSA_2019.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/timetable_24h_INSA_2019.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/timetable_24h_INSA_2019.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/timetable_samedi_24h_INSA_2019.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/timetable_samedi_24h_INSA_2019.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/timetable_vendredi_24h_INSA_2019.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/timetable_vendredi_24h_INSA_2019.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-timetable.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/background/infos-bars-back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/background/infos-bars-back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/background/infos-bars-back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bars/bars_tarifs.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bars/bars_tarifs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animations-animations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/infos-payer-old.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/infos-payer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-payer.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,17 +47,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/home.ejs">
+        <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="203" column="27" lean-forward="true" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
+            <state relative-caret-position="396">
+              <caret line="225" column="26" lean-forward="true" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/server.json">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -70,8 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TENNI</find>
-      <find>fas</find>
       <find>parallax-background2</find>
       <find>cover</find>
       <find>tennis</find>
@@ -100,6 +95,8 @@
       <find>cinema</find>
       <find>btn-black</find>
       <find>concert</find>
+      <find>cinem</find>
+      <find>spir</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%- include</replace>
@@ -149,11 +146,7 @@
         <option value="$PROJECT_DIR$/routes/concerts.js" />
         <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
-        <option value="$PROJECT_DIR$/views/a-propos-partenaires.ejs" />
-        <option value="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" />
-        <option value="$PROJECT_DIR$/views/infos-payer.ejs" />
         <option value="$PROJECT_DIR$/views/courses-informations.ejs" />
-        <option value="$PROJECT_DIR$/views/animations-animations.ejs" />
         <option value="$PROJECT_DIR$/views/billetterie.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/animations.js" />
@@ -169,11 +162,16 @@
         <option value="$PROJECT_DIR$/config/api-weezevent.json" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-timetable.ejs" />
+        <option value="$PROJECT_DIR$/views/animations-animations.ejs" />
+        <option value="$PROJECT_DIR$/views/a-propos-partenaires.ejs" />
+        <option value="$PROJECT_DIR$/views/infos-payer.ejs" />
+        <option value="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="326" />
+    <option name="y" value="-18" />
     <option name="width" value="954" />
     <option name="height" value="1047" />
   </component>
@@ -199,6 +197,12 @@
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -211,7 +215,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/documents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/background" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -227,18 +231,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\bars" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\documents" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\partenaires" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\documents" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\bars" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\views" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\artistes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,12 +305,12 @@
       <workItem from="1556905760617" duration="4197000" />
       <workItem from="1556911114448" duration="2555000" />
       <workItem from="1556914103174" duration="9610000" />
-      <workItem from="1556959829165" duration="2390000" />
+      <workItem from="1556959829165" duration="6006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360050000" />
+    <option name="totallyTimeSpent" value="363666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,9 +322,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.21601686" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.21601686" />
       <window_info id="Favorites" order="1" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
@@ -332,7 +337,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.58746046" visible="true" weight="0.26868907" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.58746046" visible="true" weight="0.26868907" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4125395" side_tool="true" visible="true" weight="0.26868907" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -364,16 +369,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/background/infos-bars-back.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/infos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="89" column="3" selection-start-line="89" selection-start-column="3" selection-end-line="89" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/about-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -426,24 +421,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/a-propos-partenaires.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="163" column="133" lean-forward="true" selection-start-line="163" selection-start-column="133" selection-end-line="163" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-tremplins.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="120" column="188" selection-start-line="120" selection-start-column="188" selection-end-line="120" selection-end-column="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="516" column="125" selection-start-line="516" selection-start-column="125" selection-end-line="516" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -471,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/infos-payer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/theme.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -487,13 +461,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/prevention.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/animations-animations.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/footer.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-timetable.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -698,10 +658,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/animations/arts_martiaux.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/animations-animations.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2335" column="82" selection-start-line="2335" selection-start-column="82" selection-end-line="2335" selection-end-column="82" />
+          <folding>
+            <element signature="e#181344#182846#0#HTML" />
+            <element signature="e#182866#184862#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/a-propos-partenaires.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="303" column="31" lean-forward="true" selection-start-line="303" selection-start-column="31" selection-end-line="303" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="203" column="27" lean-forward="true" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
+        <state relative-caret-position="289">
+          <caret line="203" column="27" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/background/infos-bars-back.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/infos-payer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="225" column="26" lean-forward="true" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
         </state>
       </provider>
     </entry>
