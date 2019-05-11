@@ -24,7 +24,11 @@
         <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
             <%- include header.ejs %>
         <!-- End Header -->
-
+        <style>
+            h1, h2, h3, h4, h5, h6, a:not(.footerlien) {
+                color: #aaaaaa;
+            }
+        </style>
 
         <!-- CONTENT --------------------------------------------------------------------------------->
 
@@ -35,10 +39,10 @@
                     <div class="col">
                         <div class="col-md-8 offset-md-2"></div>
                         <h2 class="m-0">
-                            <span class="color-concerts">BILLETTERIE</span><br />
+                            <span class="color-concerts">BILLETTERIE (SOLDOUT)</span><br />
                         </h2>
                         <h4>
-                            <span class="text-original-case"></span>
+                            <span class="text-original-case">Vous êtes plus de 10 000 chaque soir à avoir pris vos places pour les concerts !</span>
                         </h4>
                     </div>
                 </div>
@@ -46,13 +50,48 @@
         </section>
         <!-- End About Section -->
 
-        <section class="fond-nuit-back">
+        <section class="pb pb-5 fond-nuit-back">
+            <div class="container">
+                <div class="row">
+                    <div class="m-auto timetable-item">
+                        <div class="p-4">
+                            <img style=" object-fit: cover;" src="../images/site/billetterie_soldout_label.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb fond-nuit-back">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center" style="font-size: 20px">
+                        <p class="soldouttext"><b>Plus aucune place n'est à vendre.</b> Pas de vente sur place. Revente interdite devant le festival.</p>
+                        <p class="soldouttext"><b>Attention, n'achetez votre place qu'à des personnes de confiance.</b> Un billet ne peut être scanné qu'une fois.
+                            Chaque année plusieurs dizaines de personnes se font refuser l'accès en raison de billets photocopiées et réutilisées.
+                            Pas de recours possible cette année et pas de possibilité d'en racheter une (il n'y en a plus).</p>
+                        <p class="soldouttext">Plus d'informations sur la <a href="/infos/faq">FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fond-nuit-back d-none">
             <div class="container text-center pb-5">
                 <div class="row text-center">
                     <div class="col-md-12">
                         <h5 class="h4"></h5>
                         <div class="spacer-15"></div>
-                        <p class="lead" style="color: greys"></p>
+                        <p class="lead" style="color: greys">Tarifs dernières minutes ce vendredi 10 mai à 20h. Pass 1 soir à 18€.</p>
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3 jauge-billetterie d-none" style="color: #ff31bc; !important;">
+                                <div class="skillbar derniereminute-jauge">
+                                    <div class="skillbar-title">Tarif dernière minute</div>
+                                    <div class="skill-bar-percent derniereminute-jauge-label">0% ATTEINT</div>
+                                    <div class="skillbar-bar skillbar-bar-1"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,25 +125,25 @@
             </div>-->
         </section>
 
-            <section class="pb ptb-sm-80 fond-nuit-back">
+        <section class="pb ptb-sm-80 fond-nuit-back d-none">
                 <div class="container">
 
                     <div class="row">
                         <div class="col-md-6 offset-md-3 jauge-billetterie" style="color: #ff31bc; !important;">
                             <div class="text-center"><h4 class="jauge-titre">Jauge billetterie</h4></div>
-                            <div class="skillbar deuxs-jauge">
+                            <div class="skillbar deuxs-jauge" data-percent="100%">
                                 <div class="skillbar-title">Pass 2 soirs</div>
-                                <div class="skill-bar-percent deuxs-jauge-label">0% ATTEINT</div>
+                                <div class="skill-bar-percent deuxs-jauge-label">100% ATTEINT</div>
                                 <div class="skillbar-bar skillbar-bar-1"></div>
                             </div>
-                            <div class="skillbar ven-jauge">
+                            <div class="skillbar ven-jauge" data-percent="100%">
                                 <div class="skillbar-title">Pass Vendredi</div>
-                                <div class="skill-bar-percent ven-jauge-label">0% ATTEINT</div>
+                                <div class="skill-bar-percent ven-jauge-label">100% ATTEINT</div>
                                 <div class="skillbar-bar skillbar-bar-1"></div>
                             </div>
-                            <div class="skillbar sam-jauge">
+                            <div class="skillbar sam-jauge" data-percent="100%">
                                 <div class="skillbar-title">Pass Samedi</div>
-                                <div class="skill-bar-percent sam-jauge-label">0% ATTEINT</div>
+                                <div class="skill-bar-percent sam-jauge-label">100% ATTEINT</div>
                                 <div class="skillbar-bar skillbar-bar-1"></div>
                             </div>
                         </div>
@@ -151,38 +190,15 @@
 		$("#menu-billetterie").css('color', '#F11286');
 		$("#title-page-nav").append("Billetterie");
 		$("#sidebar-menu-billetterie").css('color', '#F11286');
-    </script>
-    <script type="text/javascript">
-		$.ajax({
-			url: "/billetterie/stats",
-			context: document.body,
-			complete: function(xhr, status, errorThrown){
-				if(xhr.status == 200){
-					var ven = JSON.parse(xhr.responseText).vendredi;
-					var sam = JSON.parse(xhr.responseText).samedi;
-					var deuxs = JSON.parse(xhr.responseText).deuxsoirs;
-					var dm = JSON.parse(xhr.responseText).derniereminute;
-					$('.derniereminute-jauge-label').text('ATTEINT '+ dm+'%');
-					$('.ven-jauge-label').text('ATTEINT '+ ven+'%');
-					$('.sam-jauge-label').text('ATTEINT '+ sam+'%');
-					$('.deuxs-jauge-label').text('ATTEINT '+ deuxs+'%');
-					$('.derniereminute-jauge').attr('data-percent', dm+'%');
-					$('.ven-jauge').attr('data-percent', ven+'%');
-					$('.sam-jauge').attr('data-percent', sam+'%');
-					$('.deuxs-jauge').attr('data-percent', deuxs+'%');
-				}else{
-					$(".jauge-billetterie").remove();
-				}
-				skillsProgressBar();
-				function skillsProgressBar() {
-					$('.skillbar').each(function () {
-						$(this).find('.skillbar-bar').animate({
-							width: $(this).attr('data-percent')
-						}, 2000);
-					});
-				};
-			}
-		});
+
+		skillsProgressBar();
+		function skillsProgressBar() {
+			$('.skillbar').each(function () {
+				$(this).find('.skillbar-bar').animate({
+					width: $(this).attr('data-percent')
+				}, 1000);
+			});
+		};
     </script>
 
 </body>

@@ -144,6 +144,10 @@ html{
 
 }
 
+.soldouttext{
+    font-size: 17px;
+}
+
 a:hover {
     color: #f11286;
 }
