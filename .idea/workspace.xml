@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="" />
+    <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,28 +20,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+        <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="559">
+              <caret line="76" column="18" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="76" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/courses-connexion.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="96" column="49" lean-forward="true" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/courses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="328" column="153" selection-start-line="328" selection-start-column="153" selection-end-line="328" selection-end-column="153" />
+              <folding>
+                <element signature="e#4443#5473#0" />
+                <element signature="e#5542#6108#0" />
+                <element signature="e#6180#7015#0" />
+                <element signature="e#7069#8110#0" />
+                <element signature="e#8166#8952#0" />
+                <element signature="e#9008#9115#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="835">
               <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/infos-faq.ejs">
+        <entry file="file://$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="86" column="87" lean-forward="true" selection-start-line="86" selection-start-column="87" selection-end-line="86" selection-end-column="87" />
+            <state relative-caret-position="360">
+              <caret line="53" column="83" lean-forward="true" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -106,10 +135,8 @@
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_1.ejs" />
         <option value="$PROJECT_DIR$/views/courses-inscription-ferme.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/script-mon-espace.js" />
-        <option value="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" />
         <option value="$PROJECT_DIR$/config/server.json" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/courses.js" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" />
         <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/timetable.js" />
@@ -150,14 +177,16 @@
         <option value="$PROJECT_DIR$/views/footer.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-timetable.ejs" />
         <option value="$PROJECT_DIR$/views/concerts-tremplins.ejs" />
-        <option value="$PROJECT_DIR$/views/billetterie-soldout.ejs" />
         <option value="$PROJECT_DIR$/views/infos-faq.ejs" />
         <option value="$PROJECT_DIR$/routes/billetterie.js" />
         <option value="$PROJECT_DIR$/views/courses-inscriptions.ejs" />
+        <option value="$PROJECT_DIR$/views/billetterie-soldout.ejs" />
+        <option value="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" />
+        <option value="$PROJECT_DIR$/routes/courses.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="326" />
     <option name="y" value="-18" />
     <option name="width" value="954" />
@@ -292,12 +321,12 @@
       <workItem from="1556905760617" duration="4197000" />
       <workItem from="1556911114448" duration="2555000" />
       <workItem from="1556914103174" duration="9610000" />
-      <workItem from="1556959829165" duration="16523000" />
+      <workItem from="1556959829165" duration="17114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374183000" />
+    <option name="totallyTimeSpent" value="374774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,6 +339,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.21601686" />
       <window_info id="Favorites" order="1" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
@@ -355,20 +385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.13.0/core-modules/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3006">
-          <caret line="186" column="14" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/animations-prevention.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="544" column="18" selection-start-line="544" selection-start-column="18" selection-end-line="544" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -493,13 +509,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/benevole/a-propos-benevole-back_flou.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses-connexion.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="99" column="22" selection-start-line="91" selection-start-column="4" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -655,17 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="158" column="57" lean-forward="true" selection-start-line="158" selection-start-column="57" selection-end-line="158" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+        <state relative-caret-position="-108">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -676,17 +678,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/billetterie.js">
+    <entry file="file://$PROJECT_DIR$/views/billetterie.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="18">
+          <caret line="158" column="57" lean-forward="true" selection-start-line="158" selection-start-column="57" selection-end-line="158" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/courses-inscriptions.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
+        <state relative-caret-position="835">
           <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="76" column="18" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="53" column="83" lean-forward="true" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses-connexion.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="96" column="49" lean-forward="true" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="328" column="153" selection-start-line="328" selection-start-column="153" selection-end-line="328" selection-end-column="153" />
+          <folding>
+            <element signature="e#4443#5473#0" />
+            <element signature="e#5542#6108#0" />
+            <element signature="e#6180#7015#0" />
+            <element signature="e#7069#8110#0" />
+            <element signature="e#8166#8952#0" />
+            <element signature="e#9008#9115#0" />
+          </folding>
         </state>
       </provider>
     </entry>

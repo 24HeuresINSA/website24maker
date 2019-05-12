@@ -256,7 +256,7 @@ router.get('/connexion', function(req, res, next) {
 						res.redirect('/');
 					}
 				}else{
-					res.redirect('courses/connexion');
+					res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard ou complétez votre inscription sur place"});
 				}
 
 			})
@@ -326,7 +326,7 @@ router.post('/connexion', function(req, res, next) {
 		})
 		.catch(err =>{
 			console.log(err);
-			res.redirect('/courses/connexion');
+			res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard ou complétez votre inscription sur place"});
 		});
 
 });
