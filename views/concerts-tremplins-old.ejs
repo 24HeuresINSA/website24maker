@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper fond-nuit-back">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+        <style>
+            h1, h2, h3, h4, h5, h6, a:not(.footerlien) {
+                color: #aaaaaa;
+            }
+        </style>
+
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- About Section -->
+        <section id="about" class="pt pt-sm-60">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-md-8 offset-md-2"></div>
+                        <h2 class="m-0">
+                            <span class="color-concerts">Tremplins</span><br />
+                        </h2>
+                        <h4>
+                            <span class="text-original-case">A la découverte de nouveaux talents qui ont ouvert le festival</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Work Section -->
+
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-justify">
+                        <h3 class="text-center">TREMPLIN ROCK</h3>
+                        <p>Chaque année les 24 heures de l'INSA organisent un tremplin rock afin de recompenser des groupes émergents et leur permettre de jouer lors de l'évènement</p>
+                        <p>Les quatres groupes qui ont retenu l'attention de l'association ont joués au <a target="_blank" href="https://toitoilezinc.fr/">Toï Toï le Zinc</a> (Villeurbanne) le mercredi 6 mars au soir :<br>
+                            il s'agissait des groupes <b>Maze, Fuzzcall, Zomething</b> et <b>WHIST</b>.</p>
+                        <p>Après des performances bluffantes, il a été difficile de les départager... Mais c'est finalement <b><a target="_blank" href="https://www.facebook.com/Fuzzcall/">Fuzzcall</a></b> qui a ouvert la scène principale le vendredi 17 mai 2019.
+                        </p>
+                    </div>
+                    <div id="testimonial-video-tremplin-rock" class="col-md-6 text-justify m-auto">
+                        <iframe id="frame-video-rock" src="https://www.youtube.com/embed/XORUpICfk6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+			$(window).resize(function() {
+				var w = $('#testimonial-video-tremplin-rock').width();
+				if(w > 560*1.5){
+					$("#frame-video-rock").height(315*1.5);
+					$("#frame-video-rock").width(560*1.5);
+				}else {
+					$("#frame-video-rock").height(w * 315 / 560);
+					$("#frame-video-rock").width(w);
+				}
+			});
+        </script>
+        <section class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-justify">
+                        <h3 class="text-center">TREMPLIN ELECTRO</h3>
+                        <p>Comme pour le tremplin rock, un tremplin électro est organisé afin de découvrir et mettre en avant de nouveaux talents de ce style très vaste.</p>
+                        <p><a target="_blank" href="https://www.facebook.com/ParadoxLyon/">Le Paradox</a> (Lyon 1er) a accueilli les artistes nominés le vendredi 22 mars. Se sont succédés  :
+                        <b><a target="_blank" href="https://www.facebook.com/alyvemusique/">Alyve</a>,
+                            <a target="_blank" href="https://www.facebook.com/slogan.musique/">SLOGAN</a></b> et
+                        <b><a target="_blank" href="https://www.facebook.com/fontiacmusic/">Fontiac</a></b>.</p>
+                        <p class="pt-1">Du 100% live, c'est ce que nous ont proposés ces passionés de musique électronique.<br>
+                            Mais malgré leur talents, un seul n'a pu être retenu... et ce sont les sonorités de <b><a target="_blank" href="https://www.facebook.com/slogan.musique/">SLOGAN</a></b> qui ont ouvert la scène nord le vendredi 17 mai 2019.
+                        </p>
+                    </div>
+                    <div id="testimonial-video-tremplin-electro" class="col-md-6 text-justify m-auto">
+                        <iframe id="frame-video-electro" src="https://www.youtube.com/embed/EHjuJW4o0_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+			$(window).resize(function() {
+				var w = $('#testimonial-video-tremplin-electro').width();
+				if(w > 560*1.5){
+					$("#frame-video-electro").height(315*1.5);
+					$("#frame-video-electro").width(560*1.5);
+				}else {
+					$("#frame-video-electro").height(w * 315 / 560);
+					$("#frame-video-electro").width(w);
+				}
+			});
+        </script>
+        <section class="ptb pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-justify">
+                        <h3 class="text-center">NINKASI MUSIK LAB</h3>
+                        <p>Depuis maintenant 2 ans, notre partenaire NINKASI organise son concours régional dans le but de mettre sur le devant de la scène de nouveaux groupes et artistes.</p>
+                        <p>Le groupe de Rap <a target="_blank" href="https://www.youtube.com/watch?v=Xto2VyiDwK0">KIKESA</a> a ainsi ouvert les 24 heures de l'INSA le samedi en 2018avec un public au top !</p>
+                        <p>Depuis, le groupe se produit un peu partout en France dans des salles de concerts et festivals aux côtés de Lorenzo, Nekfeu ou encore Orelsan.</p>
+                        <p>Le Ninkasi Musik Lab a aussi permis de révéler et accompagner les groupes <b><a target="_blank" href="https://www.youtube.com/watch?v=XgYWhT0ZA3k">Effigie</a></b> et
+                            <b><a target="_blank" href="https://www.youtube.com/watch?v=bXNsT1XMPpY">Bear's Towers</a></b> qui se sont produit cette année sur les 24'.<br>
+                            Quant au groupe <b><a target="_blank" href="https://www.youtube.com/watch?v=CL5zsdya6sU">Blade</a></b>, ils ont apporté une touche de hip hop et de jazz inédite à l'ouverture le samedi 18 mai 2019 !</p>
+                    </div>
+                    <div class="col-md-6 text-justify">
+                        <img alt="1" style="object-fit: cover" src="../img/site/ninkasi_musik_lab.jpg" class="item-container photo-concerts-artiste-item">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Work Section -->
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script>
+		$(".btn-plus-info").click(function(){
+			setTimeout(function(){
+				$(".jjj").each(function(i){
+					var w = $(this).width();
+					if (w > 0) {
+						$(".modal-artiste-video").height(w*315/560);
+						return false;
+                    }
+				});
+			}, 1000);
+		});
+		$(window).resize(function() {
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		});
+
+		$("#menu-concerts").css('color', '#F11286');
+		$("#sidebar-menu-tremplins").css('color', '#F11286');
+    </script>
+    <script type="text/javascript">
+		$("#title-page-nav").append("Tremplins");
+    </script>
+    
+</body>
+</html>
