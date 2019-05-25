@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/site/24h_insa_2019_FEDER.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/site/24h_insa_2019_FEDER_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/concerts-artistes-2020.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/concerts-tremplins-old.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/retrospective_24h_insa_2019_jour_dimanche.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/retrospective_24h_insa_2019_jour_samedi.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/retrospective_24h_insa_2019_nuit_samedi.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/retrospective_24h_insa_2019_nuit_vendredi.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/concerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/concerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-organisation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-organisation.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-animations-jour.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-animations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-prevention.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-prevention.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/billetterie-soldout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie-soldout.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable-test.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-timetable.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-caritative.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-caritative.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-resultats.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-resultats.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-bars.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-bars.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-contact.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-faq.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-transports.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-transports.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,26 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/home.ejs">
+        <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="93" column="211" selection-start-line="93" selection-start-column="211" selection-end-line="93" selection-end-column="211" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="996" column="22" selection-start-line="67" selection-start-column="16" selection-end-line="996" selection-end-column="22" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="469">
+              <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -79,7 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cd-schedule</find>
       <find>width</find>
       <find>color</find>
       <find>color-animations</find>
@@ -109,6 +75,7 @@
       <find>peu</find>
       <find>parallax</find>
       <find>vendredi</find>
+      <find>owl-page</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%- include</replace>
@@ -127,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/concerts-artistes-2019_2.ejs" />
         <option value="$PROJECT_DIR$/views/animations-animations-old.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/timetable.js" />
@@ -171,13 +137,14 @@
         <option value="$PROJECT_DIR$/views/animations-prevention.ejs" />
         <option value="$PROJECT_DIR$/views/animations-animations.ejs" />
         <option value="$PROJECT_DIR$/views/courses-informations.ejs" />
-        <option value="$PROJECT_DIR$/views/concerts-artistes-old.ejs" />
         <option value="$PROJECT_DIR$/views/sidebar.ejs" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/views/billetterie-soldout.ejs" />
         <option value="$PROJECT_DIR$/views/courses-caritative.ejs" />
         <option value="$PROJECT_DIR$/views/courses-resultats.ejs" />
+        <option value="$PROJECT_DIR$/views/concerts-artistes-old.ejs" />
+        <option value="$PROJECT_DIR$/template_html/blog-single-video-post.html" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
+        <option value="$PROJECT_DIR$/views/billetterie-soldout.ejs" />
       </list>
     </option>
   </component>
@@ -209,19 +176,6 @@
             <path>
               <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
               <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24h de l'INSA (Site NodeJS)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24h de l'INSA (Site NodeJS)" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,7 +193,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/media" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -262,11 +216,11 @@
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\media" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\views" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\documents" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\artistes\edition" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\transports" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,12 +285,12 @@
       <workItem from="1556914103174" duration="9610000" />
       <workItem from="1556959829165" duration="18220000" />
       <workItem from="1557918508876" duration="2130000" />
-      <workItem from="1558462415892" duration="5414000" />
+      <workItem from="1558462415892" duration="15109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="383424000" />
+    <option name="totallyTimeSpent" value="393119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,7 +305,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.16438356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75194806" visible="true" weight="0.20547946" />
       <window_info id="Favorites" order="1" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" sideWeight="0.24805194" side_tool="true" weight="0.20179136" />
@@ -395,27 +349,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template_html/element-components.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="448" column="28" lean-forward="true" selection-start-line="445" selection-start-column="20" selection-end-line="448" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/timetable.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1548">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/concerts-timetable-test.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="229" column="40" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template_html/element-typography.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -569,19 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2020.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
-          <folding>
-            <element signature="e#2201#3719#0#HTML" />
-            <element signature="e#3740#5888#0#HTML" />
-            <element signature="e#5944#7421#0#HTML" />
-            <element signature="e#7442#9430#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-tremplins-old.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-612">
@@ -684,16 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="44" column="144" selection-start-line="44" selection-start-column="144" selection-end-line="44" selection-end-column="144" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/courses-resultats.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -718,90 +628,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/site/home_scene_44.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_html/blog-single-slider-post.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-artistes-old.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="36" column="95" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
+        <state relative-caret-position="284">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2020.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
-            <element signature="e#2256#3774#0#HTML" />
-            <element signature="e#3795#5943#0#HTML" />
-            <element signature="e#5999#7476#0#HTML" />
-            <element signature="e#7497#9485#0#HTML" />
-            <element signature="e#9547#11014#0#HTML" />
-            <element signature="e#11035#13875#0#HTML" />
-            <element signature="e#13905#15360#0#HTML" />
-            <element signature="e#15381#16630#0#HTML" />
-            <element signature="e#13941#15438#0#HTML" />
-            <element signature="e#15459#17361#0#HTML" />
-            <element signature="e#17418#18891#0#HTML" />
-            <element signature="e#18912#20715#0#HTML" />
-            <element signature="e#20776#22268#0#HTML" />
-            <element signature="e#22289#24242#0#HTML" />
-            <element signature="e#21860#23287#0#HTML" />
-            <element signature="e#23308#24565#0#HTML" />
-            <element signature="e#24303#25852#0#HTML" />
-            <element signature="e#25873#27943#0#HTML" />
-            <element signature="e#28006#29527#0#HTML" />
-            <element signature="e#29548#31724#0#HTML" />
-            <element signature="e#30451#31933#0#HTML" />
-            <element signature="e#31991#33488#0#HTML" />
-            <element signature="e#33548#34955#0#HTML" />
-            <element signature="e#35023#36485#0#HTML" />
-            <element signature="e#36542#37984#0#HTML" />
-            <element signature="e#38043#39447#0#HTML" />
-            <element signature="e#31793#33422#0#HTML" />
-            <element signature="e#33443#35536#0#HTML" />
-            <element signature="e#35603#37098#0#HTML" />
-            <element signature="e#37119#39034#0#HTML" />
-            <element signature="e#39091#40555#0#HTML" />
-            <element signature="e#40576#42485#0#HTML" />
-            <element signature="e#42544#44080#0#HTML" />
-            <element signature="e#44101#46073#0#HTML" />
-            <element signature="e#46137#47683#0#HTML" />
-            <element signature="e#47704#49605#0#HTML" />
-            <element signature="e#49669#51165#0#HTML" />
-            <element signature="e#51186#52992#0#HTML" />
-            <element signature="e#57388#58783#0#HTML" />
-            <element signature="e#58804#60041#0#HTML" />
-            <element signature="e#53052#54524#0#HTML" />
-            <element signature="e#54545#55870#0#HTML" />
-            <element signature="e#55928#57393#0#HTML" />
-            <element signature="e#57414#58738#0#HTML" />
-            <element signature="e#58795#60299#0#HTML" />
-            <element signature="e#60320#61681#0#HTML" />
-            <element signature="e#61751#63256#0#HTML" />
-            <element signature="e#63277#64951#0#HTML" />
-            <element signature="e#65017#66528#0#HTML" />
-            <element signature="e#66549#68339#0#HTML" />
-            <element signature="e#74392#75891#0#HTML" />
-            <element signature="e#75912#78086#0#HTML" />
-            <element signature="e#78149#79645#0#HTML" />
-            <element signature="e#79666#81726#0#HTML" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/concerts-artistes-2019.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="996" column="22" selection-start-line="67" selection-start-column="16" selection-end-line="996" selection-end-column="22" />
+        <state relative-caret-position="234">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_html/blog-single-video-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="449" column="58" lean-forward="true" selection-start-line="449" selection-start-column="58" selection-end-line="449" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="136" column="52" selection-start-line="136" selection-start-column="52" selection-end-line="136" selection-end-column="52" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/site/home_scene_44.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.ejs">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/plugin/owl.carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="93" column="211" selection-start-line="93" selection-start-column="211" selection-end-line="93" selection-end-column="211" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/billetterie-soldout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
         </state>
       </provider>
     </entry>
