@@ -6,6 +6,15 @@ html{
     color: #4DBCD1;
 }
 
+.h1-titre{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.footerlien, .footer{
+    color: #EEEEEE;
+}
 
 .bg-image {
     background-repeat: repeat;
@@ -110,6 +119,18 @@ html{
     #background-color: #060023;
 }
 
+.parallax-background4 {
+    background-size: cover;
+    background-position: center;
+    max-height: 600px;
+}
+
+.parallax-background5 {
+    background-size: cover;
+    background-position: center;
+    max-height: 800px;
+}
+
 @media all and (min-width: 1px) and (max-width: 600px) {
 
     .inner-intro {
@@ -120,6 +141,12 @@ html{
 
     .parallax-background3 {
         background-size: auto 480px;
+        background-position: center;
+    }
+
+    .parallax-background4 {
+        background-size: auto 480px;
+        background-position: center;
     }
 
 }
@@ -132,6 +159,10 @@ html{
         height: 600px;
     }
 
+    .h1-titre{
+        letter-spacing: 0px;
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 4000px) {
@@ -140,6 +171,10 @@ html{
         position: relative;
         padding: 100px 0;
         height: 800px;
+    }
+
+    .h1-titre{
+        letter-spacing: 10px;
     }
 
 }

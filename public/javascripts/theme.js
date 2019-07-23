@@ -876,6 +876,34 @@ $(function () {
             $el.css("background-position", 'left' + " " + -yPos_p + "px");
 			//$el.css("background-position", "center");
         }
+        if ($('.parallax').hasClass('parallax-background4')) {
+            var offset = (1000-parallax_height)/2.2;
+            var hhh = 500-parallax_height/2;
+            var ppp =  yPos_p+offset;
+
+            if($(window).innerWidth()<1320){
+                ppp = yPos_p-30;
+                $el.css("background-size", '');
+                $el.css("background-position", 'center' + " " + -ppp/1.7 + "px");
+            }else{
+                $el.css("background-size", 'cover');
+                $el.css("background-position", 'center' + " " + -ppp/1.5 + "px");
+            }
+        }
+        if ($('.parallax').hasClass('parallax-background5')) {
+            var offset = (1000-parallax_height)/2.2;
+            var hhh = 500-parallax_height/2;
+            var ppp =  yPos_p+offset;
+
+            if($(window).innerWidth()<1320){
+                ppp = yPos_p-30;
+                $el.css("background-size", '');
+                $el.css("background-position", 'center' + " " + -ppp/1.7 + "px");
+            }else{
+                $el.css("background-size", 'cover');
+                $el.css("background-position", 'center' + " " + -ppp/1.5 + "px");
+            }
+        }
     };
 
     var parallaxPositionProperty;
