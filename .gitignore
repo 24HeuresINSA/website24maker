@@ -1,4 +1,5 @@
 template_html/
 config/*.pem
 config/api-weezevent.json
+config/api-courses24maker.json
 views/concerts-artistes-2019_1.ejs

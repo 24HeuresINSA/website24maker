@@ -50,17 +50,17 @@
     <section class="pt-3 pb-1 m-auto" style="background-color: rgba(255,203,41,0.42); max-width: 1500px">
         <div class="row m-auto text-center">
             <div class="container">
-                <% if(locals.equipe && equipe.equipe_valide == 1) { %>
+                <% if(locals.team && team.team_valid == 1) { %>
                     <span id="participationValidee" class="badge-success text-center p-2">Participation validée<b></b></span>&nbsp;
-                <% }else if(locals.equipe && equipe.equipe_valide == 2){ %>
+                <% }else if(locals.team && team.team_valid == 2){ %>
                     <span id="participationRejetee" class="badge-danger text-center p-2">Participation rejetée. Vous pouvez nous contacter à courses@24heures.org</span>&nbsp
-                <% }else if(locals.equipe && equipe.equipe_valide == 0){ %>
+                <% }else if(locals.team && team.team_valid == 0){ %>
                     <span id="participationEnCours" class="badge-primary text-center p-2">Participation en cours de validation</span>
                 <% } %>
                 <div class="p-2">
-                    <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.equipe) { %><%= equipe.equipe_nom %><% }else{ %>??<% } %></b></h3></h6><br>
-                    <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.categorie) { %><%= categorie.categorie_nom %><% }else{ %>??<% } %></b></h5></h6><br>
-                    <p class="d-inline color-gris-4"><% if(locals.categorie) { %><%= categorie.categorie_description %><% }else{ %>??<% } %></p>
+                    <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.team) { %><%= team.team_name %><% }else{ %>??<% } %></b></h3></h6><br>
+                    <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.category) { %><%= category.category_label %><% }else{ %>??<% } %></b></h5></h6><br>
+                    <p class="d-inline color-gris-4"><% if(locals.category) { %><%= category.category_description %><% }else{ %>??<% } %></p>
                     <div class="m-auto"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
     <section class="pt-4 pb-4 m-auto" style="background-color: rgba(255,60,66,0.4); max-width: 1500px">
         <div class="row m-auto pr-3 pl-3 pb-3" style="max-width: 1500px">
             <div class="m-auto col-12" style="max-width: 100%; overflow: auto;">
-                <% if (locals.coureurs && coureurs.length != 0){ %>
+                <% if (locals.team.team_participants && team.team_participants.length != 0){ %>
                 <table class="table table-password table-striped p-2 table-sm" style="background-color: white" id="">
                     <thead>
                     <tr>
@@ -79,42 +79,44 @@
                         <th style="min-width:150px">Nom</th>
                         <th style="min-width:200px">Contact</th>
                         <th style="min-width:200px">Commentaires</th>
+                        <th style="min-width:200px">Message de l'organisateur</th>
                         <th style="min-width:70px; max-width:80px">Paiement</th>
                         <th style="min-width:70px; max-width:80px">Certificat</th>
                         <th name="buttons"></th>
                     </tr>
                     </thead>
                     <tbody id="bodyTable">
-                    <% locals.coureurs.forEach((raw, index) => { %>
+                    <% locals.team.team_participants.forEach((raw, index) => { %>
                     <tr>
-                        <td class="idRaw"hidden><%= raw.coureur_id %></td>
-                        <td class="prenomRaw"><%= raw.coureur_prenom %></td>
-                        <td class="nomRaw"><%= raw.coureur_nom %></td>
+                        <td class="idRaw"hidden><%= raw.participant_id %></td>
+                        <td class="prenomRaw"><%= raw.participant_name %></td>
+                        <td class="nomRaw"><%= raw.participant_surname %></td>
                         <td class="contactRaw">
-                            <% if (raw.coureur_email != undefined && raw.coureur_email != null){ %><%= raw.coureur_email %><% } %>
-                            <% if (raw.coureur_telephone != undefined && raw.coureur_telephone != null){ %><br><%= raw.coureur_telephone %><% } %>
+                            <% if (raw.participant_email != undefined && raw.participant_email != null){ %><%= raw.participant_email %><% } %>
+                            <% if (raw.participant_telephone != undefined && raw.participant_telephone != null){ %><br><%= raw.participant_telephone %><% } %>
                         </td>
-                        <td class="commentaireRaw"><%= raw.coureur_commentaire %></td>
+                        <td class="commentaireRaw"><%= raw.participant_comment %></td>
+                        <td class="messageRaw"><%= raw.participant_message %></td>
                         <td class="paiementRaw" style="min-width:140px; max-width:150px">
-                            <% if (raw.coureur_paiement == 1){ %>
+                            <% if (raw.participant_payment == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
-                            <% }else if (raw.coureur_paiement == 0){ %>
-                                <% if (raw.coureur_etudiant == 1 && locals.categorie){ %>
-                                    <span class="badge-danger p-1">Non Reçu : <%= categorie.categorie_prix_va %>€</span>
-                                <% }else if (raw.coureur_etudiant == 0 && locals.categorie){ %>
-                                    <span class="badge-danger p-1">Non Reçu : <%= categorie.categorie_prix_normal %>€</span>
+                            <% }else if (raw.participant_payment == 0){ %>
+                                <% if (raw.participant_student == 1 && locals.category){ %>
+                                    <span class="badge-danger p-1">Non Reçu : <%= category.category_price_student %>€</span>
+                                <% }else if (raw.participant_student == 0 && locals.category){ %>
+                                    <span class="badge-danger p-1">Non Reçu : <%= category.category_price_regular %>€</span>
                                 <% }else{ %>
                                     <span class="badge-danger p-1">Non Reçu</span>
                                 <% } %>
                             <% } %></td>
                         <td class="certificatRaw" style="min-width:120px; max-width:150px">
-                            <% if (raw.coureur_certificat_valide == 1){ %>
+                            <% if (raw.participant_medical_certificate_valid == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
-                            <% }else if (raw.coureur_certificat_valide == 2){ %>
+                            <% }else if (raw.participant_medical_certificate_valid == 2){ %>
                                 <span class="badge-danger p-1">Refusé</span>
-                            <% }else if (raw.coureur_certificat_valide == 0){ %>
+                            <% }else if (raw.participant_medical_certificate_valid == 0){ %>
                                 <span class="badge-danger p-1">Non Reçu</span>
-                            <% }else if (raw.coureur_certificat_valide == 3){ %>
+                            <% }else if (raw.participant_medical_certificate_valid == 3){ %>
                                 <span class="badge-primary p-1">En cours de traitement</span>
                             <% } %></td>
                         <td class="buttonRaw" name="buttons"></td>
@@ -128,8 +130,8 @@
                 <% } %>
             </div>
             <div class="m-auto col-12 text-center m-auto">
-                <% if(locals.categorie && locals.coureurs) { %>
-                    <% if(categorie.categorie_nb_max > coureurs.length) { %>
+                <% if(locals.category && locals.team.team_participants) { %>
+                    <% if(category.category_nb_max > team.team_participants.length) { %>
                         <button id="" onclick="$('#modalAjout').modal({show:true})" class="btn btn-white btn-md">Ajouter un coureur dans l'équipe</button>
                     <% } %>
                 <% }else{ %>
@@ -147,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-4 pb-2" style="background-color: rgb(255,255,255)">
+    <section class="pt-4 pb-2 d-none" style="background-color: rgb(255,255,255)">
         <div class="row m-auto text-center" style="max-width: 1500px;">
             <div class="p-2 m-auto">
                 <h5 class="d-inline">Paiement</h5><br>
@@ -305,14 +307,14 @@
                             </div>
                             <div class="form-field-wrapper">
                                 <h6>Je suis étudiant INSA avec une carte VA</h6>
-                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="">
+                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="" style="background: white">
                                     <option value="0">Non</option>
                                     <option value="1">Oui</option>
                                 </select>
                             </div>
                             <div class="form-field-wrapper">
                                 <h6>Taille tee-shirt</h6>
-                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" value="">
+                                <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" value="" style="background: white">
                                     <option value="NO">Choisir taille</option>
                                     <option value="S">S</option>
                                     <option value="M">M</option>

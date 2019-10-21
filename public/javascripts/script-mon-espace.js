@@ -26,15 +26,15 @@ $( document ).ready(function() {
 			complete: function (xhr, status, errorThrown) {
 				if (xhr.status == 200) {
 					var data = JSON.parse(xhr.responseText);
-					$(".update-coureur input[name='coureur_prenom']").val(data.coureur_prenom);
-					$(".update-coureur input[name='coureur_id']").val(data.coureur_id);
-					$(".update-coureur input[name='coureur_nom']").val(data.coureur_nom);
-					$(".update-coureur select[name='coureur_etudiant']").val(data.coureur_etudiant);
-					$(".update-coureur input[name='coureur_commentaire']").val(data.coureur_commentaire);
-					$(".update-coureur input[name='coureur_telephone']").val(data.coureur_telephone);
-					$(".update-coureur input[name='coureur_email']").val(data.coureur_email);
-					$(".update-coureur input[name='coureur_date_naissance']").val(data.coureur_date_naissance);
-					$(".update-coureur select[name='coureur_taille_tee_shirt']").val(data.coureur_taille_tee_shirt);
+					$(".update-coureur input[name='coureur_prenom']").val(data.participant_name);
+					$(".update-coureur input[name='coureur_id']").val(data.participant_id);
+					$(".update-coureur input[name='coureur_nom']").val(data.participant_surname);
+					$(".update-coureur select[name='coureur_etudiant']").val(data.participant_student);
+					$(".update-coureur input[name='coureur_commentaire']").val(data.participant_comment);
+					$(".update-coureur input[name='coureur_telephone']").val(data.participant_telephone);
+					$(".update-coureur input[name='coureur_email']").val(data.participant_email);
+					$(".update-coureur input[name='coureur_date_naissance']").val(data.participant_birthdate);
+					$(".update-coureur select[name='coureur_taille_tee_shirt']").val(data.participant_tee_shirt_size);
 					$('#modalEdit').modal({
 						show: true
 					});
@@ -139,6 +139,22 @@ $( document ).ready(function() {
 			});
 		});
 
+	}
+
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
 	}
 
 });

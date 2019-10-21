@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var rp = require('request-promise');
 var serverConfig = require('../config/server');
+var apiConfig = require('../config/api-courses24maker');
 var sha256 = require('sha256');
 
 router.get('/inscriptions', function(req, res, next) {
@@ -9,13 +10,19 @@ router.get('/inscriptions', function(req, res, next) {
 	if(false){
 		res.render('courses-inscriptions-ferme');
 	}else{
-
-		var request = {method: 'GET', uri: serverConfig.server+"/categorie/all", resolveWithFullResponse: true};
+		var request = {
+			method: 'GET',
+			uri: serverConfig.server+"/categories",
+			headers: {
+				'Authorization': 'Bearer '+apiConfig.jwt_admin
+			},
+			resolveWithFullResponse: true
+		};
 		var categoriesPromise = rp(request);
 
 		Promise.all([categoriesPromise])
 			.then(responses=>{
-				categorieList = JSON.parse(responses[0].body);
+				categorieList = JSON.parse(responses[0].body).categories;
 				if(categorieList != null && categorieList != undefined){
 					res.render('courses-inscriptions', { "categories": categorieList });
 				}else{
@@ -23,7 +30,6 @@ router.get('/inscriptions', function(req, res, next) {
 				}
 			})
 			.catch(err=>{
-				console.log(err);
 				res.render('courses-inscriptions-ferme');
 			});
 
@@ -33,9 +39,12 @@ router.get('/inscriptions', function(req, res, next) {
 
 router.post('/inscriptions', function(req, res, next) {
 
-	if(req.body.equipe_mdp == req.body.equipe_mdp2){
+	if(req.body.team_password == req.body.team_password2){
 
-		var request = {method: 'POST', uri: serverConfig.server+"/equipe/", resolveWithFullResponse: true, body: {"equipe": req.body}, json: true};
+		var request = {method: 'POST', uri: serverConfig.server+"/authentication/register/", resolveWithFullResponse: true,
+			body: { team: {team_name: req.body.team_name, team_password: req.body.team_password, team_category_id: req.body.team_category_id},
+				team_manager: {participant_name: req.body.participant_name, participant_surname: req.body.participant_surname, participant_birthdate: req.body.participant_birthdate, participant_telephone: req.body.participant_telephone, participant_email: req.body.participant_email} },
+			json: true};
 		var equipePromise = rp(request);
 
 		Promise.all([equipePromise])
@@ -44,12 +53,15 @@ router.post('/inscriptions', function(req, res, next) {
 					res.render('courses-connexion', {"messageSucces": "Votre équipe a été créé, vous pouvez vous connecter"});
 				}else{
 					var message = responses[0].body.message;
-					var request = {method: 'GET', uri: serverConfig.server+"/categorie/all", resolveWithFullResponse: true};
+					var request = {method: 'GET', uri: serverConfig.server+"/categories",
+						headers: {
+							'Authorization': 'Bearer '+apiConfig.jwt_admin
+						}, resolveWithFullResponse: true};
 					var categoriesPromise = rp(request);
 
 					Promise.all([categoriesPromise])
 						.then(responses=>{
-							categorieList = JSON.parse(responses[0].body);
+							categorieList = JSON.parse(responses[0].body).categories;
 							if(categorieList != null && categorieList != undefined){
 								res.render('courses-inscriptions', { "categories": categorieList, "messageEchec": message });
 							}else{
@@ -62,15 +74,37 @@ router.post('/inscriptions', function(req, res, next) {
 				}
 			})
 			.catch(err =>{
-				res.redirect('/courses/inscriptions');
+				if(err.error.errorLabel == 'TEAM_ALREADY_EXISTS'){
+					var request = {method: 'GET', uri: serverConfig.server+"/categories",
+						headers: {
+							'Authorization': 'Bearer '+apiConfig.jwt_admin
+						}, resolveWithFullResponse: true};
+					var categoriesPromise = rp(request);
+					Promise.all([categoriesPromise])
+						.then(responses=>{
+							categorieList = JSON.parse(responses[0].body).categories;
+							if(categorieList != null && categorieList != undefined){
+								res.render('courses-inscriptions', { "categories": categorieList, "messageEchec": "Une équipe avec le même nom existe déjà" });
+							}else{
+								res.redirect('/courses/inscriptions');
+							}
+						})
+						.catch(err=>{
+							res.redirect('/courses/inscriptions');
+						});
+				}else{
+					res.redirect('/courses/inscriptions');
+				}
 			});
 	}else{
-		var request = {method: 'GET', uri: serverConfig.server+"/categorie/all", resolveWithFullResponse: true};
+		var request = {method: 'GET', uri: serverConfig.server+"/categories", headers: {
+				'Authorization': 'Bearer '+apiConfig.jwt_admin
+			}, resolveWithFullResponse: true};
 		var categoriesPromise = rp(request);
 
 		Promise.all([categoriesPromise])
 			.then(responses=>{
-				categorieList = JSON.parse(responses[0].body);
+				categorieList = JSON.parse(responses[0].body).categories;
 				if(categorieList != null && categorieList != undefined){
 					res.render('courses-inscriptions', { "categories": categorieList, "messageEchec": "Mots de passes différents" });
 				}else{
@@ -86,21 +120,23 @@ router.post('/inscriptions', function(req, res, next) {
 
 router.post('/ajouter-coureur', function(req, res, next) {
 
-	if(req.session.equipe){
+	if(req.session.jwt){
 
-		var coureur =
+		var participant =
 		{
-			"coureur_prenom": req.body.coureur_prenom,
-			"coureur_nom": req.body.coureur_nom,
-			"coureur_equipe": req.session.equipe.equipe_id,
-			"coureur_etudiant": req.body.coureur_etudiant,
-			"coureur_date_naissance": req.body.coureur_date_naissance,
-			"coureur_taille_tee_shirt": req.body.coureur_taille_tee_shirt,
-			"coureur_telephone": req.body.coureur_telephone,
-			"coureur_email": req.body.coureur_email,
-			"coureur_commentaire": req.body.coureur_commentaire,
+			"participant_name": req.body.coureur_prenom,
+			"participant_surname": req.body.coureur_nom,
+			"participant_student": req.body.coureur_etudiant,
+			"participant_birthdate": req.body.coureur_date_naissance,
+			"participant_tee_shirt_size": req.body.coureur_taille_tee_shirt,
+			"participant_telephone": req.body.coureur_telephone,
+			"participant_email": req.body.coureur_email,
+			"participant_comment": req.body.coureur_commentaire,
+			"participant_team_id": req.session.team_id
 		};
-		var request = {method: 'POST', uri: serverConfig.server+"/coureur/", resolveWithFullResponse: true, body: {"coureur": coureur}, json: true};
+		var request = {method: 'POST', uri: serverConfig.server+"/participants/", headers: {
+				'Authorization': 'Bearer '+req.session.jwt
+			}, resolveWithFullResponse: true, body: {"participant": participant}, json: true};
 		var coureurPromise = rp(request);
 
 		Promise.all([coureurPromise])
@@ -109,12 +145,14 @@ router.post('/ajouter-coureur', function(req, res, next) {
 					res.redirect('/courses/connexion');
 				}else{
 					var message = responses[0].body.message;
-					var request = {method: 'GET', uri: serverConfig.server+"/categorie/all", resolveWithFullResponse: true};
+					var request = {method: 'GET', uri: serverConfig.server+"/categories", headers: {
+							'Authorization': 'Bearer '+req.session.jwt
+						}, resolveWithFullResponse: true};
 					var categoriesPromise = rp(request);
 
 					Promise.all([categoriesPromise])
 						.then(responses=>{
-							categorieList = JSON.parse(responses[0].body);
+							categorieList = JSON.parse(responses[0].body).categories;
 							if(categorieList != null && categorieList != undefined){
 								res.render('courses-inscriptions', { "categories": categorieList, "messageEchec": message });
 							}else{
@@ -122,13 +160,11 @@ router.post('/ajouter-coureur', function(req, res, next) {
 							}
 						})
 						.catch(err=>{
-							console.log('----> '+err);
 							res.redirect('/courses/inscriptions');
 						});
 				}
 			})
 			.catch(err =>{
-				console.log(err);
 				res.redirect('/courses/inscriptions');
 			});
 	}else{
@@ -139,21 +175,22 @@ router.post('/ajouter-coureur', function(req, res, next) {
 
 router.post('/updater-coureur', function(req, res, next) {
 
-	if(req.session.equipe){
+	if(req.session.jwt){
 
-		var coureur =
+		var participant =
 			{
-				"coureur_prenom": req.body.coureur_prenom,
-				"coureur_nom": req.body.coureur_nom,
-				"coureur_etudiant": req.body.coureur_etudiant,
-				"coureur_equipe": req.session.equipe.equipe_id,
-				"coureur_date_naissance": req.body.coureur_date_naissance,
-				"coureur_taille_tee_shirt": req.body.coureur_taille_tee_shirt,
-				"coureur_telephone": req.body.coureur_telephone,
-				"coureur_email": req.body.coureur_email,
-				"coureur_commentaire": req.body.coureur_commentaire,
+				"participant_name": req.body.coureur_prenom,
+				"participant_surname": req.body.coureur_nom,
+				"participant_student": req.body.coureur_etudiant,
+				"participant_birthdate": req.body.coureur_date_naissance,
+				"participant_tee_shirt_size": req.body.coureur_taille_tee_shirt,
+				"participant_telephone": req.body.coureur_telephone,
+				"participant_email": req.body.coureur_email,
+				"participant_comment": req.body.coureur_commentaire,
 			};
-		var request = {method: 'PUT', uri: serverConfig.server+"/coureur/"+req.body.coureur_id, resolveWithFullResponse: true, body: {"coureur": coureur}, json: true};
+		var request = {method: 'PUT', uri: serverConfig.server+"/participants/"+req.body.coureur_id, headers: {
+				'Authorization': 'Bearer '+req.session.jwt
+			}, resolveWithFullResponse: true, body: {"participant": participant}, json: true};
 		var coureurPromise = rp(request);
 
 		Promise.all([coureurPromise])
@@ -175,9 +212,11 @@ router.post('/updater-coureur', function(req, res, next) {
 
 router.delete('/supprimer-coureur/:id', function(req, res, next) {
 
-	if(req.session.equipe){
+	if(req.session.jwt){
 
-		var request = {method: 'DELETE', uri: serverConfig.server+"/coureur/"+req.params.id, resolveWithFullResponse: true};
+		var request = {method: 'DELETE', uri: serverConfig.server+"/participants/"+req.params.id, headers: {
+				'Authorization': 'Bearer '+req.session.jwt
+			}, resolveWithFullResponse: true};
 		var coureurPromise = rp(request);
 
 		Promise.all([coureurPromise])
@@ -206,7 +245,6 @@ router.delete('/supprimer-coureur/:id', function(req, res, next) {
 
 router.post('/ajouter-certificat-coureur', function(req, res, next) {
 
-	console.log('Ok');
 	if(req.session.equipe){
 		var coureur =
 			{
@@ -237,26 +275,32 @@ router.post('/ajouter-certificat-coureur', function(req, res, next) {
 });
 
 router.get('/connexion', function(req, res, next) {
-	if(!req.session.equipe){
+	if(!req.session.jwt){
 		res.render('courses-connexion');
 	}else{
-		var request1 = {method: 'GET', uri: serverConfig.server+"/coureur/all/equipe/"+req.session.equipe.equipe_id, resolveWithFullResponse: true};
-		var request2 = {method: 'GET', uri: serverConfig.server+"/categorie/"+req.session.equipe.equipe_categorie, resolveWithFullResponse: true};
-		var coureursPromise = rp(request1);
-		var categoriePromise = rp(request2);
-
-		Promise.all([coureursPromise, categoriePromise])
+		var request1 = {method: 'GET', uri: serverConfig.server+"/teams/"+req.session.team_id+"/?participants=true&category=true&manager=true", resolveWithFullResponse: true,
+			headers: {'Authorization': 'Bearer '+req.session.jwt} };
+		var request2 = {method: 'GET', uri: serverConfig.server+"/categories/", resolveWithFullResponse: true,
+			headers: {'Authorization': 'Bearer '+req.session.jwt} };
+		var teamPromise = rp(request1);
+		var categoriesPromise = rp(request2);
+		Promise.all([teamPromise, categoriesPromise])
 			.then(responses=>{
 				if(responses[0].statusCode == 200 && responses[1].statusCode == 200){
-					coureurList = JSON.parse(responses[0].body);
-					categorie = JSON.parse(responses[1].body);
-					if(coureurList != null && coureurList != undefined){
-						res.render('courses-mon-espace', { "coureurs": coureurList, "equipe": req.session.equipe, "categorie": categorie });
+					var team = JSON.parse(responses[0].body).team;
+					var categories = JSON.parse(responses[1].body).categories;
+					var category = categories.filter(el => {
+						if(el.category_id == team.team_category_id){
+							return el;
+						}
+					});
+					if(team != null && team != undefined){
+						res.render('courses-mon-espace', {"team": team, "category": category[0]});
 					}else{
 						res.redirect('/');
 					}
 				}else{
-					res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard ou complétez votre inscription sur place"});
+					res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard"});
 				}
 
 			})
@@ -267,16 +311,18 @@ router.get('/connexion', function(req, res, next) {
 });
 
 router.get('/coureur/:id', function(req, res, next) {
-	if(!req.session.equipe){
+	if(!req.session.jwt){
 		res.render('courses-connexion');
 	}else{
-		var request1 = {method: 'GET', uri: serverConfig.server+"/coureur/"+req.params.id, resolveWithFullResponse: true};
+		var request1 = {method: 'GET', uri: serverConfig.server+"/participants/"+req.params.id, headers: {
+				'Authorization': 'Bearer '+req.session.jwt
+			}, resolveWithFullResponse: true};
 		var coureursPromise = rp(request1);
 
 		Promise.all([coureursPromise])
 			.then(responses=>{
 				if(responses[0].statusCode == 200){
-					coureur = JSON.parse(responses[0].body);
+					coureur = JSON.parse(responses[0].body).participant;
 					if(coureur != null && coureur != undefined){
 						res.status(200);
 						res.send(coureur);
@@ -297,36 +343,34 @@ router.get('/coureur/:id', function(req, res, next) {
 });
 
 router.get('/deconnexion', function(req, res, next) {
-	if(!req.session.equipe){
+	if(!req.session.team_id && !req.session.jwt){
 		res.redirect('/');
 	}else{
 		req.session.destroy();
+		res.clearCookie("jwt_courses24maker");
 		res.redirect('/');
 	}
 });
 
 router.post('/connexion', function(req, res, next) {
-
-	var request = {method: 'GET', uri: serverConfig.server+"/equipe/nom/"+req.body.equipe_nom, resolveWithFullResponse: true};
+	var request = {method: 'POST', uri: serverConfig.server+"/authentication/login/", body: {user: req.body.user, password: req.body.password}, resolveWithFullResponse: true, json: true};
 	var equipePromise = rp(request);
 
 	Promise.all([equipePromise])
 		.then(responses=>{
-			if(JSON.parse(responses[0].body).code == 202){
-				res.render('courses-connexion', {"messageEchec":"L'équipe n'existe pas ou mauvaise orthographe"});
-			}else{
-				var equipe = JSON.parse(responses[0].body);
-				if(sha256.x2(req.body.equipe_mdp+equipe.equipe_sel) == equipe.equipe_mdp){
-					req.session.equipe = equipe;
-					res.redirect('/courses/connexion');
-				}else{
-					res.render('courses-connexion', {"messageEchec":"Mauvais mot de passe"});
-				}
-			}
+			req.session.team_id = responses[0].body.team_id;
+			req.session.jwt = responses[0].body.jwt;
+			res.cookie("jwt_courses24maker", responses[0].body.jwt);
+			res.redirect('connexion');
 		})
 		.catch(err =>{
-			console.log(err);
-			res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard ou complétez votre inscription sur place"});
+			if (err.error.errorLabel == 'AUTHENTICATION_ERROR_TEAM_DOES_NOT_EXIST') {
+				res.render('courses-connexion', {"messageEchec":"L'équipe n'existe pas ou mauvais mot de passe"});
+			} else if (err.error.errorLabel == 'AUTHENTICATION_ERROR_PASSWORD_WRONG') {
+				res.render('courses-connexion', {"messageEchec":"Mauvais mot de passe"});
+			} else {
+				res.render('courses-connexion', {"messageEchec":"Le site est en maintenance. Réessayez plus tard ou complétez votre inscription sur place"});
+			}
 		});
 
 });

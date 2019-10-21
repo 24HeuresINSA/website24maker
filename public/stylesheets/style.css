@@ -583,7 +583,7 @@ button, input, textarea, select {
     font-size: 12px;
 }
 
-    input[type="text"], input[type="search"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
+    input[type="text"], input[type="search"], input[type="email"],  input[type="date"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
         appearance: none;
         -webkit-appearance: none;
         border: 1px solid #e0e0e0;

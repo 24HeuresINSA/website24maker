@@ -47,27 +47,6 @@
     </section>
     <!-- End About Section -->
 
-    <!--<section class="ptb-30 pt-2 pt-md-4 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-12 blog-post-hr m-auto">
-                    <div class="blog-post">
-                        <div class="post-header">
-                            <h3 class="text-center">Aftermovie Courses et Animations 2018</h3>
-                        </div>
-                    </div>
-
-                    <div class="post-media">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/juzVZSExeco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <iframe width="100%" height="" src="" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section> -->
-
     <section class="pb-5 pt-5">
         <div class="container">
             <div class="row">
@@ -75,7 +54,7 @@
                     <div class="contact-box-left mb-45">
                         <div class="contact-icon-left"><i class="ion ion-information-circled"></i></div>
                         <h6>INFORMATIONS</h6>
-                        <p>Retrouvez toutes les informations sur les courses sur la page : <a href="/courses/informations">Courses / Informations</a>.
+                        <p>Retrouvez toutes les informations des courses sur la page : <a href="/courses/informations">Courses / Informations</a>.
                     </div>
                 </div>
             </div>
@@ -100,31 +79,62 @@
 
                         <div class="form-field-wrapper">
                             <h6>Nom d'équipe / Login</h6>
-                            <input class="input-sm form-full" id="" type="text" name="equipe_nom" placeholder="Nom d'équipe" required>
+                            <input class="input-sm form-full" id="" type="text" name="team_name" placeholder="Nom d'équipe" required>
                         </div>
 
                         <div class="form-field-wrapper">
-                            <h6>Mot de passe</h6>
-                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp" placeholder="Mot de passe" required>
+                            <h6 class="mb-0">Mot de passe</h6>
+                            <p class="" style="font-size: 10px">Choisissez un mot de passe que vous pourrez partager avec les autres membres de votre équipe</a></p>
+                            <input class="input-sm form-full" id="" type="password" name="team_password" placeholder="Mot de passe" required>
                         </div>
 
                         <div class="form-field-wrapper">
                             <h6>Confirmation de mot de passe</h6>
-                            <input class="input-sm form-full" id="" type="password" name="equipe_mdp2" placeholder="Mot de passe confirmation" required>
+                            <input class="input-sm form-full" id="" type="password" name="team_password2" placeholder="Mot de passe confirmation" required>
                         </div>
 
                         <div class="form-field-wrapper">
                             <h6>Catégorie</h6>
-                            <select class="input-sm form-full" id="form-to" type="text" name="equipe_categorie" placeholder="">
+                            <select class="input-sm form-full" id="form-to" type="text" name="team_category_id" placeholder="" style="background: white">
                                 <% if(locals.categories != undefined){ %>
                                 <% locals.categories.forEach((categorie, index) => { %>
-                                    <% if(categorie.categorie_complet == 0){ %>
-                                        <option value="<%= categorie.categorie_id %>"><%= categorie.categorie_nom %></option>
+                                    <% if(categorie.category_full == 0){ %>
+                                        <option value="<%= categorie.category_id %>"><%= categorie.category_label %></option>
                                     <% } %>
                                 <% })  %>
                                 <% } %>
                             </select>
                             <p class="pt-2 d-none" style="font-size: 10px">Le TRIATHLON est complet ! Liste d'attente : <a href="https://docs.google.com/forms/d/1MspUfFqCmj71m9LmYl2Mmx146e2Ueerhyi4FDrJoFuM/edit?usp=sharing">Ici</a></p>
+                        </div>
+
+                        <br>
+                        <div style="border-color: grey; border-style: solid;"></div>
+                        <br>
+                        <br>
+
+                        <div class="form-field-wrapper">
+                            <h6>Prénom du chef d'équipe</h6>
+                            <input class="input-sm form-full" id="" type="text" name="participant_name" placeholder="Prenom" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Nom du chef d'équipe</h6>
+                            <input class="input-sm form-full" id="" type="text" name="participant_surname" placeholder="Nom" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Date de naissance du chef d'équipe</h6>
+                            <input class="input-sm form-full" id="" type="date" name="participant_birthdate" placeholder="Date de naissance" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Telephone chef d'équipe</h6>
+                            <input class="input-sm form-full" id="" type="tel" name="participant_telephone" placeholder="Telephone" required>
+                        </div>
+
+                        <div class="form-field-wrapper">
+                            <h6>Email du chef d'équipe</h6>
+                            <input class="input-sm form-full" id="" type="email" name="participant_email" placeholder="Email" required>
                         </div>
 
                         <button class="btn btn-md btn-black form-full btn-send" type="submit" id="form-submit" name="submit">Créer le compte de l'équipe</button>
