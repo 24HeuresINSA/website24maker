@@ -30,7 +30,7 @@
     <!-- CONTENT --------------------------------------------------------------------------------->
 
     <!-- About Section -->
-    <section id="about" class="pt pt-sm-60 pb-3">
+    <section id="about" class="pt pt-sm-60 pb-3 d-none">
         <div class="container text-center">
             <div class="row">
                 <div class="col">
@@ -45,9 +45,20 @@
             </div>
         </div>
     </section>
+
+    <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="../img/background/courses-constructions-back.jpg">
+        <div class="container">
+            <div class="title">
+                <div class="h1-titre">MON ESPACE COURSES</div><br>
+                <h4 class="">
+                    <span class="text-original-case">Toutes les informations de mon équipe pour les courses</span>
+                </h4>
+            </div>
+        </div>
+    </section>
     <!-- End About Section -->
 
-    <section class="pt-3 pb-1 m-auto" style="background-color: rgba(255,203,41,0.42); max-width: 1500px">
+    <section class="pt-4 pb-1 m-auto" style="background-color: white; max-width: 1500px">
         <div class="row m-auto text-center">
             <div class="container">
                 <% if(locals.team && team.team_valid == 1) { %>
@@ -61,13 +72,13 @@
                     <h6 class="d-inline">Mon équipe : <h3 class="d-inline text-original-case"><b><% if(locals.team) { %><%= team.team_name %><% }else{ %>??<% } %></b></h3></h6><br>
                     <h6 class="d-inline color-gris-4">Catégorie : <h5 class="d-inline text-original-case color-gris-4"><b><% if(locals.category) { %><%= category.category_label %><% }else{ %>??<% } %></b></h5></h6><br>
                     <p class="d-inline color-gris-4"><% if(locals.category) { %><%= category.category_description %><% }else{ %>??<% } %></p>
-                    <div class="m-auto"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
+                    <div class="m-auto pt-2"><a class="btn btn-black btn-md" href="/courses/deconnexion">Deconnexion</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pt-4 pb-4 m-auto" style="background-color: rgba(255,60,66,0.4); max-width: 1500px">
+    <section class="pt-4 pb-4 m-auto" style="background-color: white; max-width: 1500px">
         <div class="row m-auto pr-3 pl-3 pb-3" style="max-width: 1500px">
             <div class="m-auto col-12" style="max-width: 100%; overflow: auto;">
                 <% if (locals.team.team_participants && team.team_participants.length != 0){ %>
@@ -75,13 +86,14 @@
                     <thead>
                     <tr>
                         <th class="d-none">ID</th>
-                        <th style="min-width:150px">Prénom</th>
-                        <th style="min-width:150px">Nom</th>
-                        <th style="min-width:200px">Contact</th>
-                        <th style="min-width:200px">Commentaires</th>
-                        <th style="min-width:200px">Message de l'organisateur</th>
-                        <th style="min-width:70px; max-width:80px">Paiement</th>
-                        <th style="min-width:70px; max-width:80px">Certificat</th>
+                        <th style="/*min-width:150px*/">Prénom</th>
+                        <th style="/*min-width:150px">Date de naissance</th>
+                        <th style="/*min-width:200px">Contact</th>
+                        <th style="/*min-width:200px">Commentaires</th>
+                        <th style="/*min-width:200px">Message de l'organisateur</th>
+                        <th style="/*min-width:70px; max-width:80px">Paiement <span style="font-size: 10px;">(validé manuellement)</span></th>
+                        <th style="/*min-width:70px; max-width:80px">Certificat</th>
+                        <th style="/*min-width:70px; max-width:80px">Carte VA</th>
                         <th name="buttons"></th>
                     </tr>
                     </thead>
@@ -89,8 +101,8 @@
                     <% locals.team.team_participants.forEach((raw, index) => { %>
                     <tr>
                         <td class="idRaw"hidden><%= raw.participant_id %></td>
-                        <td class="prenomRaw"><%= raw.participant_name %></td>
-                        <td class="nomRaw"><%= raw.participant_surname %></td>
+                        <td class="prenomRaw"><%= raw.participant_name %><br><%= raw.participant_surname %></td>
+                        <td class="birthdateRaw"><%= raw.participant_birthdate %></td>
                         <td class="contactRaw">
                             <% if (raw.participant_email != undefined && raw.participant_email != null){ %><%= raw.participant_email %><% } %>
                             <% if (raw.participant_telephone != undefined && raw.participant_telephone != null){ %><br><%= raw.participant_telephone %><% } %>
@@ -119,6 +131,18 @@
                             <% }else if (raw.participant_medical_certificate_valid == 3){ %>
                                 <span class="badge-primary p-1">En cours de traitement</span>
                             <% } %></td>
+                        <td class="certificatStudentRaw" style="min-width:120px; max-width:150px">
+                            <% if (raw.participant_student_certificate_valid == 1){ %>
+                                <span class="badge-success p-1">Validé</span>
+                            <% }else if (raw.participant_student_certificate_valid == 2){ %>
+                                <span class="badge-danger p-1">Refusé</span>
+                            <% }else if (raw.participant_student_certificate_valid == 0){ %>
+                                <span class="badge-danger p-1">Non Reçu</span>
+                            <% }else if (raw.participant_student_certificate_valid == 3){ %>
+                                <span class="badge-primary p-1">En cours de traitement</span>
+                            <% }else if (raw.participant_student_certificate_valid == 4){ %>
+                                <span class="badge-success p-1">Pas concerné</span>
+                            <% } %></td>
                         <td class="buttonRaw" name="buttons"></td>
                     </tr>
                     <% }) %>
@@ -129,10 +153,10 @@
                 </div>
                 <% } %>
             </div>
-            <div class="m-auto col-12 text-center m-auto">
+            <div class="m-auto pt-3 col-12 text-center m-auto">
                 <% if(locals.category && locals.team.team_participants) { %>
                     <% if(category.category_nb_max > team.team_participants.length) { %>
-                        <button id="" onclick="$('#modalAjout').modal({show:true})" class="btn btn-white btn-md">Ajouter un coureur dans l'équipe</button>
+                        <button id="" onclick="$('#modalAjout').modal({show:true})" class="btn btn-color-b btn-md">Ajouter un coureur dans l'équipe</button>
                     <% } %>
                 <% }else{ %>
 
@@ -140,7 +164,12 @@
             </div>
         </div>
     </section>
-    <section class="pt-4 pb-2" style="background-color: rgba(255,255,255)">
+
+    <br>
+    <div class="m-2 d-none" style="border-color: grey; border-style: solid;"></div>
+    <br>
+
+    <section class="pt-4 pb-2 d-none" style="background-color: rgba(255,255,255)">
         <div class="row m-auto text-center" style="max-width: 1500px;">
             <div class="p-2 m-auto">
                 <h4 class="d-inline">Course carritative</h4><br>
@@ -221,14 +250,14 @@
                                 </div>
                                 <div class="form-field-wrapper">
                                     <h6>Je suis étudiant INSA avec une carte VA</h6>
-                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="">
+                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_etudiant" value="" style="background: white">
                                         <option value="0">Non</option>
                                         <option value="1">Oui</option>
                                     </select>
                                 </div>
                                 <div class="form-field-wrapper">
                                     <h6>Taille tee-shirt</h6>
-                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" placeholder="">
+                                    <select class="input-sm form-full" id="form-to" type="text" name="coureur_taille_tee_shirt" placeholder="" style="background: white">
                                         <option value="NO">Choisir taille</option>
                                         <option value="S">S</option>
                                         <option value="M">M</option>
@@ -361,6 +390,34 @@
                                 </div>
                                 <div class="">
                                     <input class="input-sm form-full" type="file" name="coureur_certificat_file" required>
+                                </div>
+                                <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalStudent" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="margin-top: 90px">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">CHARGER CARTE VA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <form class="contact-form update-student" method="post" enctype="multipart/form-data" action="/courses/ajouter-carte-va">
+                                <div class="form-field-wrapper d-none">
+                                    <h6>Id</h6>
+                                    <input class="input-sm form-full" id="" type="text" name="coureur_id" value="" required>
+                                </div>
+                                <div class="">
+                                    <input class="input-sm form-full" type="file" name="coureur_carteva_file" required>
                                 </div>
                                 <button class="btn btn-md btn-black form-full btn-send mb-2" type="submit" id="form-submit" name="submit">Ajouter</button>
                             </form>

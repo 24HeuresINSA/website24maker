@@ -1,11 +1,14 @@
 $( document ).ready(function() {
 
-	var newColHtml = '<div class="btn-group pull-right">' +
+	var newColHtml = '<div class="btn-group">' +
+		'<button id="bCertif" type="button" class="btn btn-color-b p-2 pull-right"  onclick="rowCertif(this);">' +
+		'Charger Certificat <i class="ion ion-upload m-1"></i>' +
+		'</button>' +
+		'<button id="bVa" type="button" class="btn btn-color-a p-2"  onclick="rowStudent(this);">' +
+		'Charger Carte VA <i class="ion ion-upload m-1"></i>' +
+		'</button>' +
 		'<button id="bEdit" type="button" class="btn btn-black p-2"  onclick="rowEdit(this);">' +
 		'Modifier <i class="ion ion-edit m-1"></i>' +
-		'</button>' +
-		'<button id="bCertif" type="button" class="btn btn-color-b p-2"  onclick="rowCertif(this);">' +
-		'Charger Certificat <i class="ion ion-edit m-1"></i>' +
 		'</button>' +
 		'<button id="bElim" type="button" class="btn btn-white p-2"  onclick="rowElim(this);">' +
 		'<i class="ion ion-trash-a m-1" aria-hidden="true"></i>' +
@@ -51,6 +54,15 @@ $( document ).ready(function() {
 		var uuid = $row.find('.idRaw').html();
 		$(".update-certificat input[name='coureur_id']").val(uuid);
 		$('#modalCertificat').modal({
+			show: true
+		});
+	}
+
+	rowStudent = function (but) {
+		var $row = $(but).parents('tr');
+		var uuid = $row.find('.idRaw').html();
+		$(".update-student input[name='coureur_id']").val(uuid);
+		$('#modalStudent').modal({
 			show: true
 		});
 	}
