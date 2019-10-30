@@ -309,9 +309,11 @@ router.post('/ajouter-carte-va', function(req, res, next) {
 });
 
 router.get('/connexion', function(req, res, next) {
-	if(!req.session.jwt){
+	if (true) {
+		res.render('404');
+	} else if (!req.session.jwt) {
 		res.render('courses-connexion');
-	}else{
+	} else {
 		var request1 = {method: 'GET', uri: serverConfig.server+"/teams/"+req.session.team_id+"/?participants=true&category=true&manager=true", resolveWithFullResponse: true,
 			headers: {'Authorization': 'Bearer '+req.session.jwt} };
 		var request2 = {method: 'GET', uri: serverConfig.server+"/categories/", resolveWithFullResponse: true,
