@@ -40,13 +40,16 @@
                     <h4 class="">
                         <span class="text-original-case">Vous étiez plus de 10 000 chaque soir pour les concerts de l'édition 2019 ! MERCI !</span>
                     </h4>
+                    <h4 class="">
+                        <span class="text-original-case">La billetterie ouvrira le Dimanche 02 Février 2020 à 14h</span>
+                    </h4>
                 </div>
             </div>
         </section>
 
         <div class="mt-3 mb-3"></div>
 
-        <section class="pb pb-5 pt-5">
+        <section class="pb pb-5 pt-5 d-none">
             <div class="container">
                 <div class="row">
                     <div class="m-auto timetable-item">
@@ -58,7 +61,41 @@
             </div>
         </section>
 
-        <section class="pb">
+        <section id="testimonial" class="overlay-dark dark-bg ptb p-5 5" style="background-image: url('img/background/home-public-45.jpg'); background-position: center center; background-size: cover;" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
+                    <div class="item">
+                        <div class="testimonial text-center dark-color d-none">
+                            <div class="container-icon"><i class="fa fa-calendar-o"></i> <i class="fa fa-"></i></div>
+                            <ul class="countdown" style="color: white;">
+                                <li>
+                                    <span class="days">00</span>
+                                    <p class="days_ref">days</p>
+                                </li>
+                                <li class="seperator">.</li>
+                                <li>
+                                    <span class="hours">00</span>
+                                    <p class="hours_ref">hours</p>
+                                </li>
+                                <li class="seperator">:</li>
+                                <li>
+                                    <span class="minutes">00</span>
+                                    <p class="minutes_ref">minutes</p>
+                                </li>
+                                <li class="seperator">:</li>
+                                <li>
+                                    <span class="seconds">00</span>
+                                    <p class="seconds_ref">seconds</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pb d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center" style="font-size: 20px">
@@ -178,12 +215,13 @@
     <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
     <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
     <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
     <script src="../js/theme.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-		$("#menu-billetterie").css('color', '#F11286');
+		$("#menu-billetterie").css('color', '#e83d44');
 		$("#title-page-nav").append("Billetterie");
-		$("#sidebar-menu-billetterie").css('color', '#F11286');
+		$("#sidebar-menu-billetterie").css('color', '#e83d44');
 
 		skillsProgressBar();
 		function skillsProgressBar() {
@@ -193,6 +231,14 @@
 				}, 1000);
 			});
 		};
+    </script>
+    <script type="text/javascript">
+        $('.countdown').downCount({
+            date: '05/15/2020 20:00:00',
+            offset: +2
+        }, function () {
+            return;
+        });
     </script>
 
 </body>

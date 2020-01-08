@@ -22,27 +22,27 @@ html{
 }
 
 .skillbar-title, .skill-bar-percent {
-    color: #f11286;
+    color: #e83d44;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .header.header-transparent .header-nav {
-    background-color: #0e003d !important;
+    background-color: #202446 !important;
     #background-color: #060025 !important; /*Desktop "header-transparent" */
 }
 
 .fond-nuit-back{
-    background-color: #0e003d;
+    background-color: #202446;
 }
 
 .fond-jour-back{
-    background-color: #6DC6C4;
+    background-color: #009e9f;
 }
 
 .jauge-titre{
-    color: #6DC6C4;
+    color: #009e9f;
 }
 
 .color-animations-jour2 {
@@ -76,7 +76,7 @@ html{
 .header.header-transparent.fixed .nav-icons > *:hover,
 .header.header-transparent.header--dark .nav-icons > *:hover,
 .header.header--dark.header-transparent .nav-icons > *:hover {
-    color: #4DBCD1;
+    color: #009e9f;
     transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -106,16 +106,16 @@ html{
 .header.header-transparent.fixed .nav-icons > *:hover,
 .header.header-transparent.header--dark .nav-icons > *:hover,
 .header.header--dark.header-transparent .nav-icons > *:hover {
-    color: #4DBCD1;
+    color: #009e9f;
 }
 
 .nav-dropdown, .nav-dropdown-sub {
-    background-color: #0e003d;
+    background-color: #202446;
     #background-color: #060023;
 }
 
 .sidebar-menu {
-    background-color: #0e003d;
+    background-color: #202446;
     #background-color: #060023;
 }
 
@@ -184,7 +184,7 @@ html{
 }
 
 a:hover {
-    color: #f11286;
+    color: #e83d44;
 }
 
 .accordion-title:before {
@@ -204,11 +204,11 @@ a:hover {
 }
 
 .sidebar-menu ul > li > a:hover {
-    color: #4DBCD1;
+    color: #009e9f;
 }
 
 .fb-header:hover{
-    color: #4dbcd1;
+    color: #009e9f;
 }
 
 .photo-concerts-artiste-item{
@@ -343,7 +343,7 @@ a:hover {
 .skillbar-bar {
     height: 6px;
     width: 0px;
-    background: #4DBCD1;
+    background: #009e9f;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -354,7 +354,7 @@ a:hover {
 .skillbar-bar-1 {
     height: 6px;
     width: 0px;
-    background: #f11286;
+    background: #e83d44;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -365,7 +365,7 @@ a:hover {
 .skillbar-bar-2 {
     height: 6px;
     width: 0px;
-    background: #f11286;
+    background: #e83d44;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -375,7 +375,7 @@ a:hover {
 
 .accordion-title.active {
     /* background: #fafafa; */
-    color: #4dbcd1;
+    color: #009e9f;
 }
 
 body{
