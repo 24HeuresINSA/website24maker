@@ -12,6 +12,11 @@ html{
     font-weight: bold;
 }
 
+.background-2020{
+    height: 70vh;
+    background: linear-gradient(25deg,#202446 0%, #202446 4%, #e83d44 4%, #e83d44 8%, #942447 8%, #942447 12%, #4b2c57 12%, #4b2c57 16%, #202446 16%, #202446 100%);
+}
+
 .footerlien, .footer{
     color: #EEEEEE;
 }

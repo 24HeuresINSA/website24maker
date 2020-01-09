@@ -3,19 +3,19 @@ var router = express.Router();
 var Buffer = require('safe-buffer').Buffer;
 var rp = require('request-promise');
 var request = require('request');
-var serverConfig = require('../config/server');
+var serverConfig = require('../config/server')[process.env.NODE_ENV];
 var apiConfig = require('../config/api-courses24maker');
 var sha256 = require('sha256');
 const { base64encode, base64decode } = require('nodejs-base64');
 
 router.get('/inscriptions', function(req, res, next) {
-
+console.log(serverConfig["server-courses-api"])
 	if(false){
 		res.render('courses-inscriptions-ferme');
 	}else{
 		var request = {
 			method: 'GET',
-			uri: serverConfig.server+"/categories",
+			uri: serverConfig["server-courses-api"]+"/categories",
 			headers: {
 				'Authorization': 'Bearer '+apiConfig.jwt_admin
 			},
@@ -33,6 +33,7 @@ router.get('/inscriptions', function(req, res, next) {
 				}
 			})
 			.catch(err=>{
+				console.log(err)
 				res.render('courses-inscriptions-ferme');
 			});
 
@@ -44,7 +45,7 @@ router.post('/inscriptions', function(req, res, next) {
 
 	if(req.body.team_password == req.body.team_password2){
 
-		var request = {method: 'POST', uri: serverConfig.server+"/authentication/register/", resolveWithFullResponse: true,
+		var request = {method: 'POST', uri: serverConfig["server-courses-api"]+"/authentication/register/", resolveWithFullResponse: true,
 			body: { team: {team_name: req.body.team_name, team_password: req.body.team_password, team_category_id: req.body.team_category_id},
 				team_manager: {participant_name: req.body.participant_name, participant_surname: req.body.participant_surname, participant_birthdate: req.body.participant_birthdate, participant_telephone: req.body.participant_telephone, participant_email: req.body.participant_email} },
 			json: true};
@@ -56,7 +57,7 @@ router.post('/inscriptions', function(req, res, next) {
 					res.render('courses-connexion', {"messageSucces": "Votre équipe a été créé, vous pouvez vous connecter"});
 				}else{
 					var message = responses[0].body.message;
-					var request = {method: 'GET', uri: serverConfig.server+"/categories",
+					var request = {method: 'GET', uri: serverConfig["server-courses-api"]+"/categories",
 						headers: {
 							'Authorization': 'Bearer '+apiConfig.jwt_admin
 						}, resolveWithFullResponse: true};
@@ -78,7 +79,7 @@ router.post('/inscriptions', function(req, res, next) {
 			})
 			.catch(err =>{
 				if(err.error.errorLabel == 'TEAM_ALREADY_EXISTS'){
-					var request = {method: 'GET', uri: serverConfig.server+"/categories",
+					var request = {method: 'GET', uri: serverConfig["server-courses-api"]+"/categories",
 						headers: {
 							'Authorization': 'Bearer '+apiConfig.jwt_admin
 						}, resolveWithFullResponse: true};
@@ -100,7 +101,7 @@ router.post('/inscriptions', function(req, res, next) {
 				}
 			});
 	}else{
-		var request = {method: 'GET', uri: serverConfig.server+"/categories", headers: {
+		var request = {method: 'GET', uri: serverConfig["server-courses-api"]+"/categories", headers: {
 				'Authorization': 'Bearer '+apiConfig.jwt_admin
 			}, resolveWithFullResponse: true};
 		var categoriesPromise = rp(request);
@@ -137,7 +138,7 @@ router.post('/ajouter-coureur', function(req, res, next) {
 			"participant_comment": req.body.coureur_commentaire,
 			"participant_team_id": req.session.team_id
 		};
-		var request = {method: 'POST', uri: serverConfig.server+"/participants/", headers: {
+		var request = {method: 'POST', uri: serverConfig["server-courses-api"]+"/participants/", headers: {
 				'Authorization': 'Bearer '+req.session.jwt
 			}, resolveWithFullResponse: true, body: {"participant": participant}, json: true};
 		var coureurPromise = rp(request);
@@ -148,7 +149,7 @@ router.post('/ajouter-coureur', function(req, res, next) {
 					res.redirect('/courses/connexion');
 				}else{
 					var message = responses[0].body.message;
-					var request = {method: 'GET', uri: serverConfig.server+"/categories", headers: {
+					var request = {method: 'GET', uri: serverConfig["server-courses-api"]+"/categories", headers: {
 							'Authorization': 'Bearer '+req.session.jwt
 						}, resolveWithFullResponse: true};
 					var categoriesPromise = rp(request);
@@ -191,7 +192,7 @@ router.post('/updater-coureur', function(req, res, next) {
 				"participant_email": req.body.coureur_email,
 				"participant_comment": req.body.coureur_commentaire,
 			};
-		var request = {method: 'PUT', uri: serverConfig.server+"/participants/"+req.body.coureur_id, headers: {
+		var request = {method: 'PUT', uri: serverConfig["server-courses-api"]+"/participants/"+req.body.coureur_id, headers: {
 				'Authorization': 'Bearer '+req.session.jwt
 			}, resolveWithFullResponse: true, body: {"participant": participant}, json: true};
 		var coureurPromise = rp(request);
@@ -217,7 +218,7 @@ router.delete('/supprimer-coureur/:id', function(req, res, next) {
 
 	if(req.session.jwt){
 
-		var request = {method: 'DELETE', uri: serverConfig.server+"/participants/"+req.params.id, headers: {
+		var request = {method: 'DELETE', uri: serverConfig["server-courses-api"]+"/participants/"+req.params.id, headers: {
 				'Authorization': 'Bearer '+req.session.jwt
 			}, resolveWithFullResponse: true};
 		var coureurPromise = rp(request);
@@ -250,7 +251,7 @@ router.post('/ajouter-certificat-coureur', function(req, res, next) {
 	if (req.session.jwt) {
 		var encoded = 'data:'+req.files.coureur_certificat_file.mimetype+';base64,'+Buffer.from(req.files.coureur_certificat_file.data).toString('base64');
 		var certif = {"participant_medical_certificate": encoded};
-		var requestOpt = {method: 'PUT', uri: serverConfig.server+"/participants/medical-certificate/"+req.body['coureur_id'],
+		var requestOpt = {method: 'PUT', uri: serverConfig["server-courses-api"]+"/participants/medical-certificate/"+req.body['coureur_id'],
 			resolveWithFullResponse: true,
 			headers: {
 				'Authorization': 'Bearer '+req.session.jwt
@@ -281,7 +282,7 @@ router.post('/ajouter-carte-va', function(req, res, next) {
 	if (req.session.jwt) {
 		var encoded = 'data:'+req.files.coureur_carteva_file.mimetype+';base64,'+Buffer.from(req.files.coureur_carteva_file.data).toString('base64');
 		var certif = {"participant_student_certificate": encoded};
-		var requestOpt = {method: 'PUT', uri: serverConfig.server+"/participants/student-certificate/"+req.body['coureur_id'],
+		var requestOpt = {method: 'PUT', uri: serverConfig["server-courses-api"]+"/participants/student-certificate/"+req.body['coureur_id'],
 			resolveWithFullResponse: true,
 			headers: {
 				'Authorization': 'Bearer '+req.session.jwt
@@ -314,9 +315,9 @@ router.get('/connexion', function(req, res, next) {
 	} else if (!req.session.jwt) {
 		res.render('courses-connexion');
 	} else {
-		var request1 = {method: 'GET', uri: serverConfig.server+"/teams/"+req.session.team_id+"/?participants=true&category=true&manager=true", resolveWithFullResponse: true,
+		var request1 = {method: 'GET', uri: serverConfig["server-courses-api"]+"/teams/"+req.session.team_id+"/?participants=true&category=true&manager=true", resolveWithFullResponse: true,
 			headers: {'Authorization': 'Bearer '+req.session.jwt} };
-		var request2 = {method: 'GET', uri: serverConfig.server+"/categories/", resolveWithFullResponse: true,
+		var request2 = {method: 'GET', uri: serverConfig["server-courses-api"]+"/categories/", resolveWithFullResponse: true,
 			headers: {'Authorization': 'Bearer '+req.session.jwt} };
 		var teamPromise = rp(request1);
 		var categoriesPromise = rp(request2);
@@ -350,7 +351,7 @@ router.get('/coureur/:id', function(req, res, next) {
 	if(!req.session.jwt){
 		res.render('courses-connexion');
 	}else{
-		var request1 = {method: 'GET', uri: serverConfig.server+"/participants/"+req.params.id, headers: {
+		var request1 = {method: 'GET', uri: serverConfig["server-courses-api"]+"/participants/"+req.params.id, headers: {
 				'Authorization': 'Bearer '+req.session.jwt
 			}, resolveWithFullResponse: true};
 		var coureursPromise = rp(request1);
@@ -389,7 +390,7 @@ router.get('/deconnexion', function(req, res, next) {
 });
 
 router.post('/connexion', function(req, res, next) {
-	var request = {method: 'POST', uri: serverConfig.server+"/authentication/login/", body: {user: req.body.user, password: req.body.password}, resolveWithFullResponse: true, json: true};
+	var request = {method: 'POST', uri: serverConfig["server-courses-api"]+"/authentication/login/", body: {user: req.body.user, password: req.body.password}, resolveWithFullResponse: true, json: true};
 	var equipePromise = rp(request);
 
 	Promise.all([equipePromise])

@@ -1,3 +1,8 @@
 {
-    "server":"http://localhost:3020"
+    "dev": {
+        "server-courses-api":"http://localhost:3020"
+    },
+    "prod": {
+        "server-courses-api":"http://api.courses24maker.24heures.org"
+    }
 }

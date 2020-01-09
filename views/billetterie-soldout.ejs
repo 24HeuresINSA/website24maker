@@ -30,24 +30,96 @@
             }
         </style>
 
+        <style type="text/css">
+            /* counter clock css */
+            ul.countdown {
+                list-style: none;
+                padding: 0;
+                display: block;
+                text-align: center;
+                font-family: 'arial', sans-serif !important;
+            }
+
+            .font-billetterie-date{
+                font-size: 9vw;
+            }
+
+            .font-billetterie-date2{
+                font-size: 3vw;
+            }
+
+            ul.countdown li {
+                display: inline-block;
+            }
+
+            ul.countdown li span {
+                font-size: 7.5vw;
+                font-weight: 300;
+            }
+
+            ul.countdown li.seperator {
+                font-size: 3vw;
+                line-height: 30px;
+                vertical-align: top;
+            }
+
+            ul.countdown li p {
+                color: #e83d44;
+                font-size: 3vw;
+            }
+            /* emd counter clock css */
+
+            @media (max-width: 767px) {
+
+                .text-center-xs {
+                    text-align: center;
+                }
+            }
+
+            @media (min-width: 1000px) {
+                .font-billetterie-date{
+                    font-size: 100px;
+                }
+                .font-billetterie-date2{
+                    font-size: 30px;
+                }
+
+                ul.countdown li span {
+                    font-size: 90px;
+                    font-weight: 300;
+                }
+
+                ul.countdown li.seperator {
+                    font-size: 60px;
+                    line-height: 40px;
+                    vertical-align: top;
+                }
+
+                ul.countdown li p {
+                    color: #e83d44;
+                    font-size: 28px;
+                }
+            }
+        </style>
+
         <!-- CONTENT --------------------------------------------------------------------------------->
 
         <!-- About Section -->
         <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="img/background/home-bellecour.jpg">
             <div class="container">
                 <div class="title">
-                    <div class="h1-titre">BILLETTERIE (SOLDOUT)</div><br>
+                    <div class="h1-titre">BILLETTERIE</div><br>
                     <h4 class="">
                         <span class="text-original-case">Vous étiez plus de 10 000 chaque soir pour les concerts de l'édition 2019 ! MERCI !</span>
                     </h4>
-                    <h4 class="">
+                    <h4 class="d-none">
                         <span class="text-original-case">La billetterie ouvrira le Dimanche 02 Février 2020 à 14h</span>
                     </h4>
                 </div>
             </div>
         </section>
 
-        <div class="mt-3 mb-3"></div>
+        <div class="mt-3 mb-3 d-none"></div>
 
         <section class="pb pb-5 pt-5 d-none">
             <div class="container">
@@ -61,35 +133,33 @@
             </div>
         </section>
 
-        <section id="testimonial" class="overlay-dark dark-bg ptb p-5 5" style="background-image: url('img/background/home-public-45.jpg'); background-position: center center; background-size: cover;" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
-                    <div class="item">
-                        <div class="testimonial text-center dark-color d-none">
-                            <div class="container-icon"><i class="fa fa-calendar-o"></i> <i class="fa fa-"></i></div>
-                            <ul class="countdown" style="color: white;">
-                                <li>
-                                    <span class="days">00</span>
-                                    <p class="days_ref">days</p>
-                                </li>
-                                <li class="seperator">.</li>
-                                <li>
-                                    <span class="hours">00</span>
-                                    <p class="hours_ref">hours</p>
-                                </li>
-                                <li class="seperator">:</li>
-                                <li>
-                                    <span class="minutes">00</span>
-                                    <p class="minutes_ref">minutes</p>
-                                </li>
-                                <li class="seperator">:</li>
-                                <li>
-                                    <span class="seconds">00</span>
-                                    <p class="seconds_ref">seconds</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <section id="testimonial" class="dark-bg d-flex ptb p-5 pl-3 pr-3 5 background-2020">
+            <div class="container m-auto">
+                <div class="testimonial text-center pb-lg-4">
+                    <span class=" font-billetterie-date">02 02 2020</span><br><span class="font-billetterie-date2">Ouverture de la billetterie à 14h</span>
+                </div>
+                <div class="testimonial text-center dark-color">
+                    <ul class="countdown pt-4" style="color: #e83d44;">
+                        <li>
+                            <span class="days">00</span>
+                            <p class="days_ref">days</p>
+                        </li>
+                        <li class="seperator">.</li>
+                        <li>
+                            <span class="hours">00</span>
+                            <p class="hours_ref">hours</p>
+                        </li>
+                        <li class="seperator">:</li>
+                        <li>
+                            <span class="minutes">00</span>
+                            <p class="minutes_ref">minutes</p>
+                        </li>
+                        <li class="seperator">:</li>
+                        <li>
+                            <span class="seconds">00</span>
+                            <p class="seconds_ref">seconds</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -234,8 +304,8 @@
     </script>
     <script type="text/javascript">
         $('.countdown').downCount({
-            date: '05/15/2020 20:00:00',
-            offset: +2
+            date: '02/02/2020 14:00:00',
+            offset: +1
         }, function () {
             return;
         });
