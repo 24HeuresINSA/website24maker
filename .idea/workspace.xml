@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/site/tremplin_2020_photo_artistes.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/prog_v1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/tremplin_electro_event_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/tremplin_rock_event_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/concerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/concerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-tremplins.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-tremplins.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,18 +141,9 @@
       <workItem from="1572472053715" duration="3511000" />
       <workItem from="1573135642733" duration="40000" />
       <workItem from="1578566209615" duration="11092000" />
-      <workItem from="1578678472499" duration="4298000" />
+      <workItem from="1578678472499" duration="5213000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

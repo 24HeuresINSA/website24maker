@@ -52,24 +52,36 @@
                 font-family: 'arial', sans-serif !important;
             }
 
+            .font-billetterie-date{
+                font-size: 9vw;
+            }
+
+            .font-billetterie-date2{
+                font-size: 3vw;
+            }
+
             ul.countdown li {
                 display: inline-block;
             }
 
             ul.countdown li span {
-                font-size: 30px;
+                font-size: 7.5vw;
                 font-weight: 300;
+                color: #e83d44;
+
             }
 
             ul.countdown li.seperator {
-                font-size: 20px;
+                font-size: 3vw;
                 line-height: 30px;
                 vertical-align: top;
+                color: #e83d44;
+
             }
 
             ul.countdown li p {
-                color: #a7abb1;
-                font-size: 12px;
+                color: #e83d44;
+                font-size: 3vw;
             }
             /* emd counter clock css */
 
@@ -77,6 +89,34 @@
 
                 .text-center-xs {
                     text-align: center;
+                }
+            }
+
+            @media (min-width: 1000px) {
+                .font-billetterie-date{
+                    font-size: 90px;
+                }
+                .font-billetterie-date2{
+                    font-size: 30px;
+                }
+
+                ul.countdown li span {
+                    font-size: 90px;
+                    color: #e83d44;
+                    font-weight: 300;
+                }
+
+                ul.countdown li.seperator {
+                    font-size: 60px;
+                    line-height: 40px;
+                    vertical-align: top;
+                    color: #e83d44;
+
+                }
+
+                ul.countdown li p {
+                    color: #e83d44;
+                    font-size: 28px;
                 }
             }
         </style>
@@ -179,8 +219,8 @@
                         <div class="testimonial text-center dark-color">
                             <div class="container-icon"><i class="fa fa-calendar"></i> <i class="fa fa-"></i></div>
                             <h2 class="text-center">RENDEZ-VOUS LES 15, 16 & 17 MAI 2020</h2>
-                            <h5 class=""><a href="https://forms.gle/x1KSiTokAicjubD3A" style="color: #ffaee7">Questionnaire de satisfaction de l'édition 2019</a></h5>
-                            <ul class="countdown d-none" style="color: white;">
+                            <h5 class="d-none"><a href="https://forms.gle/x1KSiTokAicjubD3A" style="color: #ffaee7">Questionnaire de satisfaction de l'édition 2019</a></h5>
+                            <ul class="countdown pt-3" style="color: white; background: rgba(232, 61, 68, 0)">
                                 <li>
                                     <span class="days">00</span>
                                     <p class="days_ref">days</p>
