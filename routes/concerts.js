@@ -10,7 +10,7 @@ router.get('/artistes', function(req, res, next) {
 });
 
 router.get('/tremplins', function(req, res, next) {
-	res.render('concerts-tremplins-old');
+	res.render('concerts-tremplins');
 });
 
 module.exports = router;
