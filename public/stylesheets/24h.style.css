@@ -378,6 +378,17 @@ a:hover {
     transition-property: width, background-color;
 }
 
+.skillbar-bar-2020 {
+    height: 15px;
+    width: 0px;
+    background: rgba(148,36,71, 0.9); #linear-gradient(90deg, #942447 0%, #942447 10%, #e83d44 10%, #e83d44 90%, #942447 90%, #942447 100%);
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
 .accordion-title.active {
     /* background: #fafafa; */
     color: #009e9f;

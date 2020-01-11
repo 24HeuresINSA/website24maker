@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/documents/Plaquette_sponsoring_2020.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/Plaquette_sponsoring_2019.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/24h.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/24h.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/billetterie.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/billetterie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/billetterie.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/presse.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/presse.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sponsoring.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sponsoring.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/documents" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -57,11 +63,11 @@
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/documents" />
       <recent name="$PROJECT_DIR$/public/images/site" />
       <recent name="$PROJECT_DIR$/public/images/logos" />
       <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,7 +147,7 @@
       <workItem from="1572472053715" duration="3511000" />
       <workItem from="1573135642733" duration="40000" />
       <workItem from="1578566209615" duration="11092000" />
-      <workItem from="1578678472499" duration="5213000" />
+      <workItem from="1578678472499" duration="10487000" />
     </task>
     <servers />
   </component>
