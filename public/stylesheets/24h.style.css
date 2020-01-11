@@ -13,8 +13,9 @@ html{
 }
 
 .background-2020{
-    height: 70vh;
-    background: linear-gradient(25deg,#202446 0%, #202446 4%, #e83d44 4%, #e83d44 8%, #942447 8%, #942447 12%, #4b2c57 12%, #4b2c57 16%, #202446 16%, #202446 100%);
+    height: 60vh;
+    #background: linear-gradient(25deg, #202446 0%, #202446 4%, #e83d44 4%, #e83d44 8%, #942447 8%, #942447 12%, #4b2c57 12%, #4b2c57 16%, #202446 16%, #202446 100%);
+    background: linear-gradient(180deg, #202446 0%, #202446 84%, #e83d44 84%, #e83d44 88%, #942447 88%, #942447 92%, #4b2c57 92%, #4b2c57 96%, #202446 96%, #202446 100%);
 }
 
 .footerlien, .footer{
@@ -28,7 +29,7 @@ html{
 
 .skillbar-title, .skill-bar-percent {
     color: #e83d44;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -47,7 +48,7 @@ html{
 }
 
 .jauge-titre{
-    color: #009e9f;
+    color: #e83d44;
 }
 
 .color-animations-jour2 {
@@ -379,14 +380,71 @@ a:hover {
 }
 
 .skillbar-bar-2020 {
-    height: 15px;
+    height: 30px;
     width: 0px;
-    background: rgba(148,36,71, 0.9); #linear-gradient(90deg, #942447 0%, #942447 10%, #e83d44 10%, #e83d44 90%, #942447 90%, #942447 100%);
+    z-index: 5;
+    background: rgba(148,36,71, 0.7);
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
     -o-transition-property: width, background-color;
     transition-property: width, background-color;
+}
+
+.bar-zone-billetterie {
+    height: 30px;
+    z-index: 2;
+    line-height: 12px;
+    font-size: 9px;
+    text-align: center;
+    color: #e83d44;
+    background: rgba(75,44,87, 1);
+}
+
+.prix-tarif-zone {
+    font-size: 13px;
+}
+
+.soldout-tarif-zone {
+    font-size: 11px;
+}
+
+@media (min-width: 780px) {
+    .bar-zone-billetterie {
+        height: 50px;
+        line-height: 14px;
+        font-size: 13px;
+        z-index: 2;
+        text-align: center;
+        color: #e83d44;
+        background: rgba(75,44,87, 1);
+    }
+
+    .skillbar-bar-2020 {
+        height: 50px;
+        width: 0px;
+        z-index: 5;
+        background: rgba(148,36,71, 0.7);
+        -webkit-transition-property: width, background-color;
+        -moz-transition-property: width, background-color;
+        -ms-transition-property: width, background-color;
+        -o-transition-property: width, background-color;
+        transition-property: width, background-color;
+    }
+
+    .prix-tarif-zone {
+        font-size: 17px;
+    }
+    .soldout-tarif-zone {
+        font-size: 16px;
+    }
+
+    .skillbar-title, .skill-bar-percent {
+        color: #e83d44;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 }
 
 .accordion-title.active {

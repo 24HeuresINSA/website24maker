@@ -22,12 +22,14 @@
 <link href="/css/24h.style.css" rel="stylesheet" type="text/css" />
 
 <script src="/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<% if (process.env.NODE_ENV != 'dev') { %>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116303927-1"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116303927-1"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
 	gtag('config', 'UA-116303927-1');
-</script>
+</script>-->
+<% } %>

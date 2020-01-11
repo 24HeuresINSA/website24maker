@@ -2357,14 +2357,14 @@ form label.error {
     margin-bottom: 30px;
 }
 
-.skillbar-bar:before {
+/*.skillbar-bar:before {
     background: #eee;
     content: "";
     height: 3px;
     position: absolute;
     width: 100%;
     z-index: -1;
-}
+}*/
 
 .skillbar-bar {
     height: 3px;

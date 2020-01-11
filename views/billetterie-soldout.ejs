@@ -226,31 +226,177 @@
             </div>-->
         </section>
 
-        <section class="pb ptb-sm-80 fond-nuit-back d-none">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3 jauge-billetterie" style="color: #ff31bc; !important;">
-                            <div class="text-center"><h4 class="jauge-titre">Jauge billetterie</h4></div>
-                            <div class="skillbar deuxs-jauge" data-percent="100%">
-                                <div class="skillbar-title">Pass 2 soirs</div>
-                                <div class="skill-bar-percent deuxs-jauge-label">100% ATTEINT</div>
-                                <div class="skillbar-bar skillbar-bar-1"></div>
+        <section class="pb pt-60 ptb-sm-30 fond-nuit-back">
+            <div class="container">
+                <!-- JAUGE AVRIL
+                <div class="row d-none">
+                    <div class="col-md-8 offset-md-2 jauge-billetterie" style="color: #e83d44; !important;">
+                        <div class="text-center"><h4 class="jauge-titre">Jauge billetterie</h4></div>
+                        <div class="skillbar deuxs-jauge">
+                            <div class="skillbar-title">Pass 2 soirs</div>
+                            <div class="skill-bar-percent deuxs-jauge-label">0% ATTEINT</div>
+                            <div style="background:
+                            linear-gradient(90deg, #4b2c57 0%, #4b2c57 15%, #fff 15%, #fff 16%, #4b2c57 16%, #4b2c57 93%, #fff 93%, #fff 94%, #4b2c57 94%, #4b2c57 100%);">
+                                <div class="skillbar-bar skillbar-bar-2020"></div>
                             </div>
-                            <div class="skillbar ven-jauge" data-percent="100%">
-                                <div class="skillbar-title">Pass Vendredi</div>
-                                <div class="skill-bar-percent ven-jauge-label">100% ATTEINT</div>
-                                <div class="skillbar-bar skillbar-bar-1"></div>
+                        </div>
+                        <div class="skillbar ven-jauge">
+                            <div class="skillbar-title">Pass Vendredi</div>
+                            <div class="skill-bar-percent ven-jauge-label">0% ATTEINT</div>
+                            <div style="background:
+                            linear-gradient(90deg, #4b2c57 0%, #4b2c57 8%, #fff 8%, #fff 9%, #4b2c57 9%, #4b2c57 88%, #fff 88%, #fff 89%, #4b2c57 89%, #4b2c57 100%);">
+                                <div class="skillbar-bar skillbar-bar-2020"></div>
                             </div>
-                            <div class="skillbar sam-jauge" data-percent="100%">
-                                <div class="skillbar-title">Pass Samedi</div>
-                                <div class="skill-bar-percent sam-jauge-label">100% ATTEINT</div>
-                                <div class="skillbar-bar skillbar-bar-1"></div>
+                        </div>
+                        <div class="skillbar sam-jauge">
+                            <div class="skillbar-title">Pass Samedi</div>
+                            <div class="skill-bar-percent sam-jauge-label">0% ATTEINT</div>
+                            <div style="background:
+                            linear-gradient(90deg, #4b2c57 0%, #4b2c57 8%, #fff 8%, #fff 9%, #4b2c57 9%, #4b2c57 88%, #fff 88%, #fff 89%, #4b2c57 89%, #4b2c57 100%);">
+                                <div class="skillbar-bar skillbar-bar-2020"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                -->
+                <div class="row pt-3">
+                    <div class="col-md-10 offset-md-1 jauge-billetterie" style="color: #e83d44; !important;">
+                        <div class="text-center"><h4 class="jauge-titre">Tarifs</h4></div>
+                        <div class="skillbar-title">Pass 2 soirs</div>
+                        <div class="skill-bar-percent deuxsoirs-total-jauge-label d-none">0% ATTEINT</div>
+                        <div class="row">
+                            <div class="col-3 pr-1 position-relative skillbar deuxsoirs-early-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                            <span class="m-auto position-relative" id="prix-deuxsoirs-early">Early bird<br>
+                                                <span class="m-auto prix-tarif-zone">12€</span>
+                                            </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-early">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl-1 pr-1 position-relative skillbar deuxsoirs-regular-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                            <span class="m-auto position-relative" id="prix-deuxsoirs-regular">Normal<br>
+                                                <span class="m-auto prix-tarif-zone">18€</span>
+                                            </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-regular">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 pl-1 position-relative skillbar deuxsoirs-last-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                            <span class="m-auto position-relative" id="prix-deuxsoirs-last">Last chance<br>
+                                                <span class="m-auto prix-tarif-zone">28€</span>
+                                            </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-last">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skillbar-title">Pass Vendredi</div>
+                        <div class="skill-bar-percent vendredi-total-jauge-label d-none">0% ATTEINT</div>
+                        <div class="row">
+                            <div class="col-3 pr-1 position-relative skillbar vendredi-early-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                <span class="m-auto position-relative" id="prix-vendredi-early">Early bird<br>
+                                                    <span class="m-auto prix-tarif-zone">8€</span>
+                                                </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-early">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl-1 pr-1 position-relative skillbar vendredi-regular-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                <span class="m-auto position-relative" id="prix-vendredi-regular">Normal<br>
+                                                    <span class="m-auto prix-tarif-zone">12€</span>
+                                                </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-regular">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 pl-1 position-relative skillbar vendredi-last-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                <span class="m-auto position-relative" id="prix-vendredi-last">Last chance<br>
+                                                    <span class="m-auto prix-tarif-zone">18€</span>
+                                                </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-last">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skillbar-title">Pass Samedi</div>
+                        <div class="skill-bar-percent samedi-total-jauge-label d-none">0% ATTEINT</div>
+                        <div class="row">
+                            <div class="col-3 pr-1 position-relative skillbar samedi-early-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                    <span class="m-auto position-relative" id="prix-samedi-early">Early bird<br>
+                                                        <span class="m-auto prix-tarif-zone">8€</span>
+                                                    </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-early">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl-1 pr-1 position-relative skillbar samedi-regular-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                    <span class="m-auto position-relative" id="prix-samedi-regular">Normal<br>
+                                                        <span class="m-auto prix-tarif-zone">12€</span>
+                                                    </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-regular">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 pl-1 position-relative skillbar samedi-last-jauge">
+                                <div class="bar-zone-billetterie d-flex position-relative">
+                                    <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
+                                    <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
+                                                    <span class="m-auto position-relative" id="prix-samedi-last">Last chance<br>
+                                                        <span class="m-auto prix-tarif-zone">18€</span>
+                                                    </span>
+                                        <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
+                                            <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-last">SOLD OUT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- END CONTENT ---------------------------------------------------------------------------->
 
