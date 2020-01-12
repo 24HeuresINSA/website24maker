@@ -132,9 +132,9 @@
             </div>
             <div class="row container text-center m-auto">
                 <div class="container col-md-12 col-lg-12">
-                    <a title="Billetterie Weezevent - 24h de l'INSA" href="https://www.weezevent.com/24hinsa" class="weezevent-widget-integration" target="_blank"
-                       data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=403386&lg_billetterie=1&code=64199&resize=1&width_auto=1&color_primary=0d003d"
-                       data-width="650" data-height="600" data-id="403386" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>
+                    <a title="Logiciel billetterie en ligne" href="https://weezevent.com/?c=sys_widget"
+                       class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=568493&lg_billetterie=1&code=37469&width_auto=1&color_primary=e83d44"
+                       data-width="650" data-height="600" data-id="568493" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>
                     <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
                 </div>
                 <div class="spacer-30"></div>
@@ -357,7 +357,7 @@
     </script>
     <script type="text/javascript">
 		$.ajax({
-			url: "/billetterie/stats-null",
+			url: "/billetterie/stats",
 			context: document.body,
 			complete: function(xhr, status, errorThrown){
 				if(xhr.status == 200){
