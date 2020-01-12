@@ -9,7 +9,6 @@ var sha256 = require('sha256');
 const { base64encode, base64decode } = require('nodejs-base64');
 
 router.get('/inscriptions', function(req, res, next) {
-console.log(serverConfig["server-courses-api"])
 	if(false){
 		res.render('courses-inscriptions-ferme');
 	}else{
