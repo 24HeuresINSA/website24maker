@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/partenaires/logo_runalp_couleur_sf.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/server.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/server.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-resultats.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-resultats.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/courses-connexion.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-connexion.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/courses-mon-espace.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-mon-espace.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +143,7 @@
       <workItem from="1573135642733" duration="40000" />
       <workItem from="1578566209615" duration="11092000" />
       <workItem from="1578678472499" duration="29094000" />
-      <workItem from="1578852600441" duration="15155000" />
+      <workItem from="1578852600441" duration="16052000" />
     </task>
     <servers />
   </component>
