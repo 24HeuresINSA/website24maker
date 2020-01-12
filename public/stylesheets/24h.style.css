@@ -409,6 +409,19 @@ a:hover {
     font-size: 11px;
 }
 
+.color-2020-rouge-nuit{
+    color: #e83d44
+}
+.color-2020-bordeaux-nuit{
+    color: rgb(148,36,71)
+}
+.color-2020-violet-nuit{
+    color: rgb(75,44,87)
+}
+.color-2020-fond-nuit{
+    color: #202446;
+}
+
 @media (min-width: 780px) {
     .bar-zone-billetterie {
         height: 50px;
@@ -452,6 +465,12 @@ a:hover {
     color: #009e9f;
 }
 
+@font-face{
+    font-family: "Impact";
+    src: url('/public/fonts/impact.woff') format("woff");
+}
+
 body{
-    font-family: Roboto, sans-serif;
+    #font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif !important;
 }

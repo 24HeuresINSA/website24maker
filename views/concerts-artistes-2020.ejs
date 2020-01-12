@@ -31,18 +31,13 @@
         <!-- CONTENT --------------------------------------------------------------------------------->
 
         <!-- About Section -->
-        <section id="about" class="pt pt-sm-60 fond-nuit-back">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="col-md-8 offset-md-2"></div>
-                        <h2 class="m-0">
-                            <span class="color-concerts">Artistes</span><br />
-                        </h2>
-                        <h4>
-                            <span class="text-original-case">Retrouvez la programmation de l'édition 2020</span>
-                        </h4>
-                    </div>
+        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="../img/background/concerts-comah.jpg">
+            <div class="container">
+                <div class="title">
+                    <div class="h1-titre">ARTISTES</div><br>
+                    <h4 class="">
+                        <span class="text-original-case">En attendant, retrouvez quelques artistes des 4 précédentes éditions</span>
+                    </h4>
                 </div>
             </div>
         </section>
@@ -69,15 +64,15 @@
 
                     <!-- DEVOILEMENT 1 -->
                     <%if (true) { %>
-                        <!-- ARTISTE 1 -->
+                        <!-- KLINGANDE -->
                         <div class="nf-item vendredi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_feder_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_klingande_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">FEDER <span style="font-size:10px;">(DJ SET)</span></p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#feder-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">KLINGANDE <span class="d-none" style="font-size:10px;">(DJ SET)</span></p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#klingande-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -85,41 +80,38 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">FEDER <span style="font-size:10px;">(DJ SET)</span></h3>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">KLINGANDE <span class="d-none" style="font-size:10px;">(DJ SET)</span></h3>
                                 <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Tropical House, Electro</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="feder-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="klingande-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">FEDER <span style="font-size:10px;">(DJ SET)</span></h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/RvK8SKZbBWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Avec déjà deux singles classé or, deux singles classé platine et un single de diamant à l’export, FEDER s’est imposé comme le nouveau nom de l’électro française.
-                                            Avec notamment son titre « Goodbye », classé #1 sur iTunes dans 22 pays et en haut du top Shazam France pendant 7 semaine d'affilées.🔝<br>
-                                            Ses armes secrètes ? Des beats réfléchis, des mélodies addictives et un sens inné du twist synthétique.
-                                            FEDER réalise aujourd’hui le score incroyable de 250 million de streams sur 3 singles seulement.
-                                            Son dernier single phare “Breathe”, plus influencé par des sons hip-hop, mêle clip futuriste et beats entraînants. 🔊</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">KLINGANDE <span class="d-none" style="font-size:10px;">(DJ SET)</span></h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">VENDREDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Tropical House, Electro</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/b6vSf0cA9qY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0 d-none">
+                                        🔊</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- ARTISTE 2 -->
-                        <div class="nf-item samedi spacing">
+                        <!-- 47TER -->
+                        <div class="nf-item vendredi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_mome_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_47ter_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">MØME</p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#mome-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">47TER</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#47ter-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -127,26 +119,63 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">47TER</h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rap</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="mome-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="47ter-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">MØME</h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/1YRW1QRKTBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Depuis son premier passage en 2015 aux 24 heures de l'INSA, Møme a bien grandi. Après le succès de Aloha suivi de son album Panorama composé lors d'un road trip,
-                                            il revient pour nous faire voyager avec un tout nouvel album qui sortira courant 2019. Après une tournée mondiale, le compositeur niçois continuera de nous faire rêver avec un live captivant 🎶<br>
-                                            Møme nous donne rendez-vous le Samedi 18 et pourrait nous réserver quelques surprises 👀<br>
-                                            Son dernier titre en date : <a target="_blank" href="https://youtu.be/mI3z9BNXcEE">Sail Away</a>.</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">47TER</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">VENDREDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Rap</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/nPwGvjd2zOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LPF -->
+                        <div class="nf-item samedi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_lpf_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">LA P'TITE FUMEE</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#lpf-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LA P'TITE FUMEE<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Natural Trance</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="lpf-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">LA P'TITE FUMEE</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">SAMEDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Natural Trance</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/sc3ykbPLi-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -154,16 +183,16 @@
                     <% } %>
 
                     <!-- DEVOILEMENT 2 -->
-                    <%if (true) { %>
-                        <!-- ARTISTE -->
-                        <div class="nf-item vendredi spacing">
+                    <%if (false) { %>
+                        <!-- BAKERMAT -->
+                        <div class="nf-item samedi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_feder_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_bakermat_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">FEDER <span style="font-size:10px;">(DJ SET)</span></p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#feder-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">BAKERMAT <span class="" style="font-size:10px;">(LIVE SET & SAXO)</span></p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#bakermat-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -171,41 +200,38 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">FEDER <span style="font-size:10px;">(DJ SET)</span></h3>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">BAKERMAT <span class="" style="font-size:10px;">(LIVE SET & SAXO)</span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Tropical House, Electro</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="feder-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="bakermat-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">FEDER <span style="font-size:10px;">(DJ SET)</span></h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/RvK8SKZbBWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Avec déjà deux singles classé or, deux singles classé platine et un single de diamant à l’export, FEDER s’est imposé comme le nouveau nom de l’électro française.
-                                            Avec notamment son titre « Goodbye », classé #1 sur iTunes dans 22 pays et en haut du top Shazam France pendant 7 semaine d'affilées.🔝<br>
-                                            Ses armes secrètes ? Des beats réfléchis, des mélodies addictives et un sens inné du twist synthétique.
-                                            FEDER réalise aujourd’hui le score incroyable de 250 million de streams sur 3 singles seulement.
-                                            Son dernier single phare “Breathe”, plus influencé par des sons hip-hop, mêle clip futuriste et beats entraînants. 🔊</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">BAKERMAT <span class="d-none" style="font-size:10px;">(LIVE SET & SAXO)</span></h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">SAMEDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Tropical House, Electro</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/iaGjz4dtr3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0 d-none">
+                                            🔊</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- ARTISTE -->
+                        <!-- JAHNERATION -->
                         <div class="nf-item samedi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_mome_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_jahneration_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">MØME</p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#mome-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">JAHNERATION</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#47ter-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -213,26 +239,63 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">JAHNERATION</h3>
                                 <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Reggae, Dub</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="mome-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="47ter-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">MØME</h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/1YRW1QRKTBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Depuis son premier passage en 2015 aux 24 heures de l'INSA, Møme a bien grandi. Après le succès de Aloha suivi de son album Panorama composé lors d'un road trip,
-                                            il revient pour nous faire voyager avec un tout nouvel album qui sortira courant 2019. Après une tournée mondiale, le compositeur niçois continuera de nous faire rêver avec un live captivant 🎶<br>
-                                            Møme nous donne rendez-vous le Samedi 18 et pourrait nous réserver quelques surprises 👀<br>
-                                            Son dernier titre en date : <a target="_blank" href="https://youtu.be/mI3z9BNXcEE">Sail Away</a>.</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">JAHNERATION</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">SAMEDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Reggae, Dub</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/7kR7HeQ67Ws" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOGE 21 -->
+                        <div class="nf-item vendredi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_loge21_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">LOGE 21</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#loge-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LOGE 21<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Bass House</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="loge-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">LOGE 21</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">VENDREDI - Grande Scène</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Bass House</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/_IZ9gIuThPo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -240,16 +303,16 @@
                     <% } %>
 
                     <!-- DEVOILEMENT 3 -->
-                    <%if (true) { %>
-                        <!-- ARTISTE -->
+                    <%if (false) { %>
+                        <!-- LEFA -->
                         <div class="nf-item vendredi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_feder_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_lefa_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">FEDER <span style="font-size:10px;">(DJ SET)</span></p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#feder-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">LEFA</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#lefa-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -257,41 +320,38 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">FEDER <span style="font-size:10px;">(DJ SET)</span></h3>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">LEFA</h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Nord</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rap</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="feder-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="lefa-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">FEDER <span style="font-size:10px;">(DJ SET)</span></h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">VENDREDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/RvK8SKZbBWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Avec déjà deux singles classé or, deux singles classé platine et un single de diamant à l’export, FEDER s’est imposé comme le nouveau nom de l’électro française.
-                                            Avec notamment son titre « Goodbye », classé #1 sur iTunes dans 22 pays et en haut du top Shazam France pendant 7 semaine d'affilées.🔝<br>
-                                            Ses armes secrètes ? Des beats réfléchis, des mélodies addictives et un sens inné du twist synthétique.
-                                            FEDER réalise aujourd’hui le score incroyable de 250 million de streams sur 3 singles seulement.
-                                            Son dernier single phare “Breathe”, plus influencé par des sons hip-hop, mêle clip futuriste et beats entraînants. 🔊</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">LEFA</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">VENDREDI - Scène Nord</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Rap</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/mnUWGtCokbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0 d-none">
+                                            🔊</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- ARTISTE -->
+                        <!-- WAXX -->
                         <div class="nf-item samedi spacing">
                             <div class="item-box">
                                 <a>
-                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_mome_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_waxx_500px.jpg" class="item-container photo-concerts-artiste-item">
                                     <div class="item-mask">
                                         <div class="item-caption">
-                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">MØME</p>
-                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#mome-modal">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">WAXX</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#waxx-modal">
                                                 Plus d'info
                                             </button>
                                         </div>
@@ -299,26 +359,180 @@
                                 </a>
                             </div>
                             <div>
-                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MØME<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Grande Scène</h6>
-                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electro</h6>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">WAXX</h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène Nord</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Rock</h6>
                             </div>
                         </div>
-                        <div class="modal fade m-auto p-0" id="mome-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal fade m-auto p-0" id="waxx-modal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body jjj">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title text-center" style="padding-left:13px;">MØME</h4>
-                                        <h6 class="letter-spacing-1 text-center m-0">SAMEDI - Grande Scène</h6>
-                                        <h6 class="letter-spacing-1 text-center m-0 pb-2">Electro</h6>
-                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/1YRW1QRKTBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        <p class="text-justify m-0">Depuis son premier passage en 2015 aux 24 heures de l'INSA, Møme a bien grandi. Après le succès de Aloha suivi de son album Panorama composé lors d'un road trip,
-                                            il revient pour nous faire voyager avec un tout nouvel album qui sortira courant 2019. Après une tournée mondiale, le compositeur niçois continuera de nous faire rêver avec un live captivant 🎶<br>
-                                            Møme nous donne rendez-vous le Samedi 18 et pourrait nous réserver quelques surprises 👀<br>
-                                            Son dernier titre en date : <a target="_blank" href="https://youtu.be/mI3z9BNXcEE">Sail Away</a>.</p>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">WAXX</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">SAMEDI - Scène Nord</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Rock</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/7kR7HeQ67Ws" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BILLET D'HUMEUR -->
+                        <div class="nf-item vendredi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_billet_dhumeur_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">BILLET D'HUMEUR</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#bdh-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">BILLET D'HUMEUR<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Nord</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Pop, Electro</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="bdh-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">BILLET D'HUMEUR</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">VENDREDI - Scène Nord</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Pop, Electro</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/9yoPS1-i6u4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MESSIRE -->
+                        <div class="nf-item samedi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition_2020/artiste_photo_messire_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">MESSIRE</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#messire-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-2020-rouge-nuit letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">MESSIRE<span class="d-none" style="font-size:10px;"> (Live)</span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI - Scène Nord</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Electroethnic</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="messire-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title color-2020-rouge-nuit text-center" style="padding-left:13px;">MESSIRE</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-fond-nuit">SAMEDI - Scène Nord</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-fond-nuit">Electroethnic</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/NSXear__BHY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THE ACKEE SALTFISH -->
+                        <div class="nf-item vendredi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_the_ackee_saltfish_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">THE ACKEE SALTFISH</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#tas-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">THE ACKEE SALTFISH<span style="font-size:10px;"></span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI - Scène Roots</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Reggae Bass</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="tas-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title text-center color-2020-rouge-nuit" style="padding-left:13px;">THE ACKEE SALTFISH</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-violet-nuit">VENDREDI - Scène Roots</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-violet-nuit">Reggae Bass</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="https://www.youtube.com/embed/4cyOz8qfs8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0">Présents depuis de nombreuses années sur le festival des 24h de l’INSA, le duo composé de Selecta Rhome et de Selector Abal vous fera skanker sur de la tropical bass
+                                            aux sonorités jamaïcaines !<br>
+                                            Retrouvez The Ackee saltfish le vendredi sur la scène Root's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- KLS -->
+                        <div class="nf-item vendredi samedi spacing">
+                            <div class="item-box">
+                                <a>
+                                    <img alt="1" style="object-fit: cover" src="../img/artistes/edition/artiste_2019_kls_2_500px.jpg" class="item-container photo-concerts-artiste-item">
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <p class="white text-justify text-original-case letter-spacing-no pt-1">KLS CREW</p>
+                                            <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#kls-modal">
+                                                Plus d'info
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="color-concerts letter-spacing-1 text-center mb-0 titre-concerts-artiste-item">KLS CREW<span style="font-size:10px;"></span></h3>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">VENDREDI / SAMEDI</h6>
+                                <h6 class="letter-spacing-1 text-center m-0 sous-titre-style-concerts-artiste-item">Collectif DJ multistyle</h6>
+                            </div>
+                        </div>
+                        <div class="modal fade m-auto p-0" id="kls-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body jjj">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title text-center color-2020-rouge-nuit" style="padding-left:13px;">KLS CREW</h4>
+                                        <h6 class="letter-spacing-1 text-center m-0 color-2020-violet-nuit">VENDREDI / SAMEDI</h6>
+                                        <h6 class="letter-spacing-1 text-center m-0 pb-2 color-2020-violet-nuit">Collectif DJ multistyle</h6>
+                                        <iframe class="modal-artiste-video" style="width: 100%; height: auto;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <p class="text-justify m-0"></p>
                                     </div>
                                 </div>
                             </div>
