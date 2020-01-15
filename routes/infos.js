@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var contact = require('/config/contact-credentials')
+var contact = require('../config/contact-credentials');
 var send = require('gmail-send')({
 	user: contact.user,
 	pass: contact.password

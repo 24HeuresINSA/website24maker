@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/config/contact-credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/documents/Reglement_interieur_billetterie_2020.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/billetterie.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/billetterie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/infos-faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-faq.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/partenaires" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/documents" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,19 +51,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/partenaires" />
-      <recent name="$PROJECT_DIR$/public/images/artistes/edition_2020" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
-      <recent name="$PROJECT_DIR$/public/documents" />
-      <recent name="$PROJECT_DIR$/public/images/site" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/documents" />
+      <recent name="$PROJECT_DIR$/public/images/partenaires" />
+      <recent name="$PROJECT_DIR$/public/images/artistes/edition_2020" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+      <recent name="$PROJECT_DIR$/public/images/site" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -142,7 +145,7 @@
       <workItem from="1578566209615" duration="11092000" />
       <workItem from="1578678472499" duration="29094000" />
       <workItem from="1578852600441" duration="16616000" />
-      <workItem from="1579083782834" duration="191000" />
+      <workItem from="1579083782834" duration="1052000" />
     </task>
     <servers />
   </component>
