@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/api-courses24maker-dist.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/api-weezevent-dist.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/contact-credentials-dist.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/course_caritative_remise_prix.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_04.25_site.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_05.02_site.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_early_soldout.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +141,7 @@
       <workItem from="1578678472499" duration="29094000" />
       <workItem from="1578852600441" duration="16616000" />
       <workItem from="1579083782834" duration="2924000" />
-      <workItem from="1579087902114" duration="2516000" />
+      <workItem from="1579087902114" duration="3414000" />
     </task>
     <servers />
   </component>
