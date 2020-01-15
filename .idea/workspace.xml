@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/partenaires/logo_filactions_couleur_sf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/site/courses_caritatives_photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/api-courses24maker-dist.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/api-weezevent-dist.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/contact-credentials-dist.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-caritative.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-caritative.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-connexion.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-connexion.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-mon-espace.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-mon-espace.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-resultats.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-resultats.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/site/course_caritative_remise_prix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_04.25_site.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_05.02_site.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/site/tarifs_billetterie_early_soldout.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/partenaires" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/public/images/partenaires" />
       <recent name="$PROJECT_DIR$/public/images/site" />
       <recent name="$PROJECT_DIR$/public/documents" />
       <recent name="$PROJECT_DIR$/public/images/artistes/edition_2020" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
@@ -150,7 +149,7 @@
       <workItem from="1578678472499" duration="29094000" />
       <workItem from="1578852600441" duration="16616000" />
       <workItem from="1579083782834" duration="2924000" />
-      <workItem from="1579087902114" duration="255000" />
+      <workItem from="1579087902114" duration="2516000" />
     </task>
     <servers />
   </component>
