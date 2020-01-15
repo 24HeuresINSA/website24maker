@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var contact = require('/config/contact-credentials')
 var send = require('gmail-send')({
-	user: 'communication@24heures.org',
-	pass: 'poneyroti24h'
+	user: contact.user,
+	pass: contact.password
 });
 
 var iii=0;
@@ -32,7 +33,6 @@ router.post('/contact', function(req, res, next) {
 			subject: '[Message du site 24heures.org] >> ' + subject,
 			text: '>>>> Expediteur du message: ' + name + ' | ' + email + '\n>>>>Pour lui répondre veuillez renvoyer un mail à son adresse ' + email + '\n\n>>>>Message\n' + message
 		}, function (err, info) {
-			console.log('COUCOU');
 			if (err) {
 				console.log(err);
 				res.status(500).end();
