@@ -1,10 +1,10 @@
 ## Website of the festival "24 HEURES DE L'INSA"
 
-###Requirements
+### Requirements
 - node.js
 - npm
 
-###Installation
+### Installation
 - Fork or clone the project
 - Lauch the command ``npm install``
 - Rename the three configuration json files from the directory ``/config``.
@@ -12,7 +12,7 @@
 - Run the project ``npm run dev``
 - Go to ``http://localhost:3000``
 
-###Make a change
+### Make a change
 - Make sure the code is up to date
     - ``git pull``
 - Create a branch before making a change
