@@ -14,8 +14,8 @@ html{
 
 .background-2020{
     height: 60vh;
-    #background: linear-gradient(25deg, #202446 0%, #202446 4%, #e83d44 4%, #e83d44 8%, #942447 8%, #942447 12%, #4b2c57 12%, #4b2c57 16%, #202446 16%, #202446 100%);
-    background: linear-gradient(180deg, #202446 0%, #202446 84%, #e83d44 84%, #e83d44 88%, #942447 88%, #942447 92%, #4b2c57 92%, #4b2c57 96%, #202446 96%, #202446 100%);
+    #background: linear-gradient(25deg, #202446 0%, #202446 4%, #e83e43 4%, #e83e43 8%, #AF174B 8%, #AF174B 12%, #472767 12%, #472767 16%, #202446 16%, #202446 100%);
+    background: linear-gradient(180deg, #202446 0%, #202446 84%, #e83e43 84%, #e83e43 88%, #AF174B 88%, #AF174B 92%, #472767 92%, #472767 96%, #202446 96%, #202446 100%);
 }
 
 .footerlien, .footer{
@@ -28,7 +28,7 @@ html{
 }
 
 .skillbar-title, .skill-bar-percent {
-    color: #e83d44;
+    color: #e83e43;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ html{
 }
 
 .jauge-titre{
-    color: #e83d44;
+    color: #e83e43;
 }
 
 .color-animations-jour2 {
@@ -190,7 +190,7 @@ html{
 }
 
 a:hover {
-    color: #e83d44;
+    color: #e83e43;
 }
 
 .accordion-title:before {
@@ -360,7 +360,7 @@ a:hover {
 .skillbar-bar-1 {
     height: 6px;
     width: 0px;
-    background: #e83d44;
+    background: #e83e43;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -371,7 +371,7 @@ a:hover {
 .skillbar-bar-2 {
     height: 6px;
     width: 0px;
-    background: #e83d44;
+    background: #e83e43;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -383,7 +383,7 @@ a:hover {
     height: 30px;
     width: 0px;
     z-index: 5;
-    background: rgba(148,36,71, 0.7);
+    background: rgba(175,23,75, 0.7);
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -397,8 +397,8 @@ a:hover {
     line-height: 12px;
     font-size: 9px;
     text-align: center;
-    color: #e83d44;
-    background: rgba(75,44,87, 1);
+    color: #e83e43;
+    background: rgba(71,39,103, 1);
 }
 
 .prix-tarif-zone {
@@ -410,13 +410,13 @@ a:hover {
 }
 
 .color-2020-rouge-nuit{
-    color: #e83d44
+    color: #e83e43
 }
 .color-2020-bordeaux-nuit{
     color: rgb(148,36,71)
 }
 .color-2020-violet-nuit{
-    color: rgb(75,44,87)
+    color: rgb(71,39,103)
 }
 .color-2020-fond-nuit{
     color: #202446;
@@ -429,15 +429,15 @@ a:hover {
         font-size: 13px;
         z-index: 2;
         text-align: center;
-        color: #e83d44;
-        background: rgba(75,44,87, 1);
+        color: #e83e43;
+        background: rgba(71,39,103, 1);
     }
 
     .skillbar-bar-2020 {
         height: 50px;
         width: 0px;
         z-index: 5;
-        background: rgba(148,36,71, 0.7);
+        background: rgba(175,23,75, 0.7);
         -webkit-transition-property: width, background-color;
         -moz-transition-property: width, background-color;
         -ms-transition-property: width, background-color;
@@ -453,7 +453,7 @@ a:hover {
     }
 
     .skillbar-title, .skill-bar-percent {
-        color: #e83d44;
+        color: #e83e43;
         font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
