@@ -3,38 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4912a21-c5e0-4c68-8f75-12d626514fa8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/Reglement_interieur_billetterie_2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/reglement_interieur_2020.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logos/logo_24h_insa_edition_2020_nuit_rvb_horizontal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logos/logo_24h_insa_edition_2020_nuit_rvb_horizontal.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/24h.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/24h.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-devenir-benevole.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-histoire.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-histoire.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-organisation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-organisation.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/a-propos-partenaires.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-animations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-animations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-plan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-plan.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animations-prevention.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/animations-prevention.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/billetterie-soldout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie-soldout.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/billetterie.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/billetterie.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-2019.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-2020.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-2020.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-artistes-old.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-timetable.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-timetable.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-tremplins-old.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-tremplins-old.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/concerts-tremplins.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/concerts-tremplins.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-caritative.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-caritative.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-connexion.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-connexion.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-informations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-informations.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions-ferme.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-inscriptions.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-inscriptions.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-mon-espace.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-mon-espace.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-parcours.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-parcours.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/courses-resultats.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses-resultats.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-bars.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-bars.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-contact.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-faq.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-payer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-payer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/infos-transports.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/infos-transports.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +144,7 @@
       <workItem from="1579083782834" duration="2924000" />
       <workItem from="1579087902114" duration="3568000" />
       <workItem from="1579457505333" duration="599000" />
-      <workItem from="1579718959015" duration="1812000" />
+      <workItem from="1579718959015" duration="2596000" />
     </task>
     <servers />
   </component>
