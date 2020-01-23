@@ -3,5 +3,6 @@ config/*.pem
 config/api-weezevent.json
 config/api-courses24maker.json
 config/contact-credentials.json
+.idea/workspace.xml
 views/concerts-artistes-2019_1.ejs
 node_modules/
