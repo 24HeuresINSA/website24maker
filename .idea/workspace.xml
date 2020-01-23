@@ -46,19 +46,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/public/images/partenaires" />
-      <recent name="$PROJECT_DIR$/public/images/site" />
-      <recent name="$PROJECT_DIR$/public/documents" />
-      <recent name="$PROJECT_DIR$/public/images/artistes/edition_2020" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\benevole" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\logos" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\background" />
       <recent name="C:\Users\UTILISATEUR\Documents\24h de l'INSA (Site NodeJS)\public\images\site" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/public/images/partenaires" />
+      <recent name="$PROJECT_DIR$/public/images/site" />
+      <recent name="$PROJECT_DIR$/public/documents" />
+      <recent name="$PROJECT_DIR$/public/images/artistes/edition_2020" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +143,7 @@
       <workItem from="1579083782834" duration="2924000" />
       <workItem from="1579087902114" duration="3568000" />
       <workItem from="1579457505333" duration="599000" />
-      <workItem from="1579718959015" duration="3271000" />
+      <workItem from="1579718959015" duration="3693000" />
     </task>
     <servers />
   </component>
