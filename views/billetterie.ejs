@@ -179,7 +179,8 @@
                 -->
                 <div class="row pt-2 pt-md-5">
                     <div class="col-md-10 offset-md-1 jauge-billetterie" style="color: #e83e43; !important;">
-                        <div class="text-center"><h4 class="jauge-titre">Tarifs et Jauges</h4></div>
+                        <div class="text-center"><h4 class="jauge-titre mb-0">Tarifs et Jauges</h4>
+                        <p class="text-center" style="color: #e83e43; font-size: 12px">Les jauges sont mises à jour automatiquement lorsque l'achat a été confirmée</p></div>
                             <div class="skillbar-title">Pass 2 soirs</div>
                             <div class="skill-bar-percent deuxsoirs-total-jauge-label d-none">0% ATTEINT</div>
                             <div class="row">
@@ -354,6 +355,17 @@
 		$("#menu-billetterie").css('color', '#e83e43');
 		$("#title-page-nav").append("Billetterie");
 		$("#sidebar-menu-billetterie").css('color', '#e83e43');
+		onresize = function(event){
+            if(innerWidth > 1200) {
+                $('#prix-deuxsoirs-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">28€</span>');
+                $('#prix-vendredi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+                $('#prix-samedi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+            } else {
+                $('#prix-deuxsoirs-last').html('Last chance<br><span class="m-auto prix-tarif-zone">28€</span>');
+                $('#prix-vendredi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+                $('#prix-samedi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+            }
+        }
     </script>
     <script type="text/javascript">
 		$.ajax({
