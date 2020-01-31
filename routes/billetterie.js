@@ -4,10 +4,6 @@ var cleweezevent = require('../config/api-weezevent');
 const request = require('request');
 
 router.get('/', function(req, res, next) {
-	res.render('billetterie-soldout');
-});
-
-router.get('/A', function(req, res, next) {
 	res.render('billetterie');
 });
 
@@ -48,8 +44,8 @@ router.get('/stats', function (req, res, next) {
 			});
 
 			tickets.forEach(elem => {
-				//2S early
-				if (["2129361", "2129356"].includes(elem.id)) {
+				//2S early "2129361"
+				if (["2129356"].includes(elem.id)) {
 					deuxsoirs += elem.participants;
 					vendredi += elem.participants;
 					samedi += elem.participants;
@@ -93,6 +89,10 @@ router.get('/stats', function (req, res, next) {
 				}
 			});
 
+			if (new Date(Date.now()) > new Date(2020,1,2,18)) {
+				deuxsoirs_early = 700;
+			}
+
 			/*var deadline = new Date(2020, 05, 07,22,20,00);
 			var debut = new Date(2020,02,02,12,00,00);
 			var now = Date.now();
@@ -104,7 +104,7 @@ router.get('/stats', function (req, res, next) {
 				"vendredi": (vendredi/10000*100).toFixed(1),
 				"samedi": (samedi/10000*100).toFixed(1),
 				"deuxsoirs": (deuxsoirs/5500*100).toFixed(1),
-				"deuxsoirs_early": (deuxsoirs_early/850*100).toFixed(1),
+				"deuxsoirs_early": (deuxsoirs_early/700*100).toFixed(1),
 				"deuxsoirs_regular": Math.max((deuxsoirs_regular/4350*100).toFixed(1), avancement),
 				"deuxsoirs_last": (deuxsoirs_last/300*100).toFixed(1),
 				"vendredi_early": (vendredi_early/15*100).toFixed(1),
