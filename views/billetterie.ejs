@@ -120,7 +120,7 @@
             </div>
         </section>
 
-        <section id="testimonial" class="dark-bg d-flex ptb p-5 pl-3 pr-3 5 background-2020">
+        <!--<section id="testimonial" class="dark-bg d-flex ptb p-5 pl-3 pr-3 5 background-2020 d-none">
             <div class="container m-auto">
                 <div class="testimonial text-center pb-lg-4">
                     <span class="font-billetterie-date">02 02 2020</span><br><span class="font-billetterie-date2">Ouverture de la billetterie à 14h</span>
@@ -149,9 +149,9 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section>-->
 
-        <section class="fond-nuit-back d-none">
+        <section class="fond-nuit-back">
             <div class="container text-center pb-5">
                 <div class="row text-center">
                     <div class="col-md-12">
@@ -211,7 +211,8 @@
                 <div class="row pt-2 pt-md-5">
                     <div class="col-md-10 offset-md-1 jauge-billetterie" style="color: #e83e43; !important;">
                         <div class="text-center"><h4 class="jauge-titre mb-0">Tarifs et Jauges</h4>
-                        <p class="text-center" style="color: #e83e43; font-size: 12px">Les jauges sont mises à jour automatiquement lorsque l'achat a été confirmée</p></div>
+                        <p class="text-center" style="color: #e83e43; font-size: 12px">Les jauges sont mises à jour automatiquement lorsque l'achat a été confirmée<br>
+                            * hors frais de location (0,99€) et dans la limite des places disponibles</p></div>
                             <div class="skillbar-title">Pass 2 soirs</div>
                             <div class="skill-bar-percent deuxsoirs-total-jauge-label d-none">0% ATTEINT</div>
                             <div class="row">
@@ -220,7 +221,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                             <span class="m-auto position-relative" id="prix-deuxsoirs-early">Early bird<br>
-                                                <span class="m-auto prix-tarif-zone">12€</span>
+                                                <span class="m-auto prix-tarif-zone">12€*</span>
                                             </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-early">SOLD OUT</span>
@@ -233,7 +234,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                             <span class="m-auto position-relative" id="prix-deuxsoirs-regular">Normal<br>
-                                                <span class="m-auto prix-tarif-zone">18€</span>
+                                                <span class="m-auto prix-tarif-zone">18€*</span>
                                             </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-regular">SOLD OUT</span>
@@ -246,7 +247,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                             <span class="m-auto position-relative" id="prix-deuxsoirs-last">Last chance<br>
-                                                <span class="m-auto prix-tarif-zone">28€</span>
+                                                <span class="m-auto prix-tarif-zone">28€*</span>
                                             </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-deuxsoirs-last">SOLD OUT</span>
@@ -264,7 +265,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                 <span class="m-auto position-relative" id="prix-vendredi-early">Early bird<br>
-                                                    <span class="m-auto prix-tarif-zone">8€</span>
+                                                    <span class="m-auto prix-tarif-zone">8€*</span>
                                                 </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-early">SOLD OUT</span>
@@ -277,7 +278,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                 <span class="m-auto position-relative" id="prix-vendredi-regular">Normal<br>
-                                                    <span class="m-auto prix-tarif-zone">12€</span>
+                                                    <span class="m-auto prix-tarif-zone">12€*</span>
                                                 </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-regular">SOLD OUT</span>
@@ -290,7 +291,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                 <span class="m-auto position-relative" id="prix-vendredi-last">Last chance<br>
-                                                    <span class="m-auto prix-tarif-zone">18€</span>
+                                                    <span class="m-auto prix-tarif-zone">18€*</span>
                                                 </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-vendredi-last">SOLD OUT</span>
@@ -308,7 +309,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                     <span class="m-auto position-relative" id="prix-samedi-early">Early bird<br>
-                                                        <span class="m-auto prix-tarif-zone">8€</span>
+                                                        <span class="m-auto prix-tarif-zone">8€*</span>
                                                     </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-early">SOLD OUT</span>
@@ -321,7 +322,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                     <span class="m-auto position-relative" id="prix-samedi-regular">Normal<br>
-                                                        <span class="m-auto prix-tarif-zone">12€</span>
+                                                        <span class="m-auto prix-tarif-zone">12€*</span>
                                                     </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-regular">SOLD OUT</span>
@@ -334,7 +335,7 @@
                                         <div class="skillbar-bar skillbar-bar-2020 d-flex position-absolute"></div>
                                         <div class="m-auto position-relative d-flex" style="width: 100%; height: 100%">
                                                     <span class="m-auto position-relative" id="prix-samedi-last">Last chance<br>
-                                                        <span class="m-auto prix-tarif-zone">18€</span>
+                                                        <span class="m-auto prix-tarif-zone">18€*</span>
                                                     </span>
                                             <div class="m-auto position-absolute d-flex" style="z-index: 6; color: white; width: 100%; height: 100%">
                                                 <span class="font-weight-bold position-relative m-auto letter-spacing-no soldout-tarif-zone d-none" id="so-samedi-last">SOLD OUT</span>
@@ -391,13 +392,13 @@
 		$("#sidebar-menu-billetterie").css('color', '#e83e43');
 		onresize = function(event){
             if(innerWidth > 1200) {
-                $('#prix-deuxsoirs-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">28€</span>');
-                $('#prix-vendredi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€</span>');
-                $('#prix-samedi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+                $('#prix-deuxsoirs-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">28€*</span>');
+                $('#prix-vendredi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+                $('#prix-samedi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
             } else {
-                $('#prix-deuxsoirs-last').html('Last chance<br><span class="m-auto prix-tarif-zone">28€</span>');
-                $('#prix-vendredi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€</span>');
-                $('#prix-samedi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€</span>');
+                $('#prix-deuxsoirs-last').html('Last chance<br><span class="m-auto prix-tarif-zone">28€*</span>');
+                $('#prix-vendredi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+                $('#prix-samedi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
             }
         }
     </script>
