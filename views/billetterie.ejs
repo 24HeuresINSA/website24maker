@@ -162,7 +162,7 @@
                 </div>
             </div>
             <p class="text-center" style="color: #e83e43; font-size: 12px">Carte VA, Pass Région, consultez la <a href="/infos/faq" style="font-weight: bold; color: red">FAQ</a></p>
-            <div class="row container text-center m-auto">
+            <div class="row container text-center m-auto p-0">
                 <div class="container col-md-12 col-lg-12 p-0">
                     <a title="Logiciel billetterie en ligne" href="https://weezevent.com/?c=sys_widget"
                        class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=568493&lg_billetterie=1&code=37469&width_auto=1&color_primary=e83d44"
@@ -416,15 +416,15 @@
 					$('.deuxsoirs-total-jauge-label').text('ATTEINT '+ results.deuxsoirs+'%');
 					$('.vendredi-total-jauge').attr('data-percent', results.vendredi+'%');
 					$('.vendredi-early-jauge').attr('data-percent', results.vendredi_early+'%');
-					$('.vendredi-regular-jauge').attr('data-percent', results.vendredi_regular+'%');
+					$('.vendredi-regular-jauge').attr('data-percent', results.vendredi_regular_sell+'%');
 					$('.vendredi-last-jauge').attr('data-percent', results.vendredi_last+'%');
 					$('.samedi-total-jauge').attr('data-percent', results.samedi+'%');
 					$('.samedi-early-jauge').attr('data-percent', results.samedi_early+'%');
-					$('.samedi-regular-jauge').attr('data-percent', results.samedi_regular+'%');
+					$('.samedi-regular-jauge').attr('data-percent', results.samedi_regular_sell+'%');
 					$('.samedi-last-jauge').attr('data-percent', results.samedi_last+'%');
 					$('.deuxsoirs-total-jauge').attr('data-percent', results.deuxsoirs+'%');
 					$('.deuxsoirs-early-jauge').attr('data-percent', results.deuxsoirs_early+'%');
-					$('.deuxsoirs-regular-jauge').attr('data-percent', results.deuxsoirs_regular+'%');
+					$('.deuxsoirs-regular-jauge').attr('data-percent', results.deuxsoirs_regular_sell+'%');
 					$('.deuxsoirs-last-jauge').attr('data-percent', results.deuxsoirs_last+'%');
 				}else{
 					$(".jauge-billetterie").remove();

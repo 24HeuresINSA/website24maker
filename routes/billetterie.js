@@ -25,13 +25,29 @@ router.get('/stats', function (req, res, next) {
 			var deuxsoirs = 0;
 			var deuxsoirs_early = 0;
 			var deuxsoirs_regular = 0;
+			var deuxsoirs_regular_sell = 0;
 			var deuxsoirs_last = 0;
 			var vendredi_early = 0;
 			var vendredi_regular = 0;
+			var vendredi_regular_sell = 0;
 			var vendredi_last = 0;
 			var samedi_early = 0;
 			var samedi_regular = 0;
+			var samedi_regular_sell = 0;
 			var samedi_last = 0;
+			var quotas_deuxsoirs = 0;
+			var quotas_deuxsoirs_early = 0;
+			var quotas_deuxsoirs_regular = 0;
+			var quotas_deuxsoirs_regular_sell = 0;
+			var quotas_deuxsoirs_last = 0;
+			var quotas_vendredi_early = 0;
+			var quotas_vendredi_regular = 0;
+			var quotas_vendredi_regular_sell = 0;
+			var quotas_vendredi_last = 0;
+			var quotas_samedi_early = 0;
+			var quotas_samedi_regular = 0;
+			var quotas_samedi_regular_sell = 0;
+			var quotas_samedi_last = 0;
 
 			var result = JSON.parse(resr.body);
 			var categories = result.events[0].categories;
@@ -46,18 +62,34 @@ router.get('/stats', function (req, res, next) {
 			tickets.forEach(elem => {
 				//2S early "2129361"
 				if (["2129356"].includes(elem.id)) {
+					quotas_deuxsoirs += elem.quotas;
+					quotas_deuxsoirs_early += elem.quotas;
 					deuxsoirs += elem.participants;
 					vendredi += elem.participants;
 					samedi += elem.participants;
 					deuxsoirs_early += elem.participants;
+				//2S regular in sell
+				} else if (["2129348"].includes(elem.id)) {
+					quotas_deuxsoirs_regular += elem.quotas;
+					quotas_deuxsoirs_regular_sell += elem.quotas;
+					quotas_deuxsoirs += elem.quotas;
+					deuxsoirs += elem.participants;
+					vendredi += elem.participants;
+					samedi += elem.participants;
+					deuxsoirs_regular += elem.participants;
+					deuxsoirs_regular_sell += elem.participants
 				//2S regular
-				} else if (["2129348", "2129352", "2129347", "2129360"].includes(elem.id)) {
+				} else if (["2129352", "2129347", "2129360"].includes(elem.id)) {
+					quotas_deuxsoirs += elem.quotas;
+					quotas_deuxsoirs_regular += elem.quotas;
 					deuxsoirs += elem.participants;
 					vendredi += elem.participants;
 					samedi += elem.participants;
 					deuxsoirs_regular += elem.participants;
 				//2S last
 				} else if (["2129367"].includes(elem.id)) {
+					quotas_deuxsoirs += elem.quotas;
+					quotas_deuxsoirs_last += elem.quotas;
 					deuxsoirs += elem.participants;
 					vendredi += elem.participants;
 					samedi += elem.participants;
@@ -66,26 +98,46 @@ router.get('/stats', function (req, res, next) {
 				} else if (["2129362"].includes(elem.id)) {
 					vendredi += elem.participants;
 					vendredi_early += elem.participants;
-				//VEN regular
-				} else if (["2129349", "2129353", "2129345", "2129371"].includes(elem.id)) {
+					quotas_vendredi_early += elem.quotas;
+				//VEN regular in sell
+				} else if (["2129349"].includes(elem.id)) {
+					vendredi_regular_sell += elem.participants;
 					vendredi += elem.participants;
 					vendredi_regular += elem.participants;
+					quotas_vendredi_regular += elem.quotas;
+					quotas_vendredi_regular_sell += elem.quotas;
+				//VEN regular
+				} else if (["2129353", "2129345", "2129371"].includes(elem.id)) {
+					vendredi += elem.participants;
+					vendredi_regular += elem.participants;
+					quotas_vendredi_regular += elem.quotas;
 				//VEN last
 				} else if (["2129368"].includes(elem.id)) {
 					vendredi += elem.participants;
 					vendredi_last += elem.participants;
+					quotas_vendredi_last += elem.quotas;
 				//SAM early
 				} else if (["2129363"].includes(elem.id)) {
 					samedi += elem.participants;
 					samedi_early += elem.participants;
-				//SAM regular
-				} else if (["2129350", "2129354", "2129346", "2129370"].includes(elem.id)) {
+					quotas_samedi_early += elem.quotas;
+				//SAM regular in sell
+				} else if (["2129350"].includes(elem.id)) {
 					samedi += elem.participants;
 					samedi_regular += elem.participants;
+					samedi_regular_sell += elem.participants;
+					quotas_samedi_regular += elem.quotas;
+					quotas_samedi_regular_sell += elem.quotas;
+				//SAM regular
+				} else if (["2129354", "2129346", "2129370"].includes(elem.id)) {
+					samedi += elem.participants;
+					samedi_regular += elem.participants;
+					quotas_samedi_regular += elem.quotas;
 				//SAM last
 				} else if (["2129369"].includes(elem.id)) {
 					samedi += elem.participants;
 					samedi_last += elem.participants;
+					quotas_samedi_last += elem.quotas;
 				}
 			});
 
@@ -103,16 +155,19 @@ router.get('/stats', function (req, res, next) {
 			res.send({
 				"vendredi": (vendredi/10000*100).toFixed(1),
 				"samedi": (samedi/10000*100).toFixed(1),
-				"deuxsoirs": (deuxsoirs/5500*100).toFixed(1),
-				"deuxsoirs_early": (deuxsoirs_early/700*100).toFixed(1),
-				"deuxsoirs_regular": Math.max((deuxsoirs_regular/4350*100).toFixed(1), avancement),
-				"deuxsoirs_last": (deuxsoirs_last/300*100).toFixed(1),
-				"vendredi_early": (vendredi_early/15*100).toFixed(1),
-				"vendredi_regular": Math.max((vendredi_regular/3685*100).toFixed(1), avancement),
-				"vendredi_last": (vendredi_last/800*100).toFixed(1),
-				"samedi_early": (samedi_early/15*100).toFixed(1),
-				"samedi_regular": Math.max((samedi_regular/3685*100).toFixed(1), avancement),
-				"samedi_last": (samedi_last/800*100).toFixed(1)
+				"deuxsoirs": (deuxsoirs/quotas_deuxsoirs*100).toFixed(1),
+				"deuxsoirs_early": (deuxsoirs_early/quotas_deuxsoirs_early*100).toFixed(1),
+				"deuxsoirs_regular": Math.max((deuxsoirs_regular/quotas_deuxsoirs_regular*100).toFixed(1), avancement),
+				"deuxsoirs_regular_sell": Math.max((deuxsoirs_regular_sell/quotas_deuxsoirs_regular_sell*100).toFixed(1), avancement),
+				"deuxsoirs_last": (deuxsoirs_last/quotas_deuxsoirs_last*100).toFixed(1),
+				"vendredi_early": (vendredi_early/quotas_vendredi_early*100).toFixed(1),
+				"vendredi_regular": Math.max((vendredi_regular/quotas_vendredi_regular*100).toFixed(1), avancement),
+				"vendredi_regular_sell": Math.max((vendredi_regular_sell/quotas_vendredi_regular_sell*100).toFixed(1), avancement),
+				"vendredi_last": (vendredi_last/quotas_vendredi_last*100).toFixed(1),
+				"samedi_early": (samedi_early/quotas_samedi_early*100).toFixed(1),
+				"samedi_regular": Math.max((samedi_regular/quotas_samedi_regular*100).toFixed(1), avancement),
+				"samedi_regular_sell": Math.max((samedi_regular_sell/quotas_samedi_regular_sell*100).toFixed(1), avancement),
+				"samedi_last": (samedi_last/quotas_samedi_last*100).toFixed(1)
 			});
 		} else {
 			res.status(500);
