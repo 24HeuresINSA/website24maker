@@ -22,7 +22,7 @@ router.get('/stats', function (req, res, next) {
 		} else if(JSON.parse(resr.body).events != undefined) {
 			var vendredi = 0;
 			var samedi = 0;
-			var deuxsoirs = 0;
+			var deuxsoirs = 138;
 			var deuxsoirs_early = 0;
 			var deuxsoirs_regular = 0;
 			var deuxsoirs_regular_sell = 0;
@@ -35,7 +35,7 @@ router.get('/stats', function (req, res, next) {
 			var samedi_regular = 0;
 			var samedi_regular_sell = 0;
 			var samedi_last = 0;
-			var quotas_deuxsoirs = 0;
+			var quotas_deuxsoirs = 138;
 			var quotas_deuxsoirs_early = 0;
 			var quotas_deuxsoirs_regular = 0;
 			var quotas_deuxsoirs_regular_sell = 0;
