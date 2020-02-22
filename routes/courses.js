@@ -309,7 +309,7 @@ router.post('/ajouter-carte-va', function(req, res, next) {
 });
 
 router.get('/connexion', function(req, res, next) {
-	if (true) {
+	if (false) {
 		res.render('404');
 	} else if (!req.session.jwt) {
 		res.render('courses-connexion');
