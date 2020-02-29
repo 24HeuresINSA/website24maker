@@ -92,9 +92,9 @@
                         <th style="/*min-width:200px">Commentaires</th>
                         <th style="/*min-width:200px">Message de l'organisateur</th>
                         <th style="/*min-width:70px; max-width:80px">Paiement <span style="font-size: 10px;">(validé manuellement)</span></th>
-                        <th style="/*min-width:70px; max-width:80px">Certificat</th>
-                        <th style="/*min-width:70px; max-width:80px">Carte VA</th>
-                        <th name="buttons"></th>
+                        <th class="d-none" style="/*min-width:70px; max-width:80px">Certificat</th>
+                        <th class="d-none" style="/*min-width:70px; max-width:80px">Carte VA</th>
+                        <th class="d-none" name="buttons"></th>
                     </tr>
                     </thead>
                     <tbody id="bodyTable">
@@ -121,7 +121,7 @@
                                     <span class="badge-danger p-1">Non Reçu</span>
                                 <% } %>
                             <% } %></td>
-                        <td class="certificatRaw" style="min-width:120px; max-width:150px">
+                        <td class="certificatRaw d-none" style="min-width:120px; max-width:150px">
                             <% if (raw.participant_medical_certificate_valid == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
                             <% }else if (raw.participant_medical_certificate_valid == 2){ %>
@@ -131,7 +131,7 @@
                             <% }else if (raw.participant_medical_certificate_valid == 3){ %>
                                 <span class="badge-primary p-1">En cours de traitement</span>
                             <% } %></td>
-                        <td class="certificatStudentRaw" style="min-width:120px; max-width:150px">
+                        <td class="certificatStudentRaw d-none" style="min-width:120px; max-width:150px">
                             <% if (raw.participant_student_certificate_valid == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
                             <% }else if (raw.participant_student_certificate_valid == 2){ %>
@@ -143,7 +143,7 @@
                             <% }else if (raw.participant_student_certificate_valid == 4){ %>
                                 <span class="badge-success p-1">Pas concerné</span>
                             <% } %></td>
-                        <td class="buttonRaw" name="buttons"></td>
+                        <td class="buttonRaw d-none" name="buttons"></td>
                     </tr>
                     <% }) %>
                     </tbody>
@@ -173,17 +173,6 @@
         <p class="m-auto text-center">Une fois le paiement effectué sur la plateforme ci-dessous, vous recevrez un mail de confirmation de Weezevent.<br>
             Cela signifie que le paiement a été validé, il sera ensuite changer manuellement plus tard dans le tableau ci-dessus à côté de votre nom</p>
         <a title="Logiciel billetterie en ligne" href="https://weezevent.com/?c=sys_widget" class="weezevent-widget-integration" target="_blank" data-src="https://widget.weezevent.com/ticket/E580544/?id_evenement=580544&lg_billetterie=1&code=51871&width_auto=1&color_primary=202446" data-width="650" data-height="600" data-id="580544" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0" data-type="neo">Billetterie Weezevent</a><script type="text/javascript" src="https://widget.weezevent.com/weez.js"></script>
-    </section>
-    <section class="pt-4 pb-2 d-none" style="background-color: rgb(255,255,255)">
-        <div class="row m-auto text-center" style="max-width: 1500px;">
-            <div class="p-2 m-auto">
-                <h5 class="d-inline">Paiement</h5><br>
-                <h6 class="d-inline">Paiement et dons sur la plateforme <a class="bold" href="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h-tout-tarif">Hello Asso</a></h6><br>
-                <p class="d-inline color-gris-4">Choisissez la catégorie, entrez votre nom et votre prénom ainsi que le nom de votre équipe. Une fois le paiement effectué, nous validerons manuellement votre paiement dans les jours qui suivent.
-                    <br>Si vous souhaitez payer en espèce, vous pouvez vous rendre à notre local. Nous ne prenons pas les chèques.</p><br>
-                <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/24h-de-l-insa/evenements/courses-des-24h-tout-tarif/widget" style="width:100%;height:750px;border:none;"></iframe><div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
-            </div>
-        </div>
     </section>
 
     <section class="wow fadeIn ptb ptb-sm-80">
