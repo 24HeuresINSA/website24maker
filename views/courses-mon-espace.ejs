@@ -92,9 +92,9 @@
                         <th style="/*min-width:200px">Commentaires</th>
                         <th style="/*min-width:200px">Message de l'organisateur</th>
                         <th style="/*min-width:70px; max-width:80px">Paiement <span style="font-size: 10px;">(validé manuellement)</span></th>
-                        <th class="d-none" style="/*min-width:70px; max-width:80px">Certificat</th>
-                        <th class="d-none" style="/*min-width:70px; max-width:80px">Carte VA</th>
-                        <th class="d-none" name="buttons"></th>
+                        <th class="" style="/*min-width:70px; max-width:80px">Certificat</th>
+                        <th class="" style="/*min-width:70px; max-width:80px">Carte VA</th>
+                        <th class="" name="buttons"></th>
                     </tr>
                     </thead>
                     <tbody id="bodyTable">
@@ -121,7 +121,7 @@
                                     <span class="badge-danger p-1">Non Reçu</span>
                                 <% } %>
                             <% } %></td>
-                        <td class="certificatRaw d-none" style="min-width:120px; max-width:150px">
+                        <td class="certificatRaw" style="min-width:120px; max-width:150px">
                             <% if (raw.participant_medical_certificate_valid == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
                             <% }else if (raw.participant_medical_certificate_valid == 2){ %>
@@ -131,7 +131,7 @@
                             <% }else if (raw.participant_medical_certificate_valid == 3){ %>
                                 <span class="badge-primary p-1">En cours de traitement</span>
                             <% } %></td>
-                        <td class="certificatStudentRaw d-none" style="min-width:120px; max-width:150px">
+                        <td class="certificatStudentRaw" style="min-width:120px; max-width:150px">
                             <% if (raw.participant_student_certificate_valid == 1){ %>
                                 <span class="badge-success p-1">Validé</span>
                             <% }else if (raw.participant_student_certificate_valid == 2){ %>
@@ -143,7 +143,7 @@
                             <% }else if (raw.participant_student_certificate_valid == 4){ %>
                                 <span class="badge-success p-1">Pas concerné</span>
                             <% } %></td>
-                        <td class="buttonRaw d-none" name="buttons"></td>
+                        <td class="buttonRaw" name="buttons"></td>
                     </tr>
                     <% }) %>
                     </tbody>
