@@ -46,7 +46,7 @@ router.post('/inscriptions', function(req, res, next) {
 
 		var request = {method: 'POST', uri: serverConfig["server-courses-api"]+"/authentication/register/", resolveWithFullResponse: true,
 			body: { team: {team_name: req.body.team_name, team_password: req.body.team_password, team_category_id: req.body.team_category_id},
-				team_manager: {participant_name: req.body.participant_name, participant_surname: req.body.participant_surname, participant_birthdate: req.body.participant_birthdate, participant_telephone: req.body.participant_telephone, participant_email: req.body.participant_email} },
+				team_manager: {participant_name: req.body.participant_name, participant_surname: req.body.participant_surname, participant_birthdate: req.body.participant_birthdate, participant_student: req.body.participant_student, participant_telephone: req.body.participant_telephone, participant_email: req.body.participant_email} },
 			json: true};
 		var equipePromise = rp(request);
 
