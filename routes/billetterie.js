@@ -12,14 +12,14 @@ router.get('/reglement', function(req, res, next) {
 });
 
 router.get('/stats', function (req, res, next) {
-	//res.status(500).end();
-	request(cleweezevent.cle, (err, resr, body) => {
+	res.status(500).end();
+	/*request(cleweezevent.cle, (err, resr, body) => {
 		if (err) {
 			res.status(500);
 			res.send({
 				"error": err
 			});
-		} else if(JSON.parse(resr.body).events != undefined) {
+		} else if(resr.body.events != undefined) {
 			var vendredi = 0;
 			var samedi = 0;
 			var deuxsoirs = 138;
@@ -145,11 +145,11 @@ router.get('/stats', function (req, res, next) {
 				deuxsoirs_early = 700;
 			}
 
-			/*var deadline = new Date(2020, 05, 07,22,20,00);
-			var debut = new Date(2020,02,02,12,00,00);
-			var now = Date.now();
-			var totaldate = deadline - debut;
-			var restantdate = deadline - now;*/
+			//var deadline = new Date(2020, 05, 07,22,20,00);
+			//var debut = new Date(2020,02,02,12,00,00);
+			//var now = Date.now();
+			//var totaldate = deadline - debut;
+			//var restantdate = deadline - now;
 			var avancement = 0// 100-((restantdate/totaldate)*100).toFixed(1);
 
 			res.send({
@@ -173,7 +173,7 @@ router.get('/stats', function (req, res, next) {
 			res.status(500);
 			res.send({"error": "problem to get stats"});
 		}
-	});
+	});*/
 
 });
 
