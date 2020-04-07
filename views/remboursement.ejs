@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+
+        <style>
+            h1, h2, h3, h4, h5, h6, a:not(.footerlien) {
+                color: #eeeeee;
+            }
+        </style>
+
+        <style type="text/css">
+            /* counter clock css */
+            ul.countdown {
+                list-style: none;
+                padding: 0;
+                display: block;
+                text-align: center;
+                font-family: '', sans-serif !important;
+            }
+
+            .font-billetterie-date{
+                font-size: 9vw;
+            }
+
+            .font-billetterie-date2{
+                font-size: 3vw;
+            }
+
+            ul.countdown li {
+                display: inline-block;
+            }
+
+            ul.countdown li span {
+                font-size: 7.5vw;
+                font-weight: 300;
+            }
+
+            ul.countdown li.seperator {
+                font-size: 3vw;
+                line-height: 30px;
+                vertical-align: top;
+            }
+
+            ul.countdown li p {
+                color: #e83e43;
+                font-size: 3vw;
+            }
+            /* emd counter clock css */
+
+            @media (max-width: 767px) {
+
+                .text-center-xs {
+                    text-align: center;
+                }
+            }
+
+            @media (min-width: 1000px) {
+                .font-billetterie-date{
+                    font-size: 100px;
+                }
+                .font-billetterie-date2{
+                    font-size: 30px;
+                }
+
+                ul.countdown li span {
+                    font-size: 90px;
+                    font-weight: 300;
+                }
+
+                ul.countdown li.seperator {
+                    font-size: 60px;
+                    line-height: 40px;
+                    vertical-align: top;
+                }
+
+                ul.countdown li p {
+                    color: #e83e43;
+                    font-size: 28px;
+                }
+            }
+        </style>
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <div class="spacer-60"></div>
+
+        <section class="fond-nuit-back">
+            <div class="container text-center pb-5">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="spacer-15"></div>
+                        <p class="lead" style="color: greys"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row container text-center m-auto p-0">
+                <div class="container col-md-12 col-lg-12 p-0">
+                    <div class="h1-titre pt-4 pb-4 white">REMBOURSEMENTS</div>
+                </div>
+            </div>
+            <div class="row container text-center m-auto p-0">
+                <div class="container col-md-12 col-lg-12 p-0">
+                    <p class="text-justify m-3 p-2 pb-5" style="color: #e83e43; font-size: 14px; max-width: 1200px;">
+                        Le remboursement ne comprends pas les frais de services de votre achat (soit 0.99€ par billet). Une demande de remboursement via le module n'est valable que pour un billet. Il faut en faire autant que de billet en votre possésions.<br><br>
+                        Le module de remboursement effectuera un virement sur la carte utiliser pour la commande. Les transactions commencerons à la fin de la période de remboursement (après le 17 mai).<br>
+                        <br>
+                        Vous pouvez demander le remboursement d'un billet jusqu'au 17 mai 2020. Passez cette date, nous vous incitons à utiliser <a href="">TicketSwap</a>, un site partenaire où vous pouvez remettre vos billets en ventes.
+                        <br><br>
+                        Si vous n'avez pas acheté votre billet en ligne via notre billetterie, envoyez un mail à billetterie@24heures.org, nous étudirons votre demande.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row container text-center m-auto p-0">
+                <div class="container col-md-12 col-lg-12 p-0">
+                    <a title="Logiciel billetterie en ligne" href="https://widget.weezevent.com/ticket/insa?locale=fr-FR" class="weezevent-widget-integration" target="_blank" data-src="https://widget.weezevent.com/ticket/insa?locale=fr-FR" data-width="undefined" data-height="undefined" data-resize="1" data-nopb="0" data-type="neo" data-width_auto="1">Billetterie Weezevent</a>
+                    <script type="text/javascript" src="https://widget.weezevent.com/weez.js" async defer></script>
+                    <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
+                </div>
+                <div class="spacer-30 d-none"></div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+		$("#menu-billetterie").css('color', '#e83e43');
+		$("#title-page-nav").append("Remboursements");
+		$("#sidebar-menu-remboursements").css('color', '#e83e43');
+		$("#sidebar-menu-remboursements").css('color', '#e83e43');
+		onresize = function(event){
+            if(innerWidth > 1200) {
+                $('#prix-deuxsoirs-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">28€*</span>');
+                $('#prix-vendredi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+                $('#prix-samedi-last').html('Dernière chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+            } else {
+                $('#prix-deuxsoirs-last').html('Last chance<br><span class="m-auto prix-tarif-zone">28€*</span>');
+                $('#prix-vendredi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+                $('#prix-samedi-last').html('Last chance<br><span class="m-auto prix-tarif-zone">18€*</span>');
+            }
+        }
+    </script>
+    <script type="text/javascript">
+		$.ajax({
+			url: "/billetterie/stats",
+			context: document.body,
+			complete: function(xhr, status, errorThrown){
+				if(xhr.status == 200){
+				    var results = JSON.parse(xhr.responseText);
+					$('.vendredi-total-jauge-label').text('ATTEINT '+ results.vendredi+'%');
+					$('.samedit-total-jauge-label').text('ATTEINT '+ results.vendredi+'%');
+					$('.deuxsoirs-total-jauge-label').text('ATTEINT '+ results.deuxsoirs+'%');
+					$('.vendredi-total-jauge').attr('data-percent', results.vendredi+'%');
+					$('.vendredi-early-jauge').attr('data-percent', results.vendredi_early+'%');
+					$('.vendredi-regular-jauge').attr('data-percent', results.vendredi_regular_sell+'%');
+					$('.vendredi-last-jauge').attr('data-percent', results.vendredi_last+'%');
+					$('.samedi-total-jauge').attr('data-percent', results.samedi+'%');
+					$('.samedi-early-jauge').attr('data-percent', results.samedi_early+'%');
+					$('.samedi-regular-jauge').attr('data-percent', results.samedi_regular_sell+'%');
+					$('.samedi-last-jauge').attr('data-percent', results.samedi_last+'%');
+					$('.deuxsoirs-total-jauge').attr('data-percent', results.deuxsoirs+'%');
+					$('.deuxsoirs-early-jauge').attr('data-percent', results.deuxsoirs_early+'%');
+					$('.deuxsoirs-regular-jauge').attr('data-percent', results.deuxsoirs_regular_sell+'%');
+					$('.deuxsoirs-last-jauge').attr('data-percent', results.deuxsoirs_last+'%');
+				}else{
+					$(".jauge-billetterie").remove();
+				}
+				skillsProgressBar();
+				function skillsProgressBar() {
+					$('.skillbar').each(function () {
+						$(this).find('.skillbar-bar').animate({
+							width: $(this).attr('data-percent')
+						}, {duration: 1000,
+                            complete: function(){
+                                if($(this).parent().parent().attr('data-percent').split('%')[0]>99.9){
+                                    $(this).parent().parent().find('.soldout-tarif-zone').removeClass('d-none');
+                                }
+                            }
+						});
+					});
+				};
+			}
+		});
+    </script>
+
+    <script type="text/javascript">
+        $('.countdown').downCount({
+            date: '02/02/2020 14:00:00',
+            offset: +1
+        }, function () {
+            return;
+        });
+    </script>
+
+</body>
+</html>
