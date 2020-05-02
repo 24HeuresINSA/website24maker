@@ -155,6 +155,11 @@ html{
         background-position: center;
     }
 
+    .h1-titre{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+    }
 }
 
 @media all and (min-width: 600px) and (max-width: 768px) {

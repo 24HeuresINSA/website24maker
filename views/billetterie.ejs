@@ -46,6 +46,10 @@
             }
 
             .font-billetterie-date2{
+                font-size: 6vw;
+            }
+
+            .font-billetterie-date3{
                 font-size: 3vw;
             }
 
@@ -82,7 +86,11 @@
                     font-size: 100px;
                 }
                 .font-billetterie-date2{
-                    font-size: 30px;
+                    font-size: 60px;
+                }
+                .font-billetterie-date3{
+                    line-height: 60px;
+                    font-size: 40px;
                 }
 
                 ul.countdown li span {
@@ -111,7 +119,7 @@
                 <div class="title">
                     <div class="h1-titre">BILLETTERIE</div><br>
                     <h4 class="">
-                        <span class="text-original-case">En raison de l'annulation de l'édition de mai 2020, la billetterie est fermée.</span>
+                        <span class="text-original-case">Retrouvons-nous tous en 2021 pour un week-end inoubliable.</span>
                     </h4>
                     <h4 class="">
                         <span class="text-original-case">
@@ -121,13 +129,15 @@
             </div>
         </section>
 
-        <!--<section id="testimonial" class="dark-bg d-flex ptb p-5 pl-3 pr-3 5 background-2020 d-none">
+        <section id="testimonial" class="dark-bg d-flex ptb p-5 pl-3 pr-3 5 background-2020 pt3">
             <div class="container m-auto">
                 <div class="testimonial text-center pb-lg-4">
-                    <span class="font-billetterie-date">02 02 2020</span><br><span class="font-billetterie-date2">Ouverture de la billetterie à 14h</span>
+                    <span class="font-billetterie-date d-none">02 02 2020</span>
+                    <span class="font-billetterie-date3">Prochaine édition</span><br>
+                    <span class="font-billetterie-date2">21, 22 et 23 mai 2021</span>
                 </div>
                 <div class="testimonial text-center dark-color">
-                    <ul class="countdown pt-4" style="color: #e83e43;">
+                    <ul class="countdown pt-4 pb-80" style="color: #e83e43;">
                         <li>
                             <span class="days">00</span>
                             <p class="days_ref">days</p>
@@ -150,8 +160,10 @@
                     </ul>
                 </div>
             </div>
-        </section>-->
-
+        </section>
+        <section style="background-color: #202446" class="dark-bg d-flex p-3 text-center m-auto">
+            <p class="text-center m-auto" style="color: #e83e43; font-size: 12px"><a href="/billetterie/remboursements" style="font-weight: bold; color: red">Remboursement des billets de l'édition 2020</a></p>
+        </section>
         <section class="fond-nuit-back d-none">
             <div class="container text-center pb-5">
                 <div class="row text-center">
@@ -177,7 +189,7 @@
             </div>
         </section>
 
-        <section class="fond-nuit-back">
+        <section class="fond-nuit-back d-none">
             <div class="spacer-30"></div>
             <div class="spacer-30"></div>
             <div class="spacer-30"></div>
@@ -478,7 +490,7 @@
 
     <script type="text/javascript">
         $('.countdown').downCount({
-            date: '02/02/2020 14:00:00',
+            date: '05/21/2021 20:00:00',
             offset: +1
         }, function () {
             return;
