@@ -1,13 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('home');
+router.get('/', function(req, res, next) {
+	res.render('home');
 });
 
-router.get('/', function(req, res, next) {
-	res.render('communique');
+router.get('/dons', function(req, res, next) {
+	res.render('dons');
 });
 
 router.get('/covid-19', function(req, res, next) {
