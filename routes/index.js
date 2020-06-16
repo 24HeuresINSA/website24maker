@@ -5,10 +5,6 @@ router.get('/', function(req, res, next) {
 	res.render('home');
 });
 
-router.get('/dons', function(req, res, next) {
-	res.render('dons');
-});
-
 router.get('/covid-19', function(req, res, next) {
 	res.render('communique');
 });
