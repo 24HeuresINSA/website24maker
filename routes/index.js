@@ -5,10 +5,6 @@ router.get('/', function(req, res, next) {
 	res.render('home');
 });
 
-router.get('/covid-19', function(req, res, next) {
-	res.render('communique');
-});
-
 router.get('/c==3', function(req, res, next) {
 	res.redirect('https://www.forumorg.org/');
 });

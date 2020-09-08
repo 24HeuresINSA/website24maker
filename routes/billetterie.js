@@ -7,10 +7,6 @@ router.get('/', function(req, res, next) {
 	res.render('billetterie');
 });
 
-router.get('/reglement', function(req, res, next) {
-	res.render('billetterie');
-});
-
 router.get('/stats', function (req, res, next) {
 	res.status(500).end();
 	/*request(cleweezevent.cle, (err, resr, body) => {
