@@ -1,4 +1,4 @@
-FROM node:10.17.0-alpine
+FROM node:15.4.0-alpine
 
 WORKDIR /home/website24maker
 
@@ -6,4 +6,6 @@ COPY . .
 
 RUN npm install
 
-CMD npm run prod
+EXPOSE 3001
+
+CMD ["node", "app.js"]
