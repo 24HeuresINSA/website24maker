@@ -15,7 +15,8 @@ html{
 .background-2020{
     height: 60vh;
     #background: linear-gradient(25deg, #202446 0%, #202446 4%, #e83e43 4%, #e83e43 8%, #AF174B 8%, #AF174B 12%, #472767 12%, #472767 16%, #202446 16%, #202446 100%);
-    background: linear-gradient(180deg, #202446 0%, #202446 84%, #e83e43 84%, #e83e43 88%, #AF174B 88%, #AF174B 92%, #472767 92%, #472767 96%, #202446 96%, #202446 100%);
+    #background: linear-gradient(180deg, #202446 0%, #202446 84%, #e83e43 84%, #e83e43 88%, #AF174B 88%, #AF174B 92%, #472767 92%, #472767 96%, #202446 96%, #202446 100%);
+    background-color: #2B3180;
 }
 
 .footerlien, .footer{
@@ -28,19 +29,19 @@ html{
 }
 
 .skillbar-title, .skill-bar-percent {
-    color: #e83e43;
+    color: #E20917;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .header.header-transparent .header-nav {
-    background-color: #202446 !important;
+    background-color: #2B3180 !important;
     #background-color: #060025 !important; /*Desktop "header-transparent" */
 }
 
 .fond-nuit-back{
-    background-color: #202446;
+    background-color: #2B3180;
 }
 
 .fond-jour-back{
@@ -48,7 +49,7 @@ html{
 }
 
 .jauge-titre{
-    color: #e83e43;
+    color: #E20917;
 }
 
 .color-animations-jour2 {
@@ -82,7 +83,7 @@ html{
 .header.header-transparent.fixed .nav-icons > *:hover,
 .header.header-transparent.header--dark .nav-icons > *:hover,
 .header.header--dark.header-transparent .nav-icons > *:hover {
-    color: #009e9f;
+    color: #3DA936;
     transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -112,16 +113,16 @@ html{
 .header.header-transparent.fixed .nav-icons > *:hover,
 .header.header-transparent.header--dark .nav-icons > *:hover,
 .header.header--dark.header-transparent .nav-icons > *:hover {
-    color: #009e9f;
+    color: #3DA936;
 }
 
 .nav-dropdown, .nav-dropdown-sub {
-    background-color: #202446;
+    background-color: #2B3180;
     #background-color: #060023;
 }
 
 .sidebar-menu {
-    background-color: #202446;
+    background-color: #2B3180;
     #background-color: #060023;
 }
 
@@ -195,7 +196,7 @@ html{
 }
 
 a:hover {
-    color: #e83e43;
+    color: #E20917;
 }
 
 .accordion-title:before {
@@ -215,11 +216,11 @@ a:hover {
 }
 
 .sidebar-menu ul > li > a:hover {
-    color: #009e9f;
+    color: #3DA936;
 }
 
 .fb-header:hover{
-    color: #009e9f;
+    color: #3DA936;
 }
 
 .photo-concerts-artiste-item{
@@ -365,7 +366,7 @@ a:hover {
 .skillbar-bar-1 {
     height: 6px;
     width: 0px;
-    background: #e83e43;
+    background: #E20917;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -376,7 +377,7 @@ a:hover {
 .skillbar-bar-2 {
     height: 6px;
     width: 0px;
-    background: #e83e43;
+    background: #E20917;
     -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
@@ -402,7 +403,7 @@ a:hover {
     line-height: 12px;
     font-size: 9px;
     text-align: center;
-    color: #e83e43;
+    color: #E20917;
     background: rgba(71,39,103, 1);
 }
 
@@ -415,7 +416,7 @@ a:hover {
 }
 
 .color-2020-rouge-nuit{
-    color: #e83e43
+    color: #E20917
 }
 .color-2020-bordeaux-nuit{
     color: rgb(148,36,71)
@@ -424,7 +425,7 @@ a:hover {
     color: rgb(71,39,103)
 }
 .color-2020-fond-nuit{
-    color: #202446;
+    color: #2B3180;
 }
 
 @media (min-width: 780px) {
@@ -434,7 +435,7 @@ a:hover {
         font-size: 13px;
         z-index: 2;
         text-align: center;
-        color: #e83e43;
+        color: #E20917;
         background: rgba(71,39,103, 1);
     }
 
@@ -458,7 +459,7 @@ a:hover {
     }
 
     .skillbar-title, .skill-bar-percent {
-        color: #e83e43;
+        color: #E20917;
         font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
