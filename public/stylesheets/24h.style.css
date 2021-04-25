@@ -138,6 +138,29 @@ html{
     max-height: 800px;
 }
 
+.live-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live-button h3 {
+    background-color: #E20917;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.live-button a {
+    color: #FFFFFF;
+    padding: 10px 15px 10px 15px;
+}
+
+.live-button a:hover{
+    color: #000000;
+}
+
 @media all and (min-width: 1px) and (max-width: 600px) {
 
     .inner-intro {
@@ -154,6 +177,17 @@ html{
     .parallax-background4 {
         background-size: auto 480px;
         background-position: center;
+    }
+
+    .parallax-background5{
+        height: 600px;
+    }
+
+    .font-billetterie-date3{
+        font-size: 30px;
+    }
+    .font-billetterie-date2{
+        font-size: 20px;
     }
 
     .h1-titre{
