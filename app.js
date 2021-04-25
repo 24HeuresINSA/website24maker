@@ -16,6 +16,8 @@ var concertsRouter = require('./routes/concerts');
 var billetterieRouter = require('./routes/billetterie');
 var coursesRouter = require('./routes/courses');
 var infosRouter = require('./routes/infos');
+var livestream = require('./routes/livestream')
+var webtv = require('./routes/webtv')
 
 var app = express();
 
@@ -56,6 +58,8 @@ app.use('/concerts', concertsRouter);
 app.use('/courses', coursesRouter);
 app.use('/infos', infosRouter);
 app.use('/billetterie', billetterieRouter);
+app.use('/livestream', livestream)
+app.use('/webtv', webtv)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
