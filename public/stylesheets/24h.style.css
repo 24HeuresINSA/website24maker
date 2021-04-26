@@ -138,6 +138,56 @@ html{
     max-height: 800px;
 }
 
+.live-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live-txt {
+    background-color: #E20917;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.live-button .live-txt a {
+    color: #FFFFFF;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.live-button .live-txt a:hover{
+    color: #000000;
+}
+
+.webtv-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webtv-txt {
+    background-color: #3DA936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.webtv-button .webtv-txt a {
+    color: #FFFFFF;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.webtv-button .webtv-txt a:hover{
+    color: #000000;
+}
+
 @media all and (min-width: 1px) and (max-width: 600px) {
 
     .inner-intro {
@@ -154,6 +204,17 @@ html{
     .parallax-background4 {
         background-size: auto 480px;
         background-position: center;
+    }
+
+    .parallax-background5{
+        height: 600px;
+    }
+
+    .font-billetterie-date3{
+        font-size: 30px;
+    }
+    .font-billetterie-date2{
+        font-size: 20px;
     }
 
     .h1-titre{
