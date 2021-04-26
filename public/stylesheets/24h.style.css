@@ -144,7 +144,7 @@ html{
     align-items: center;
 }
 
-.live-button h3 {
+.live-txt {
     background-color: #E20917;
     display: flex;
     justify-content: center;
@@ -152,12 +152,39 @@ html{
     border-radius: 10px;
 }
 
-.live-button a {
+.live-button .live-txt a {
     color: #FFFFFF;
-    padding: 10px 15px 10px 15px;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-.live-button a:hover{
+.live-button .live-txt a:hover{
+    color: #000000;
+}
+
+.webtv-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webtv-txt {
+    background-color: #3DA936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.webtv-button .webtv-txt a {
+    color: #FFFFFF;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.webtv-button .webtv-txt a:hover{
     color: #000000;
 }
 
