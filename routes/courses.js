@@ -427,4 +427,12 @@ router.get('/resultats', function(req, res, next) {
 	res.render('courses-resultats');
 });
 
+router.get('/pimpmybike', function(req, res, next) {
+	res.render('pimpmybike');
+});
+
+router.get('/24heuresdecourse', function(req, res, next) {
+	res.render('24heurescourse');
+});
+
 module.exports = router;
