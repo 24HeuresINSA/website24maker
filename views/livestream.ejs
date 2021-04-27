@@ -203,12 +203,20 @@
     <!-- END CONTENT ---------------------------------------------------------------------------->
 
     <!-- FOOTER -->
-    <div style="position: fixed;
-                bottom: 0;
-                width: 100%;
-                z-index: 999">
+    <style type="text/css">
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        @media (max-width: 800px) {
+            .footer{
+                position: relative;
+            }
+        }
+    </style>
     <%- include footer.ejs %>
-    </div>
     <!-- END FOOTER -->
 
 
