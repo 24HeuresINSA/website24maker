@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+<!-- Preloader -->
+    <!--<section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section> -->
+<!-- End Preloader -->
+
+<!-- Sidebar Menu -->
+<%- include sidebar.ejs %>
+<!-- End Sidebar Menu -->
+
+<!-- Site Wraper -->
+<div class="wrapper">
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        /* counter clock css */
+        ul.countdown {
+            list-style: none;
+            padding: 0;
+            display: block;
+            text-align: center;
+            font-family: 'arial', sans-serif !important;
+        }
+
+        .font-billetterie-date3{
+            font-size: 50px;
+            line-height: 42px;
+        }
+
+        ul.countdown li {
+            display: inline-block;
+        }
+
+        ul.countdown li span {
+            font-size: 75px;
+            font-weight: 300;
+            color: #E20917;
+
+        }
+
+        ul.countdown li.seperator {
+            font-size: 3vw;
+            line-height: 30px;
+            vertical-align: top;
+            color: #E20917;
+
+        }
+
+        ul.countdown li p {
+            color: #E20917;
+            font-size: 3vw;
+        }
+        /* emd counter clock css */
+
+        @media (max-width: 767px) {
+
+            .text-center-xs {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .font-billetterie-date{
+                font-size: 90px;
+            }
+
+            .font-billetterie-date2{
+                font-size: 30px;
+            }
+
+            ul.countdown li span {
+                font-size: 90px;
+                color: #E20917;
+                font-weight: 300;
+            }
+
+            ul.countdown li.seperator {
+                font-size: 60px;
+                line-height: 40px;
+                vertical-align: top;
+                color: #E20917;
+
+            }
+
+            ul.countdown li p {
+                color: #E20917;
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .font-billetterie-date{
+                font-size: 90px;
+            }
+            .font-billetterie-date2{
+                font-size: 15px;
+            }
+
+            ul.countdown li span {
+                font-size: 30px;
+                color: #E20917;
+                font-weight: 300;
+            }
+
+            ul.countdown li.seperator {
+                font-size: 15px;
+                line-height: 40px;
+                vertical-align: top;
+                color: #E20917;
+
+            }
+
+            ul.countdown li p {
+                color: #E20917;
+                font-size: 15px;
+            }
+        }
+    </style>
+
+    <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+    <%- include header.ejs %>
+    <!-- End Header -->
+
+    <!-- JS -->
+
+    <!-- CONTENT --------------------------------------------------------------------------------->
+
+    <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="../img/background/courses-constructions-back.jpg">
+        <div class="container">
+            <div class="title">
+                <div class="h1-titre">24h de course</div><br>
+                <h4 class="">
+                        <span class="text-original-case">
+                            Retrouvez toutes les informations relatives aux 24 heures de course<br>
+                            46ème édition
+                        </span>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="ptb pt-5 parallax">
+        <div class="container">
+            <!-- work Filter -->
+            <!-- End work Filter -->
+
+            <div class="text-center p-3">
+                <h4>
+                        <span class="text-original-case " style="font-weight: bold">
+                            Les courses de 24 heures sont le cœur historique du festival, et nous ne pouvons imaginer cette édition sans elles. Cependant, l’incertitude dans laquelle nous sommes plongés quant aux mesures sanitaires qui auront court fin mai ne nous permet pas de proposer une course avec un tracé fixe et une date unique.
+                            À la place, nous organisons une course « virtuelle ». Le principe est simple : vous aurez la possibilité de courir où vous voulez et quand vous le voulez ! Vous n’aurez ensuite qu’à nous transmettre vos données GPS pour nous communiquer vos résultats et intégrer le classement.
+                            <br>
+                            Vous aurez neuf jours, du vendredi 14 mai à 14h au dimanche 23 mai à 14h, pour effectuer 24 heures de course au total, d’une seule traite ou en plusieurs étapes. Il sera possible, comme les années précédentes, de participer en solo ou en équipe, et les disciplines proposées seront les suivantes : course à vélo, course à pied et duathlon.
+                            <br>
+                            Notre système se basera sur l’application de running « Strava ». Vous aurez la possibilité d’importer leurs données d’activité Strava sur notre site internet, où nous conserverons pour le classement leurs 24 « meilleures » heures de course.
+                            <br>
+                            À l’issue de la semaine du défi, les coureurs ayant parcouru la plus grande distance en 24 heures se verront récompensés par divers lots au cours d’une cérémonie de remise des prix en distanciel.
+                            <br><br>
+                            Vous pourrez retrouver le règlement et plus d'infos très bientôt sur cette page.
+
+                        </span>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTENT ---------------------------------------------------------------------------->
+
+    <!-- FOOTER -->
+    <%- include footer.ejs %>
+    <!-- END FOOTER -->
+
+
+
+    <!-- Scroll Top -->
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+    <!-- End Scroll Top -->
+
+</div>
+<!-- Site Wraper End -->
+
+<!-- JS -->
+<script type="text/javascript">
+    $('.countdown').downCount({
+        date: '05/21/2021 20:00:00',
+        offset: +1
+    }, function () {
+        return;
+    });
+    $("#menu-courses").css('color', "#E20917");
+</script>
+
+</body>
+</html>
