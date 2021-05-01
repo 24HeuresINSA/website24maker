@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="../img/background/home-spot.jpg">
+            <div class="container">
+                <div class="title">
+                    <div class="h1-titre">FOIRE AUX QUESTIONS</div><br>
+                    <h4 class="">
+                        <span class="text-original-case">Un doute ? Une question ? Consultez la foire aux questions afin de profiter du festival sans soucis !</span>
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-3 mb-3"></div>
+
+        <!-- Work Section -->
+        <section class="p-md-5">
+            <div class="container">
+                <div class="tabs b-lrb-none">
+                    <ul>
+                        <li><a href="#tabs-billetterie"><i class="ion ion-flag left"></i>Billetterie</a></li>
+                        <li><a href="#tabs-securite"><i class="ion ion-star left"></i>Sécurité</a></li>
+                        <li><a href="#tabs-accessibilite"><i class="ion ion-pin left"></i>Accessibilité</a></li>
+                        <li><a href="#tabs-divers"><i class="ion ion-android-textsms left"></i>Informations diverses</a></li>
+                    </ul>
+                    <div class="ui-tab-content">
+                        <div id="tabs-billetterie" class="plr-0">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je acheter un billet avec le pass région ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Oui, pour cela tu dois passer à notre local sur le campus de la Doua en semaine le midi ou le soir.
+                                        Pour nous retrouver, consulte la page <a href="/infos/contact">Contact</a></p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section d-none">
+                                    <h6 class="accordion-title">Quels sont les tarifs pour les étudiants INSA VA ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Des places sont réservées pour les ventes VA. Les ventes au tarif early bird (12€ les deux soirs et 8€ un soir) auront lieu aux restaurants INSA au mois de mars
+                                            pour les étudiants INSA en possession de la carte VA. Une seule place par carte VA.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je acheter un billet sur place ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Oui si le festival n'est pas complet.<br>
+                                            Depuis 2 ans, le festival affiche complet plusieurs jours avant même le début de l'évènement.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section d-none">
+                                    <h6 class="accordion-title">Puis-je me faire rembourser mon billet ?</h6>
+                                    <div class="accordion-content">
+                                        <p>
+                                            En cas de tenu du festival, les billets achetés sont non remboursables. Vous pourrez les revendre sur la plateforme partenaire et sécurisée Ticketswap (voir question suivante). <br>
+                                            En cas d'annulation du festival, les billets seront 100% remboursables comme en pour l'édition 2020.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section d-none">
+                                    <h6 class="accordion-title">Puis-je revendre mon billet ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Oui, rend toi sur <a href="http://bit.ly/2PsMHZv">TicketSwap</a>. C'est une plateforme de ventes et d'achats sécurisés de billet de seconde main.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Que faire en cas d'annulation du festival ?</h6>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Si le festival doit être annulé, comme pour l'édition de 2020, les billets seront totalement remboursables et vous en serez informé. <br>
+                                            Pour rappel, les billets de l'édition 2020 ne sont pas valables en 2021. Nous remercions infiniment les personnes qui ont fait don de leur billet en 2020. Cela nous a permit de surmonter la crise aujourd'hui, et c'est grâce à vous <3.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section d-none">
+                                    <h6 class="accordion-title">Est-ce grave si mon nom n'est pas celui qui est indiqué sur le billet ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Une pièce d'identité sera demandée à l'entrée uniquement en cas de litige ou de problème à l'entrée. A moins d'être présent avec la personne dont le nom figure sur le billet, tu t'exposes à un potentiel contrôle.<br>
+                                            Si t'es procuré ton billet via le site TicketSwap, pas de problème.</p>
+                                        <p>Méfie-toi des billets à vendre sur internet.<b>Chaque année des personnes se font refuser l'accès à cause de billets photocopiés ou falsifiés. Nous te conseillons d'acheter sur <a href="http://bit.ly/2PsMHZv">TicketSwap</a> uniquement.</b>
+                                            Seule la première personne scannant le billet peut entrer. Si le billet est invalide au scan, il sera impossible d'entrer ni d'en racheter un sur place, même si c'est ton nom dessus.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je montrer mon billet sur téléphone ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Oui à condition d'avoir de la batterie, un écran non fissuré et la luminosité réglée au MAXIMUM. Prépare le QR code à l'avance afin de fluidifier les entrées.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment fonctionne le pass 2 soirs et les bracelets ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Lors de ton arrivée le premier soir (vendredi), un bracelet te sera remis. Ne l'enleve pas et ne le perds pas !
+                                            Ce bracelet te permetra d'entrer le second soir (samedi). Aucune exception ne sera faite si tu n'as pas de bracelet et le billet sera de toute manière invalide au scan le deuxième soir.</p>
+                                        <p>Si tu n'es pas venu le premier soir (vendredi), mais que tu as un pass 2 soirs, tu pourras tout de même entrer puisque le billet n'aura pas été scanné la veille.</p>
+                                        <p>Attention, le pass 2 soirs n'est pas divisible. Ainsi le bracelet ne peut pas être cédé.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">J'ai perdu ou enlevé mon bracelet, que faire ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Si tu as perdu ton bracelet, tant pis pour toi, tu dois repayer ta place (s'il en reste).</p>
+                                        <p>Si tu as dû couper ton bracelet pour des raisons professionnelles par exemple, remplis ce <a href="http://forms.gle/HzGRHuPpKdvw2Yuy8"> formulaire </a> avant le festival.
+                                            Présente toi tôt avec <b>ton billet, ton bracelet coupé et une pièce d'identité</b> à la caisse. Attention, le nom sur la carte d'indentité et sur le billet doivent coincider.
+                                            Nous avons très peu de bracelets supplémentaires, alors ne le coupe qu'en cas d'extrème nécessité.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je entrer et sortir comme je veux ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Non, toute sortie est définitive.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Quelles sont les conditions générales de ventes ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Vous pouvez consultez les conditions générales de vente ici : <a href="/documents/cgv_24hinsa_2021.pdf">Voir / Télécharger</a></p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Quel est le règlement interieur du festival ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Vous pouvez consultez le règlement interieur ici : <a href="/documents/reglement_interieur_24hinsa_2020.pdf">Voir / Télécharger</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion -->
+                        </div>
+                        <div id="tabs-securite" class="plr-0">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Quels objets sont interdits ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Les bouteilles, boites métalliques, objets tranchants et/ou contendants, boissons alcoolisées, et d’une manière générale tout autre objet pouvant servir de projectile, tout objet dangereux et tout article pyrotechnique,
+                                            arme à feu, substances explosives, inflammables ou volatiles, des signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire et autres objets dangereux sont interdits dans la zone concert.</p>
+                                        <p>En cas de tentative abusive, pouvant porter atteinte à la sécurité des autres festivaliers, l'entrée pourra vous être définitivement refusée.</p>
+                                        <p>De la même manière, la drogue est formellement interdite pouvant faire l'objet de poursuites.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je venir avec un sac ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Seuls les sacs à dos  à faible contenance / sac à main / sac en bandoulière sont autorisés.
+                                            L'attente pourra être plus longue puisqu'ils seront systematiquement et minutieusement fouillés.
+                                            Les valises et autres bagages sont interdits.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Que prendre avec moi ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Prenez le strict minimum et faites attention à vos effets personnels ! Venez de préférence avec des poches fermées et sans objet de valeur apparents.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Y'a t-il des casiers ou vestiaires pour poser des affaires ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Non. Il n'y a aucun moyen de déposer des affaires sur le festival.
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Que faire si je suis témoin d'incident ou de violence ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Si la situation ne peut s'apaiser, ne vous mettez pas en danger et contactez le : 04 28 29 63 82. Notre poste de sécurité est en lien avec les forces de l'ordre et les services de secours pour une intervention rapide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accordion -->
+                        </div>
+                        <div id="tabs-accessibilite" class="plr-0">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment venir au festival ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Consultez notre rubrique <a href="/infos/transports">Transports</a> pour en savoir plus.</p>
+                                        <p>Notez que le campus est interdit à la circulation du Vendredi 17 mai au Lundi 20 mai 2019.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je circuler sur le campus ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Le campus est fermé à la circulation durant le festival par un arrété prefectoral.  Les professionnels, prestataires et autres personnes necessitant d'accéder au campus durant cette période
+                                            doivent formuler une demande écrite. Sans cette autorisation préable, aucune exception ne sera faite.</p>
+                                        <p>De toute manière, aucun stationnement ne pourra s'éffectuer sur le campus et les parkings seront évacués la semaine du festival. Les voitures recalcitrantes seront enlevées par la fourrière.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Un accès est-il prévu pour les Personnes à Mobilité Réduite (PMR) ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Biensur, le festival a été conçu pour accueillir des Personnes à Mobilité Réduite. Vous avez la possibilité d'accéder à une rampe pour assister aux concerts.
+                                            Des buvettes et des toilettes adaptées seront à disposition.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment accéder aux concerts (horaires, plan...) ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Les concerts sont ouverts Vendredi et Samedi de 20h à 4h ! Vous pouvez entrer jusqu'à 1h30. Attention, toute sortie est définitive.</p>
+                                        <p>L'entrée se situe devant l'arrêt de tram INSA Einstein.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment accéder aux animations en journée (horaires, plan...) ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Les animations en journées ont lieu Samedi et Dimanche de 10h à 18h. L'entrée est libre et totalement gratuite.</p>
+                                        <p>Les animations se déroulent un peu partout sur le campus et sont accessible depuis n'importe quel endroit.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment accéder aux courses (horaires, plan...) ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Les courses ont lieu Samedi et Dimanche de 14h à 14h . Elles ont lieu en parallèle des concerts et des animations.</p>
+                                        <p>Les courses se déroules sur la partie nord du campus.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je dormir sur place ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Non. Il n'y a clairement pas la place pour camper.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-divers" class="plr-0">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Comment payer sur place ?</h6>
+                                    <div class="accordion-content">
+                                        <p>En espèce, CB, Paylib/Sans-contact ou via Lyf Pay. Pas de chèque. <br>
+                                            Plus d'info sur <a href="/infos/payer">Comment Payer ?</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Y a t-il un distributeur de billet ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Non pas sur le campus. Si vous souhaitez payer en espèce, vous devez retirer avant de venir.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Peut-on apporter à boire ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Les soirs de concerts, aucune bouteille ne peut entrer.
+                                            Des bouteilles d'eau sont en vente sur le festival et des points d'eau sont mis à disposition gratuitement.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Peut-on se restaurer et se reposer ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Oui bien sûr ! Des stands de restaurations sont présents sur le festival et un espace détente (tables, chaises) est mis à disposition.<br>
+                                           Plus d'infos sur <a href="/infos/bars-restauration">Bars / Restauration</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Puis-je prendre des photos et vidéos des artistes ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Aucun appareil photo / caméra ne pourra entrer (mis à part les téléphones biensûr). Si vous souhaitez une accréditation presse, ou une autorisation de captation, veuillez nous contacter.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-section">
+                                    <h6 class="accordion-title">Je souhaite devenir partenaire ou prestataire, comment faire ?</h6>
+                                    <div class="accordion-content">
+                                        <p>Pour toute demande ou suggestion, rendez vous à la rubrique <a href="/infos/contact">Contactez-Nous</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section -->
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.downCount.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+		$('.countdown').downCount({
+			date: '05/17/2019 19:00:00',
+			offset: +10
+		}, function () {
+		});
+    </script>
+    <script type="text/javascript">
+		$("#menu-infos-pratiques").css('color', '#E20917');
+		$("#sidebar-menu-faq").css('color', '#E20917');
+        $("#title-page-nav").append("FAQ");
+    </script>
+
+
+
+</body>
+</html>
