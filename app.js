@@ -21,12 +21,13 @@ var webtv = require('./routes/webtv')
 
 var app = express();
 
-if (process.env.NODE_ENV != 'production' && false) {
-	https.createServer({
-		key: fs.readFileSync('./config/key.pem'),
-		cert: fs.readFileSync('./config/cert.pem')
-	}, app).listen(3001);
-}
+// if (process.env.NODE_ENV != 'production' && false) {
+// 	https.createServer({
+// 		key: fs.readFileSync('./config/key.pem'),
+// 		cert: fs.readFileSync('./config/cert.pem')
+// 	}, app).listen(3001);
+// }
+app.listen(3001)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
