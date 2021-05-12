@@ -170,6 +170,10 @@
                 </span>
             </div>
             <div class="testimonial text-center dark-color">
+                <% now = new Date();
+                disp9 = new Date('2021-05-21T19:30:00')
+                if (now < disp9) {
+                %>
                 <ul class="countdown pt-4 pb-80" style="color: #E20917;">
                     <li>
                         <span class="days">00</span>
@@ -191,11 +195,19 @@
                         <p class="seconds_ref">seconds</p>
                     </li>
                 </ul>
-                    <div class="live-button d-none">
+                <% } %>
+
+                <% now = new Date();
+                disp2 = new Date('2021-05-21T19:30:00')
+                if (now > disp2){
+                %>
+                    <div class="live-button">
                         <span class="live-txt">
-                            <a href="https://www.youtube.com"> Rejoindre le live ici </a>
+                            <a href="https://shotgun.live/fr/events/292582/stream"> Rejoindre le live ici </a>
                         </span>
                     </div>
+
+                <% } %>
                 </div>
         </div>
     </section>
