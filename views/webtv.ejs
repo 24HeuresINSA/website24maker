@@ -169,6 +169,10 @@
                     Vous pourrez profiter de diverses animations prévues.
                 </span>
             </div>
+            <% now = new Date();
+            disp2 = new Date('2021-05-18T19:30:00')
+            if (now < disp2){
+            %>
             <div class="testimonial text-center dark-color">
                 <ul class="countdown pt-4 pb-80" style="color: #3DA936;">
                     <li>
@@ -191,18 +195,53 @@
                         <p class="seconds_ref" style="color: #3DA936;">seconds</p>
                     </li>
                 </ul>
-                    <div class="webtv-button d-none">
+                <% } %>
+                <% now = new Date();
+                disp2 = new Date('2021-05-18T19:30:00')
+                if (now > disp2){
+                %>
+                    <div class="webtv-button">
                         <span class="webtv-txt">
-                            <a href="https://www.youtube.com"> Rejoindre la WebTV ici </a>
+                            <a href="https://shotgun.live/fr/events/292582/stream"> Rejoindre la WebTV ici </a>
                         </span>
                     </div>
                 </div>
+            <% } %>
         </div>
     </section>
+
+    <% now = new Date();
+    disp2 = new Date('2021-05-18T19:30:00')
+    if (now > disp2){
+    %>
+        <section class="ptb pt-5 fond-nuit-back"
+                 Style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding-bottom: 30px">
+            <div style="height: 710px;
+                        width: 1420px;">
+                <iframe src="https://shotgun.live/fr/events/292582/stream"
+                        width="1420"
+                        height="700"
+                        allow="camera;microphone"
+                        title="24h Shotgun Stream"
+                        style="left: 20%;
+                               margin: 30px 0px 0px 0px"
+                ></iframe>
+            </div>
+
+        </section>
+    <% } %>
 
     <!-- END CONTENT ---------------------------------------------------------------------------->
 
     <!-- FOOTER -->
+    <% now = new Date();
+    disp2 = new Date('2021-05-18T19:30:00')
+    if (now < disp2){
+    %>
     <style type="text/css">
         .footer {
             position: fixed;
@@ -221,6 +260,7 @@
             }
         }
     </style>
+    <% } %>
     <%- include footer.ejs %>
     <!-- END FOOTER -->
 
