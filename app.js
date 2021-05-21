@@ -18,6 +18,7 @@ var coursesRouter = require('./routes/courses');
 var infosRouter = require('./routes/infos');
 var livestream = require('./routes/livestream')
 var webtv = require('./routes/webtv')
+var timetable = require('./routes/timetable')
 
 var app = express();
 
@@ -27,7 +28,6 @@ if (process.env.NODE_ENV != 'production' && false) {
 		cert: fs.readFileSync('./config/cert.pem')
 	}, app).listen(3001);
 }
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -61,6 +61,7 @@ app.use('/infos', infosRouter);
 app.use('/billetterie', billetterieRouter);
 app.use('/livestream', livestream)
 app.use('/webtv', webtv)
+app.use('/timetable', timetable)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
