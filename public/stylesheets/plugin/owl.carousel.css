@@ -120,7 +120,7 @@
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             border-radius: 20px;
-            background: #323232;
+            background: #E20917;
             border: 2px solid;
             border-color: none;
             transition: all 0.3s ease 0s;
@@ -132,7 +132,7 @@
         /*.owl-carousel .owl-controls.clickable .owl-page:hover span,*/
         .owl-carousel .owl-controls .owl-page.active span {
             background: rgba(0,0,0,0);
-            border: 2px solid #323232;
+            border: 2px solid #E20917;
             transform: scale(1.5);
             -webkit-transform: scale(1.5);
             -moz-transform: scale(1.5);
