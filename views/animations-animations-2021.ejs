@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <%- include head.ejs %>
+</head>
+
+<body>
+
+    <!-- Preloader --> <!--
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Sidebar Menu -->
+        <%- include sidebar.ejs %>
+    <!-- End Sidebar Menu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header ("header--dark", "header-transparent", "header--sticky")-->
+            <%- include header.ejs %>
+        <!-- End Header -->
+
+        <style>
+            .map-responsive {
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .map-responsive iframe {
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        </style>
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background4" data-background-img="../img/background/animations-1.jpg">
+            <div class="container">
+                <div class="title">
+                    <div class="h1-titre">ANIMATIONS</div><br>
+                    <h4 class="">
+                        <span class="text-original-case">Retrouvez les animations de l'édition 2019 passée</span>
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-3 mb-3"></div>
+
+        <!-- Work Section -->
+        <section class="ptb pt-5">
+            <div class="container">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li><a class="categories active" data-filter="*">TOUT</a></li>
+                        <li><a class="categories" data-filter=".samedi">SAMEDI</a></li>
+                        <li><a class="categories" data-filter=".dimanche">DIMANCHE</a></li>
+                        <li><a class="categories" data-filter=".culture">CULTURE</a></li>
+                        <li><a class="categories" data-filter=".sport">SPORT</a></li>
+                        <li><a class="categories" data-filter=".divertissement">DIVERTISSEMENT</a></li>
+                        <li><a class="categories" data-filter=".petit">POUR LES PETITS</a></li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+
+                <!-- ANIMATIONS -->
+               <div class="row container-grid nf-col-3">
+
+                   <!-- COURSES -->
+                   <div class="nf-item samedi dimanche sport spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/courses.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">24h de Courses</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#courses-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">24h de Courses</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI 14h - DIMANCHE 14h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-primary">Sport</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="courses-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">24h de Courses</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0">SAMEDI 14h - DIMANCHE 14h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-primary">Sport</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/courses.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">Viens voir/soutenir/admirer les téméraires qui relèvent le défi des 24 Heures de l'INSA.
+                                       Depuis maintenant plus de 40 ans, la course des 24 Heures propose un challenge de taille. Et il y en a pour tous les goûts, que ce soit en solo ou en équipe, de la course à pied, du cyclisme ou encore du triathlon pour les plus courageux.
+                                       Viens repousser tes limites pendant des épreuves de 24 heures d'affilée. Et si tu aimes t'amuser en faisant du sport, ne t'inquiète pas, la course folklo est également au rendez-vous pour cette édition.
+                                       Bonne ambiance garantie !</p>
+                                   <p class="text-justify m-0 pt-1">
+                                       Cette année, le challenge d’endurance se déroulera sur une semaine complète : les participants devront parcourir le plus de kilomètres sur 24 heures de courses cumulées dans 3 catégories possibles (course à pied, vélo ou duathlon)
+                                       <br> <a href="/courses/24heuresdecourse"> Encore plus d'infos ici</a>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <!-- Pimp my bike -->
+                   <div class="nf-item samedi dimanche divertissement spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/pimpmybike.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">Pimp my bike</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#pimp_my_bike-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">Pimp my bike</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item ">DIMANCHE 16  14h à DIMANCHE 23 14h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-danger">Divertissement</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="pimp_my_bike-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">Pimp my bike</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0 ">DIMANCHE 16  14h à DIMANCHE 23 14h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-danger">Divertissement</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/pimpmybike.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">
+                                       Concourez dans le concours de la plus belle décoration de vélo avec le challenge Pimp My Bike ! Envoyez-nous en photo vos vélos les plus fun et les meilleurs seront recompensés !
+                                       <br> <a href="/courses/pimpmybike"> Encore plus d'infos ici</a>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- Sur la piste des 24 heures enfants -->
+                   <div class="nf-item samedi dimanche divertissement petit spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/jeu-piste_enfant.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">Sur la piste des 24 heures (Enfants)</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#sur_la_piste_des_24-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">Sur la piste des 24 heures (Enfants)</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item ">SAMEDI et DIMANCHE de 11h à 17h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-danger">Divertissement</span>
+                           <span class="badge badge-warning">Pour les petits</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="sur_la_piste_des_24-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">Sur la piste des 24 heures(Enfants)</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0 ">SAMEDI et DIMANCHE de 11h à 17h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-danger">Divertissement</span>
+                                       <span class="badge badge-warning">Pour les petits</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/jeu-piste_enfant.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">
+                                       Cette année, le challenge d’endurance se déroulera sur une semaine complète : les participants devront parcourir le plus de kilomètres sur 24 heures de courses cumulées dans 3 catégories possibles (course à pied, vélo ou duathlon)
+                                       <br> <a href="/courses/24heuresdecourse"> Encore plus d'infos ici</a>
+                                   </p>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- Sur la piste des 24 heures etudiant -->
+                   <div class="nf-item samedi dimanche divertissement spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/jeu-piste_adulte.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">Sur la piste d'Alain 24 (Etudiants)</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#sur_la_piste_des_24_etu-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">Sur la piste d'Alain 24 (Etudiants)</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI et DIMANCHE de 11h à 18h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-danger">Divertissement</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="sur_la_piste_des_24_etu-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">Sur la piste d'Alain 24 (Etudiant)</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0">SAMEDI et DIMANCHE de 11h à 18h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-danger">Divertissement</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/jeu-piste_adulte.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">
+                                       Notre star Alain24 a caché son bob sur le campus de l'INSA et y a laissé des
+                                       indices pour le retrouver. Venez donc suivre la piste des énigmes sur le
+                                       festival en partant à la découverte des 24 heures de l’INSA, seuls ou en équipe
+                                       pour retrouver le bob, qui vous permettra de participer au tirage au sort et
+                                       tenter de gagner divers goodies des 24 !<br>
+                                       <a href="/documents/reglement_jeux_de_piste_2021.pdf">
+                                           Trouvez le réglement ici
+                                       </a>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- WebTV  -->
+                   <div class="nf-item samedi dimanche divertissement spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/webtv.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">WebTV</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#webtv-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">WebTV</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI et DIMANCHE de 13h30 à 18h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-danger">Divertissement</span>
+                           <span class="badge badge-primary">Sport</span>
+                           <span class="badge badge-success">Culture</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="webtv-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">WebTV</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0">SAMEDI et DIMANCHE de 13h30 à 18h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-danger">Divertissement</span>
+                                       <span class="badge badge-primary">Sport</span>
+                                       <span class="badge badge-success">Culture</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/webtv.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">
+                                       Une émission présenté en direct entre 13h30 et 18h sera accessible le samedi et le dimanche de la manifestation pour vous présenter diverses animations. Vous y retrouverez de nombreuses vidéos issus des éditions précédentes, des interviews, des spots de prévention et de sensibilisation et bien plus encore ! Alors n’hésitez et rejoignez nous en live dès samedi 22 Mai, nous vous y attendons très nombreux !
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- Expo photo  -->
+                   <div class="nf-item samedi dimanche divertissement culture spacing">
+                       <div class="item-box">
+                           <a>
+                               <img alt="1" src="/img/animations/expo_photos.jpg" class="item-container">
+                               <div class="item-mask">
+                                   <div class="item-caption">
+                                       <h5 class="white">Expo photo</h5>
+                                       <button type="button" class="btn btn-xs btn-white btn-plus-info" data-toggle="modal" data-target="#expo_photo-modal">
+                                           Plus d'info
+                                       </button>
+                                   </div>
+                               </div>
+                           </a>
+                       </div>
+                       <h3 class="color-animations letter-spacing-1 text-center mb-0 titre-artiste-item">Expo photo</h3>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">SAMEDI et DIMANCHE de 11h à 18h</h6>
+                       <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item">
+                           <span class="badge badge-danger">Divertissement</span>
+                           <span class="badge badge-success">Culture</span>
+                       </h6>
+                   </div>
+                   <div class="modal fade m-auto p-0" id="expo_photo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" style="padding-top: 50px;" role="document">
+                           <div class="modal-content">
+                               <div class="modal-body jjj">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                                   <h4 class="modal-title text-center" style="padding-left:13px;">Expo photo</h4>
+                                   <h6 class="letter-spacing-1 text-center m-0">SAMEDI et DIMANCHE de 11h à 18h</h6>
+                                   <h6 class="letter-spacing-1 text-center m-0 sous-titre-date-concerts-artiste-item pb-2">
+                                       <span class="badge badge-danger">Divertissement</span>
+                                       <span class="badge badge-success">Culture</span>
+                                   </h6>
+                                   <div class="text-center map-responsive">
+                                       <img alt="1" src="/img/animations/expo_photos.jpg" class="item-container">
+                                       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.348272439582!2d4.87319!3d45.78425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ3JzAzLjMiTiA0wrA1MicyMy41IkU!5e0!3m2!1sfr!2sfr!4v1548163424719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                   </div>
+                                   <p class="text-justify m-0 pt-1">
+                                       Une émission présenté en direct entre 13h30 et 18h sera accessible le samedi et le dimanche de la manifestation pour vous présenter diverses animations. Vous y retrouverez de nombreuses vidéos issus des éditions précédentes, des interviews, des spots de prévention et de sensibilisation et bien plus encore ! Alors n’hésitez et rejoignez nous en live dès samedi 22 Mai, nous vous y attendons très nombreux !
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+
+
+
+            </div>
+        </section>
+
+        <!--<section id="testimonial" class="overlay-dark dark-bg ptb" style="background-image: url('../img/background/animations-construction-back.jpg'); background-position-x: center; background-position-y: center;" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="testimonial-carousel">
+                    <div class="item">
+                        <div class="testimonial text-center dark-color">
+                            <div class="container-icon"><i class="fa fa-code"></i></div>
+                            <h2 style="font-weight: normal;">PAGE EN CONSTRUCTION / A VENIR</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+            <%- include footer.ejs %>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+    <script src="../js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="../js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="../js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="../js/theme.js" type="text/javascript"></script>
+    <script>
+		$(".btn-plus-info").click(function(){
+			setTimeout(function(){
+				$(".jjj").each(function(i){
+					var w = $(this).width();
+					if (w > 0) {
+						$(".modal-artiste-video").height(w*315/560);
+						return false;
+                    }
+				});
+			}, 1000);
+		});
+
+		$("#menu-animation").css('color', '#E20917');
+		$("#sidebar-menu-animations").css('color', '#E20917');
+
+		$(window).resize(function() {
+			$(".jjj").each(function(i){
+				var w = $(this).width();
+				if (w > 0) {
+					$(".modal-artiste-video").height(w*315/560);
+					return false;
+				}
+			});
+		});
+    </script>
+    <script type="text/javascript">
+		$("#title-page-nav").append("Animations");
+    </script>
+    
+</body>
+</html>
