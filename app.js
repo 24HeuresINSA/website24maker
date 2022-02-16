@@ -53,15 +53,15 @@ app.use('/documents', express.static('public/documents'));
 app.use('/fonts', express.static('public/fonts'));
 
 app.use('/', indexRouter);
-app.use('/animations', animationsRouter);
-app.use('/prevention', preventionRouter);
-app.use('/concerts', concertsRouter);
+// app.use('/animations', animationsRouter);
+// app.use('/prevention', preventionRouter);
+// app.use('/concerts', concertsRouter);
 app.use('/courses', coursesRouter);
-app.use('/infos', infosRouter);
-app.use('/billetterie', billetterieRouter);
-app.use('/livestream', livestream)
-app.use('/webtv', webtv)
-app.use('/timetable', timetable)
+// app.use('/infos', infosRouter);
+// app.use('/billetterie', billetterieRouter);
+// app.use('/livestream', livestream)
+// app.use('/webtv', webtv)
+// app.use('/timetable', timetable)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

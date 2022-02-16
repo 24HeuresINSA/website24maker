@@ -411,28 +411,28 @@ router.post('/connexion', function(req, res, next) {
 
 });
 
-router.get('/informations', function(req, res, next) {
-	res.render('courses-informations');
-});
+// router.get('/informations', function(req, res, next) {
+// 	res.render('courses-informations');
+// });
 
-router.get('/course-caritative', function(req, res, next) {
-	res.render('courses-caritative');
-});
+// router.get('/course-caritative', function(req, res, next) {
+// 	res.render('courses-caritative');
+// });
 
-router.get('/parcours', function(req, res, next) {
-	res.render('courses-parcours');
-});
+// router.get('/parcours', function(req, res, next) {
+// 	res.render('courses-parcours');
+// });
 
-router.get('/resultats', function(req, res, next) {
-	res.render('courses-resultats');
-});
+// router.get('/resultats', function(req, res, next) {
+// 	res.render('courses-resultats');
+// });
 
-router.get('/pimpmybike', function(req, res, next) {
-	res.render('pimpmybike');
-});
+// router.get('/pimpmybike', function(req, res, next) {
+// 	res.render('pimpmybike');
+// });
 
-router.get('/24heuresdecourse', function(req, res, next) {
-	res.render('24heurescourse');
-});
+// router.get('/24heuresdecourse', function(req, res, next) {
+// 	res.render('24heurescourse');
+// });
 
 module.exports = router;
