@@ -91,12 +91,30 @@
     </section>
 
     <!-- COURSES FOOTER -->
-    <%- include courses-footer.ejs %>
+    <!-- <%- include courses-footer.ejs %> -->
     <!-- END COURSES FOOTER -->
 
     <!-- END CONTENT ---------------------------------------------------------------------------->
 
     <!-- FOOTER -->
+    <style type="text/css">
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        @media (max-width: 800px) {
+            .footer{
+                position: relative;
+            }
+        }
+        @media (max-height: 800px) {
+            .footer{
+                position: relative;
+            }
+        }
+    </style>
     <%- include footer.ejs %>
     <!-- END FOOTER -->
 
