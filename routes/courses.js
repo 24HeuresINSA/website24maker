@@ -9,7 +9,7 @@ var sha256 = require('sha256');
 const { base64encode, base64decode } = require('nodejs-base64');
 
 router.get('/inscriptions', function(req, res, next) {
-	if(false){
+	if(true){
 		res.render('courses-inscriptions-ferme');
 	}else{
 		var request = {
