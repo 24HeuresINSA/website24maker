@@ -156,7 +156,8 @@
             <div>
                 * pdf seulement | ** pdf, png, jpg
             </div>
-            <div class="m-auto pt-3 col-12 text-center m-auto">
+            <!-- remove d-none for inscription time  -->
+            <div class="m-auto pt-3 col-12 text-center m-auto d-none">
                 <% if(locals.category && locals.team.team_participants) { %>
                     <% if(category.category_nb_max > team.team_participants.length) { %>
                         <button id="" onclick="$('#modalAjout').modal({show:true})" class="btn btn-color-b btn-md">Ajouter un coureur dans l'équipe</button>
